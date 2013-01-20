@@ -40,7 +40,7 @@ http://box2d.org/forum/viewtopic.php?f=2&t=509
 Notes:
 -Past users note that b2BoxDef has been replaced by SetAsBox() function in b2PolygonDef
 (Refer to any of the PhysTest examples or the manual for more info and usage examples)
--Debug rendering class included, see the constructor in Test.as in the PhysTest project for example usage
+-Debug rendering class included, see the constructor in TestPluginModule.as in the PhysTest project for example usage
 -One of the major features of 2.0.0 is the inclusion of CCD, see here for more information:
 http://www.box2d.org/manual.html#bullets
 //

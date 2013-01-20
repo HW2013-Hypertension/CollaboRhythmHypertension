@@ -60,6 +60,7 @@
       <module fileurl="file://$PROJECT_DIR$/PianoChord/PianoChord.iml" filepath="$PROJECT_DIR$/PianoChord/PianoChord.iml" group="CollaboRhythm/Tools" />
       <module fileurl="file://$PROJECT_DIR$/SplitViewNavigatorTest1/SplitViewNavigatorTest1.iml" filepath="$PROJECT_DIR$/SplitViewNavigatorTest1/SplitViewNavigatorTest1.iml" group="CollaboRhythm/Other" />
       <module fileurl="file://$PROJECT_DIR$/TCPSyslogTarget/TCPSyslogTarget.iml" filepath="$PROJECT_DIR$/TCPSyslogTarget/TCPSyslogTarget.iml" group="CollaboRhythm/3rd Party Libraries" />
+      <module fileurl="file://$PROJECT_DIR$/Test/Test.iml" filepath="$PROJECT_DIR$/Test/Test.iml" group="CollaboRhythm/Plugins" />
       <module fileurl="file://$PROJECT_DIR$/indivo_client_flash/indivo_client_flash.iml" filepath="$PROJECT_DIR$/indivo_client_flash/indivo_client_flash.iml" group="CollaboRhythm/Libraries" />
     </modules>
   </component>
