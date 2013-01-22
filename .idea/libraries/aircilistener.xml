@@ -1,0 +1,19 @@
+<component name="libraryTable">
+  <library name="aircilistener" type="flex">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/../../flexunit-4.1.0_RC2-4-4.1.0.16076/flexunit" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="file://$PROJECT_DIR$/../../flexunit-4.1.0_RC2-4-4.1.0.16076/flexunit/docs/aircilistener" />
+      <root url="file://$PROJECT_DIR$/../../flexunit-4.1.0_RC2-4-4.1.0.16076/flexunit/docs/cilistener" />
+      <root url="file://$PROJECT_DIR$/../../flexunit-4.1.0_RC2-4-4.1.0.16076/flexunit/docs/flexcoverlistener" />
+      <root url="file://$PROJECT_DIR$/../../flexunit-4.1.0_RC2-4-4.1.0.16076/flexunit/docs/flexunit" />
+      <root url="file://$PROJECT_DIR$/../../flexunit-4.1.0_RC2-4-4.1.0.16076/flexunit/docs/uilistener" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="file://$PROJECT_DIR$/../../flexunit-4.1.0_RC2-4-4.1.0.16076/flexunit/sampleCIProject/src/test/flex" />
+      <root url="file://$PROJECT_DIR$/../../flexunit-4.1.0_RC2-4-4.1.0.16076/flexunit/turnkey/src" />
+    </SOURCES>
+    <jarDirectory url="file://$PROJECT_DIR$/../../flexunit-4.1.0_RC2-4-4.1.0.16076/flexunit" recursive="false" />
+  </library>
+</component>
