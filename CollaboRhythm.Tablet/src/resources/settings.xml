@@ -52,6 +52,7 @@
 		<pluginSearchPath>$APPLICATION_DIRECTORY$/../../CollaboRhythm.Plugins.Messages/bin-debug</pluginSearchPath>
 		<pluginSearchPath>$APPLICATION_DIRECTORY$/../../CollaboRhythm.Plugins.Problems.HIV/bin-debug</pluginSearchPath>
 		<pluginSearchPath>$APPLICATION_DIRECTORY$/../../CollaboRhythm.Plugins.BloodPressure/bin-debug</pluginSearchPath>
+		<pluginSearchPath>$APPLICATION_DIRECTORY$/../../out/production/HW2013Hypertension.Plugins.Problems.Hypertension</pluginSearchPath>
 		<!-- This path is for the plugins that are installed with the application -->
 		<pluginSearchPath>$APPLICATION_DIRECTORY$/../../out/production/CollaboRhythm.Plugins.Problems.Test</pluginSearchPath>
 		<pluginSearchPath>$APPLICATION_DIRECTORY$/plugins/SchedulePluginModule.swf</pluginSearchPath>
@@ -85,6 +86,7 @@
 				<appDescriptor>collaboRhythm.plugins.messages.controller::MessagesAppController</appDescriptor>
 				<appDescriptor>collaboRhythm.plugins.insulinTitrationSupport.controller::InsulinTitrationFAQAppController</appDescriptor>
 				<appDescriptor>collaboRhythm.plugins.problems.HIV.controller::HIVAppController</appDescriptor>
+				<appDescriptor>hw2013Hypertension.plugins.problems.hypertension.controller::HypertensionAppController</appDescriptor>
 			</appDescriptors>
 		</appGroup>
 	</appGroups>
