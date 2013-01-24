@@ -32,8 +32,26 @@ package hw2013Hypertension.plugins.problems.hypertension.controller
 					_collaborationLobbyNetConnectionServiceProxyLocal);
 		}
 
+		override public function initialize():void
+		{
+			super.initialize();
+			initializeHypertensionModel();
+
+			updateWidgetViewModel();
+		}
+
+		private function initializeHypertensionModel():void
+		{
+			if (_model == null)
+			{
+				_model = new HypertensionModel(_activeRecordAccount);
+			}
+		}
+
 		override protected function createWidgetView():UIComponent
 		{
+			initializeHypertensionModel();
+
 			_widgetView = new HypertensionButtonWidgetView();
 			return _widgetView;
 		}
@@ -94,7 +112,7 @@ package hw2013Hypertension.plugins.problems.hypertension.controller
 				return;
 			}
 
-			_viewNavigator.pushView(HypertensionView, this);
+			_viewNavigator.pushView(HypertensionView, _model);
 		}
 
 		override public function close():void
