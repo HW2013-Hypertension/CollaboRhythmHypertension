@@ -50,5 +50,6 @@
 				<s:SolidColor color="green"/>
 			</s:fill>
 		</s:Rect>
+
 	</s:Group>
 </tablet:TabletViewBase>
