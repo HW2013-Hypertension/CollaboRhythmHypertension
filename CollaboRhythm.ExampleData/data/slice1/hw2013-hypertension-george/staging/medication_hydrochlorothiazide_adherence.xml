@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--~
+  ~ Copyright 2011 John Moore, Scott Gilroy
+  ~
+  ~ This file is part of CollaboRhythm.
+  ~
+  ~ CollaboRhythm is free software: you can redistribute it and/or modify it under the terms of the GNU General Public
+  ~ License as published by the Free Software Foundation, either version 2 of the License, or (at your option) any later
+  ~ version.
+  ~
+  ~ CollaboRhythm is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied
+  ~ warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more
+  ~ details.
+  ~
+  ~ You should have received a copy of the GNU General Public License along with CollaboRhythm.  If not, see
+  ~ <http://www.gnu.org/licenses/>.
+  -->
+
+	<IndivoDocuments>
+		<AdherenceItem xmlns="http://indivo.org/vocab/xml/documents#">
+			<name type="http://rxnav.nlm.nih.gov/REST/rxcui/" value="310798">Hydrochlorothiazide 25 MG Oral Tablet</name>
+			<reportedBy>csantos@records.media.mit.edu</reportedBy>
+			<dateReported>2013-01-01T08:02:00Z</dateReported>
+			<adherence>true</adherence>
+			<ndc>006033856</ndc>
+			<indication>diabetes</indication>
+		</AdherenceItem>
+		<AdherenceItem xmlns="http://indivo.org/vocab/xml/documents#">
+			<name type="http://rxnav.nlm.nih.gov/REST/rxcui/" value="310798">Hydrochlorothiazide 25 MG Oral Tablet</name>
+			<reportedBy>csantos@records.media.mit.edu</reportedBy>
+			<dateReported>2013-01-02T08:05:00Z</dateReported>
+			<adherence>true</adherence>
+		</AdherenceItem>
+		<AdherenceItem xmlns="http://indivo.org/vocab/xml/documents#">
+			<name type="http://rxnav.nlm.nih.gov/REST/rxcui/" value="310798">Hydrochlorothiazide 25 MG Oral Tablet</name>
+			<reportedBy>csantos@records.media.mit.edu</reportedBy>
+			<dateReported>2013-01-03T08:07:00Z</dateReported>
+			<adherence>true</adherence>
+		</AdherenceItem>
+		<AdherenceItem xmlns="http://indivo.org/vocab/xml/documents#">
+			<name type="http://rxnav.nlm.nih.gov/REST/rxcui/" value="310798">Hydrochlorothiazide 25 MG Oral Tablet</name>
+			<reportedBy>csantos@records.media.mit.edu</reportedBy>
+			<dateReported>2013-01-04T08:01:00Z</dateReported>
+			<adherence>true</adherence>
+		</AdherenceItem>
+		<AdherenceItem xmlns="http://indivo.org/vocab/xml/documents#">
+			<name type="http://rxnav.nlm.nih.gov/REST/rxcui/" value="310798">Hydrochlorothiazide 25 MG Oral Tablet</name>
+			<reportedBy>csantos@records.media.mit.edu</reportedBy>
+			<dateReported>2013-01-05T08:04:00Z</dateReported>
+			<adherence>true</adherence>
+		</AdherenceItem>
+		<AdherenceItem xmlns="http://indivo.org/vocab/xml/documents#">
+			<name type="http://rxnav.nlm.nih.gov/REST/rxcui/" value="310798">Hydrochlorothiazide 25 MG Oral Tablet</name>
+			<reportedBy>csantos@records.media.mit.edu</reportedBy>
+			<dateReported>2013-01-06T07:58:00Z</dateReported>
+			<adherence>true</adherence>
+		</AdherenceItem>
+		<AdherenceItem xmlns="http://indivo.org/vocab/xml/documents#">
+			<name type="http://rxnav.nlm.nih.gov/REST/rxcui/" value="310798">Hydrochlorothiazide 25 MG Oral Tablet</name>
+			<reportedBy>csantos@records.media.mit.edu</reportedBy>
+			<dateReported>2013-01-06T07:58:00Z</dateReported>
+			<adherence>true</adherence>
+		</AdherenceItem>
+		<AdherenceItem xmlns="http://indivo.org/vocab/xml/documents#">
+			<name type="http://rxnav.nlm.nih.gov/REST/rxcui/" value="310798">Hydrochlorothiazide 25 MG Oral Tablet</name>
+			<reportedBy>csantos@records.media.mit.edu</reportedBy>
+			<dateReported>2013-01-07T07:59:00Z</dateReported>
+			<adherence>false</adherence>
+		</AdherenceItem>
+		<AdherenceItem xmlns="http://indivo.org/vocab/xml/documents#">
+			<name type="http://rxnav.nlm.nih.gov/REST/rxcui/" value="310798">Hydrochlorothiazide 25 MG Oral Tablet</name>
+			<reportedBy>csantos@records.media.mit.edu</reportedBy>
+			<dateReported>2013-01-08T08:12:00Z</dateReported>
+			<adherence>true</adherence>
+		</AdherenceItem>
+		<AdherenceItem xmlns="http://indivo.org/vocab/xml/documents#">
+			<name type="http://rxnav.nlm.nih.gov/REST/rxcui/" value="310798">Hydrochlorothiazide 25 MG Oral Tablet</name>
+			<reportedBy>csantos@records.media.mit.edu</reportedBy>
+			<dateReported>2013-01-09T07:56:00Z</dateReported>
+			<adherence>true</adherence>
+		</AdherenceItem>
+		<AdherenceItem xmlns="http://indivo.org/vocab/xml/documents#">
+			<name type="http://rxnav.nlm.nih.gov/REST/rxcui/" value="310798">Hydrochlorothiazide 25 MG Oral Tablet</name>
+			<reportedBy>csantos@records.media.mit.edu</reportedBy>
+			<dateReported>2013-01-10T08:24:00Z</dateReported>
+			<adherence>true</adherence>
+		</AdherenceItem>
+		<AdherenceItem xmlns="http://indivo.org/vocab/xml/documents#">
+			<name type="http://rxnav.nlm.nih.gov/REST/rxcui/" value="310798">Hydrochlorothiazide 25 MG Oral Tablet</name>
+			<reportedBy>csantos@records.media.mit.edu</reportedBy>
+			<dateReported>2013-01-11T08:13:00Z</dateReported>
+			<adherence>true</adherence>
+		</AdherenceItem>
+		<AdherenceItem xmlns="http://indivo.org/vocab/xml/documents#">
+			<name type="http://rxnav.nlm.nih.gov/REST/rxcui/" value="310798">Hydrochlorothiazide 25 MG Oral Tablet</name>
+			<reportedBy>csantos@records.media.mit.edu</reportedBy>
+			<dateReported>2013-01-12T08:01:00Z</dateReported>
+			<adherence>true</adherence>
+		</AdherenceItem>
+		<AdherenceItem xmlns="http://indivo.org/vocab/xml/documents#">
+			<name type="http://rxnav.nlm.nih.gov/REST/rxcui/" value="310798">Hydrochlorothiazide 25 MG Oral Tablet</name>
+			<reportedBy>csantos@records.media.mit.edu</reportedBy>
+			<dateReported>2013-01-13T08:08:00Z</dateReported>
+			<adherence>true</adherence>
+		</AdherenceItem>
+		<AdherenceItem xmlns="http://indivo.org/vocab/xml/documents#">
+			<name type="http://rxnav.nlm.nih.gov/REST/rxcui/" value="310798">Hydrochlorothiazide 25 MG Oral Tablet</name>
+			<reportedBy>csantos@records.media.mit.edu</reportedBy>
+			<dateReported>2013-01-14T08:09:00Z</dateReported>
+			<adherence>true</adherence>
+		</AdherenceItem>
+		<AdherenceItem xmlns="http://indivo.org/vocab/xml/documents#">
+			<name type="http://rxnav.nlm.nih.gov/REST/rxcui/" value="310798">Hydrochlorothiazide 25 MG Oral Tablet</name>
+			<reportedBy>csantos@records.media.mit.edu</reportedBy>
+			<dateReported>2013-01-15T08:07:00Z</dateReported>
+			<adherence>false</adherence>
+		</AdherenceItem>
+		<AdherenceItem xmlns="http://indivo.org/vocab/xml/documents#">
+			<name type="http://rxnav.nlm.nih.gov/REST/rxcui/" value="310798">Hydrochlorothiazide 25 MG Oral Tablet</name>
+			<reportedBy>csantos@records.media.mit.edu</reportedBy>
+			<dateReported>2013-01-16T07:50:00Z</dateReported>
+			<adherence>true</adherence>
+		</AdherenceItem>
+		<AdherenceItem xmlns="http://indivo.org/vocab/xml/documents#">
+			<name type="http://rxnav.nlm.nih.gov/REST/rxcui/" value="310798">Hydrochlorothiazide 25 MG Oral Tablet</name>
+			<reportedBy>csantos@records.media.mit.edu</reportedBy>
+			<dateReported>2013-01-17T07:54:00Z</dateReported>
+			<adherence>true</adherence>
+		</AdherenceItem>
+	  <AdherenceItem xmlns="http://indivo.org/vocab/xml/documents#">
+			<name type="http://rxnav.nlm.nih.gov/REST/rxcui/" value="310798">Hydrochlorothiazide 25 MG Oral Tablet</name>
+			<reportedBy>csantos@records.media.mit.edu</reportedBy>
+			<dateReported>2013-01-18T07:56:00Z</dateReported>
+			<adherence>true</adherence>
+		</AdherenceItem>
+		<AdherenceItem xmlns="http://indivo.org/vocab/xml/documents#">
+			<name type="http://rxnav.nlm.nih.gov/REST/rxcui/" value="310798">Hydrochlorothiazide 25 MG Oral Tablet</name>
+			<reportedBy>csantos@records.media.mit.edu</reportedBy>
+			<dateReported>2013-01-19T08:04:00Z</dateReported>
+			<adherence>true</adherence>
+		</AdherenceItem>
+		<AdherenceItem xmlns="http://indivo.org/vocab/xml/documents#">
+			<name type="http://rxnav.nlm.nih.gov/REST/rxcui/" value="310798">Hydrochlorothiazide 25 MG Oral Tablet</name>
+			<reportedBy>csantos@records.media.mit.edu</reportedBy>
+			<dateReported>2013-01-20T08:09:00Z</dateReported>
+			<adherence>true</adherence>
+		</AdherenceItem>
+		<AdherenceItem xmlns="http://indivo.org/vocab/xml/documents#">
+			<name type="http://rxnav.nlm.nih.gov/REST/rxcui/" value="310798">Hydrochlorothiazide 25 MG Oral Tablet</name>
+			<reportedBy>csantos@records.media.mit.edu</reportedBy>
+			<dateReported>2013-01-21T08:10:00Z</dateReported>
+			<adherence>true</adherence>
+		</AdherenceItem>
+</IndivoDocuments>
