@@ -26,16 +26,20 @@
 		import hw2013Hypertension.plugins.problems.hypertension.controller.HypertensionAppController;
 		import hw2013Hypertension.plugins.problems.hypertension.model.HypertensionModel;
 
+		import mx.collections.ArrayCollection;
+
 		private var _controller:HypertensionAppController;
 
 		[Bindable]
 		private var _model:HypertensionModel;
+		private var _messages:ArrayCollection;
 
 		override public function set data(value:Object):void
 		{
 			super.data = value;
 
 			_model = value as HypertensionModel;
+			_messages = _model.messages;
 		}
 
 		]]></fx:Script>
@@ -71,4 +75,5 @@
 				</s:Panel>
 
 			</s:Group>
+	<s:List dataProvider="{_messages}"/>
 </tablet:TabletViewBase>
