@@ -110,17 +110,17 @@ package hw2013Hypertension.plugins.problems.hypertension.model
 			if (score > 0.75*28)
 			{
 				_messages.addItem("Congratulations, your score was " + score.toString()+
-						           "you have your blood pressure well under control");
+						           "\n"+"you have your blood pressure well under control");
 			}
 			else if(0.50*28<score<=0.75*28)
 			{
 				_messages.addItem("It is difficult to tell whether your blood pressure is under control," +
-							       " remember to take at least 3 measurements per week");
+							       "\n"+"remember to take at least 3 measurements per week");
 			}
 			else
 			{
 				_messages.addItem("Your blood pressure levels are higher than they should be. Remember to exercise, " +
-						 "eat well, sleep well and adhere to your regiman ")
+						 "\n"+"eat well, sleep well and adhere to your regiman ")
 			}
 
 		}
