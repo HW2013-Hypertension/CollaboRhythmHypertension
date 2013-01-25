@@ -83,6 +83,27 @@
 				dataProvider="{_messages}" />
 
 
+<s:Group x="590" y="40" height="40">
+		<s:Rect height="100%" width="500">
+			<s:fill>
+				<s:SolidColor color="black"/>
+			</s:fill>
+		</s:Rect>
+		<s:Rect height="100%" width="{_model.percentBloodPressureAdherence * 5}">
 
+			<s:fill>
+				<s:SolidColor color="green"/>
+			</s:fill>
+		</s:Rect>
+
+	</s:Group>
+
+	<s:RichText  x="590" y="120"
+						 width="500" height="40"
+						 text="Every time you take positive actions towards controlling your blood pressure, your buddy gets rewarded!"
+						 textAlign="center"
+						 styleName="titleHeader"
+
+						/>
 
 </tablet:TabletViewBase>
