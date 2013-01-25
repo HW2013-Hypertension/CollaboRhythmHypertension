@@ -76,5 +76,10 @@
 				</s:Panel>
 
 			</s:Group>
-	<s:List dataProvider="{_messages}"/>
+
+	<s:List x="590" y="40" width="500" height="80" dataProvider="{_messages}" />
+
+
+
+
 </tablet:TabletViewBase>
