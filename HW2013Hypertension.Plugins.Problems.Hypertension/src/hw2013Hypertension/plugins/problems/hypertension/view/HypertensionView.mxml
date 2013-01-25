@@ -48,7 +48,7 @@
 					 text="Blood Pressure Progress"
 					 styleName="titleHeader"
 					/>
-	<s:Group x="40" y="40" height="60">
+	<s:Group x="40" y="40" height="40">
 		<s:Rect height="100%" width="500">
 			<s:fill>
 				<s:SolidColor color="black"/>
@@ -63,24 +63,24 @@
 
 	</s:Group>
 
-	<s:Group x="40" y="120" height="500">
+	<s:Group x="40" y="260" height="400">
 			<s:Panel height="100%" width="500" title="Personal Rewards">
 
 			</s:Panel>
 
 		</s:Group>
 
-	<s:Group x="590" y="120" height="500">
+	<s:Group x="590" y="260" height="400">
 				<s:Panel  width="500" height="100%" title="BP Buddy Rewards">
 
 				</s:Panel>
 
 			</s:Group>
 
-	<s:List x="590" y="40"
-			width="500" height="60"
-			textAlign="center"
-			dataProvider="{_messages}" />
+	<s:List x="40" y="120"
+				width="500" height="100"
+				textAlign="center"
+				dataProvider="{_messages}" />
 
 
 

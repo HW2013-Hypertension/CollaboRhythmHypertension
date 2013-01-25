@@ -56,6 +56,10 @@ package hw2013Hypertension.plugins.problems.hypertension.model
 		private function calculateScore():void
 		{
 			var score:int = 0;
+			var totalreadings:int = 0;
+			var goodreadings:int = 0;
+			var totalscore:int = 0;
+
 
 			for each (var healthActionSchedule:HealthActionSchedule in _healthActionScheduleCollection)
 			{
@@ -69,6 +73,7 @@ package hw2013Hypertension.plugins.problems.hypertension.model
 						if (adherenceItem.dateReported.time > dateWeekStart.time &&
 								adherenceItem.dateReported.time < dateWeekEnd.time)
 						{
+							totalreadings= totalreadings +1;
 							var adherenceResults:Vector.<DocumentBase> = adherenceItem.adherenceResults;
 
 							if (adherenceResults.length != 0)
@@ -96,6 +101,7 @@ package hw2013Hypertension.plugins.problems.hypertension.model
 								if (systolic < 140 && diastolic < 90)
 								{
 									score = score + 2;
+									goodreadings= goodreadings +1;
 								}
 								else if (systolic < 140 || diastolic < 90)
 								{
@@ -107,7 +113,35 @@ package hw2013Hypertension.plugins.problems.hypertension.model
 					}
 				}
 			}
-			if (score > 0.75*28)
+			 totalscore= (goodreadings/totalreadings)*0.75 +0.25;
+
+			if (totalreadings < 6)
+			{
+				_messages.addItem("Having a high blood pressure, but not knowing about it, can be really"+
+						      "\n"+"dangerous.This is why they call high blood pressure 'The Silent Killer'."+
+						      "\n"+"To know how your blood pressure is doing make sure to take at least 3"+
+						      "\n"+"readings per week!" );
+			}
+
+			else
+			{
+
+				 if(totalscore>= 65)
+				{
+					_messages.addItem("Great job, you are taking control of your blood pressure, and your"+
+									"\n"+"own health. Keep up the good work and enjoy a pressure free life.");
+				}
+				else
+				{
+					_messages.addItem("It is good that you are measuring your blood pressure on a regular basis"+
+									  "\n"+"That is the first and foremost step towards a pressure free life." +
+									  "\n"+"Continue to eat well, sleep well, exercise and adhere to your drug" +
+									  "\n"+"regimen, and you should see your blood pressure drop accordingly. If"+
+									  "\n"+"not, make sure to consult your local pharmacy, as different"+
+									  "\n"+"treatmeant might be better suited to you" );
+				}
+			}
+			/*if (score > 0.75*28)
 			{
 				_messages.addItem("Congratulations, your score was " + score.toString()+
 						           "\n"+"you have your blood pressure well under control");
@@ -121,7 +155,7 @@ package hw2013Hypertension.plugins.problems.hypertension.model
 			{
 				_messages.addItem("Your blood pressure levels are higher than they should be. Remember to exercise, " +
 						 "\n"+"eat well, sleep well and adhere to your regiman ")
-			}
+			}*/
 
 		}
 
