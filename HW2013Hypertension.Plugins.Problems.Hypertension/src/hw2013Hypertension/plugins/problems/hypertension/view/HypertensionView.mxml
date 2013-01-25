@@ -79,7 +79,10 @@
 
 	<s:List x="40" y="120"
 				width="500" height="100"
-				textAlign="center"
+				horizontalCenter="true"
+				borderVisible="true"
+				borderColor="black"
+				borderAlpha="0.5"
 				dataProvider="{_messages}" />
 
 
