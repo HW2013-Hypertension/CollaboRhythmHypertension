@@ -88,7 +88,7 @@
 										</name>
 										<reportedBy>csantos@records.media.mit.edu</reportedBy>
 										<dateReported>2013-01-01T08:02:00Z</dateReported>
-										<recurrenceIndex>5</recurrenceIndex>
+										<recurrenceIndex>1</recurrenceIndex>
 										<adherence>true</adherence>
 									</AdherenceItem>
 								</document>
@@ -126,7 +126,7 @@
 										</name>
 										<reportedBy>csantos@records.media.mit.edu</reportedBy>
 										<dateReported>2013-01-02T08:05:00Z</dateReported>
-										<recurrenceIndex>6</recurrenceIndex>
+										<recurrenceIndex>2</recurrenceIndex>
 										<adherence>true</adherence>
 									</AdherenceItem>
 								</document>
@@ -164,7 +164,7 @@
 										</name>
 										<reportedBy>csantos@records.media.mit.edu</reportedBy>
 										<dateReported>2013-01-03T08:07:00Z</dateReported>
-										<recurrenceIndex>7</recurrenceIndex>
+										<recurrenceIndex>3</recurrenceIndex>
 										<adherence>true</adherence>
 									</AdherenceItem>
 								</document>
@@ -202,7 +202,7 @@
 										</name>
 										<reportedBy>csantos@records.media.mit.edu</reportedBy>
 										<dateReported>2013-01-04T08:01:00Z</dateReported>
-										<recurrenceIndex>8</recurrenceIndex>
+										<recurrenceIndex>4</recurrenceIndex>
 										<adherence>true</adherence>
 									</AdherenceItem>
 								</document>
@@ -240,7 +240,7 @@
 										</name>
 										<reportedBy>csantos@records.media.mit.edu</reportedBy>
 										<dateReported>2013-01-05T08:04:00Z</dateReported>
-										<recurrenceIndex>9</recurrenceIndex>
+										<recurrenceIndex>5</recurrenceIndex>
 										<adherence>true</adherence>
 									</AdherenceItem>
 								</document>
@@ -278,7 +278,7 @@
 										</name>
 										<reportedBy>csantos@records.media.mit.edu</reportedBy>
 										<dateReported>2013-01-06T07:58:00Z</dateReported>
-										<recurrenceIndex>10</recurrenceIndex>
+										<recurrenceIndex>6</recurrenceIndex>
 										<adherence>true</adherence>
 									</AdherenceItem>
 								</document>
@@ -316,7 +316,7 @@
 										</name>
 										<reportedBy>csantos@records.media.mit.edu</reportedBy>
 										<dateReported>2013-01-06T07:58:00Z</dateReported>
-										<recurrenceIndex>10</recurrenceIndex>
+										<recurrenceIndex>7</recurrenceIndex>
 										<adherence>true</adherence>
 									</AdherenceItem>
 								</document>
@@ -354,7 +354,7 @@
 										</name>
 										<reportedBy>csantos@records.media.mit.edu</reportedBy>
 										<dateReported>2013-01-07T07:59:00Z</dateReported>
-										<recurrenceIndex>11</recurrenceIndex>
+										<recurrenceIndex>8</recurrenceIndex>
 										<adherence>false</adherence>
 									</AdherenceItem>
 								</document>
@@ -367,7 +367,7 @@
 										</name>
 										<reportedBy>csantos@records.media.mit.edu</reportedBy>
 										<dateReported>2013-01-08T08:12:00Z</dateReported>
-										<recurrenceIndex>12</recurrenceIndex>
+										<recurrenceIndex>9</recurrenceIndex>
 										<adherence>true</adherence>
 									</AdherenceItem>
 								</document>
@@ -405,7 +405,7 @@
 										</name>
 										<reportedBy>csantos@records.media.mit.edu</reportedBy>
 										<dateReported>2013-01-09T07:56:00Z</dateReported>
-										<recurrenceIndex>13</recurrenceIndex>
+										<recurrenceIndex>10</recurrenceIndex>
 										<adherence>true</adherence>
 									</AdherenceItem>
 								</document>
@@ -443,7 +443,7 @@
 										</name>
 										<reportedBy>csantos@records.media.mit.edu</reportedBy>
 										<dateReported>2013-01-10T08:24:00Z</dateReported>
-										<recurrenceIndex>14</recurrenceIndex>
+										<recurrenceIndex>11</recurrenceIndex>
 										<adherence>true</adherence>
 									</AdherenceItem>
 								</document>
@@ -481,7 +481,7 @@
 										</name>
 										<reportedBy>csantos@records.media.mit.edu</reportedBy>
 										<dateReported>2013-01-11T08:13:00Z</dateReported>
-										<recurrenceIndex>15</recurrenceIndex>
+										<recurrenceIndex>12</recurrenceIndex>
 										<adherence>true</adherence>
 									</AdherenceItem>
 								</document>
@@ -519,7 +519,7 @@
 										</name>
 										<reportedBy>csantos@records.media.mit.edu</reportedBy>
 										<dateReported>2013-01-12T08:01:00Z</dateReported>
-										<recurrenceIndex>16</recurrenceIndex>
+										<recurrenceIndex>13</recurrenceIndex>
 										<adherence>true</adherence>
 									</AdherenceItem>
 								</document>
@@ -557,7 +557,7 @@
 										</name>
 										<reportedBy>csantos@records.media.mit.edu</reportedBy>
 										<dateReported>2013-01-13T08:08:00Z</dateReported>
-										<recurrenceIndex>17</recurrenceIndex>
+										<recurrenceIndex>14</recurrenceIndex>
 										<adherence>true</adherence>
 									</AdherenceItem>
 								</document>
@@ -595,7 +595,7 @@
 										</name>
 										<reportedBy>csantos@records.media.mit.edu</reportedBy>
 										<dateReported>2013-01-14T08:09:00Z</dateReported>
-										<recurrenceIndex>18</recurrenceIndex>
+										<recurrenceIndex>15</recurrenceIndex>
 										<adherence>true</adherence>
 									</AdherenceItem>
 								</document>
@@ -633,7 +633,7 @@
 										</name>
 										<reportedBy>csantos@records.media.mit.edu</reportedBy>
 										<dateReported>2013-01-15T08:07:00Z</dateReported>
-										<recurrenceIndex>19</recurrenceIndex>
+										<recurrenceIndex>16</recurrenceIndex>
 										<adherence>false</adherence>
 									</AdherenceItem>
 								</document>
@@ -646,7 +646,7 @@
 										</name>
 										<reportedBy>csantos@records.media.mit.edu</reportedBy>
 										<dateReported>2013-01-16T07:50:00Z</dateReported>
-										<recurrenceIndex>20</recurrenceIndex>
+										<recurrenceIndex>17</recurrenceIndex>
 										<adherence>true</adherence>
 									</AdherenceItem>
 								</document>
@@ -684,7 +684,7 @@
 										</name>
 										<reportedBy>csantos@records.media.mit.edu</reportedBy>
 										<dateReported>2013-01-17T07:01:00Z</dateReported>
-										<recurrenceIndex>21</recurrenceIndex>
+										<recurrenceIndex>18</recurrenceIndex>
 										<adherence>true</adherence>
 									</AdherenceItem>
 								</document>
@@ -722,7 +722,7 @@
 										</name>
 										<reportedBy>csantos@records.media.mit.edu</reportedBy>
 										<dateReported>2013-01-18T07:56:00Z</dateReported>
-										<recurrenceIndex>22</recurrenceIndex>
+										<recurrenceIndex>19</recurrenceIndex>
 										<adherence>true</adherence>
 									</AdherenceItem>
 								</document>
@@ -760,7 +760,7 @@
 										</name>
 										<reportedBy>csantos@records.media.mit.edu</reportedBy>
 										<dateReported>2013-01-19T08:04:00Z</dateReported>
-										<recurrenceIndex>23</recurrenceIndex>
+										<recurrenceIndex>20</recurrenceIndex>
 										<adherence>true</adherence>
 									</AdherenceItem>
 								</document>
@@ -798,7 +798,7 @@
 										</name>
 										<reportedBy>csantos@records.media.mit.edu</reportedBy>
 										<dateReported>2013-01-20T08:09:00Z</dateReported>
-										<recurrenceIndex>24</recurrenceIndex>
+										<recurrenceIndex>21</recurrenceIndex>
 										<adherence>true</adherence>
 									</AdherenceItem>
 								</document>
@@ -836,7 +836,7 @@
 										</name>
 										<reportedBy>csantos@records.media.mit.edu</reportedBy>
 										<dateReported>2013-01-21T08:10:00Z</dateReported>
-										<recurrenceIndex>25</recurrenceIndex>
+										<recurrenceIndex>22</recurrenceIndex>
 										<adherence>true</adherence>
 									</AdherenceItem>
 								</document>
