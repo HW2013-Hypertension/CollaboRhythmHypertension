@@ -32,7 +32,6 @@ package hw2013Hypertension.plugins.problems.hypertension.model
 		private var _mostRecentSystolic:Number;
 		private var _mostRecentDiastolic:Number;
 
-
 		public function HypertensionModel(activeRecordAccount:Account)
 		{
 
@@ -161,8 +160,6 @@ package hw2013Hypertension.plugins.problems.hypertension.model
 									  "\n"+"treatmeant might be better suited to you" );
 				}
 			}
-
-
 			/*if (score > 0.75*28)
 			{
 				_messages.addItem("Congratulations, your score was " + score.toString()+
