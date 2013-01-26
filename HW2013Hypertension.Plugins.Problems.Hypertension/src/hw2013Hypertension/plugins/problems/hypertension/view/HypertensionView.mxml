@@ -53,7 +53,7 @@
 					 text="Blood Pressure Progress"
 					 styleName="titleHeader"
 					/>
-	<s:Label x="215" y="85"
+	<s:Label x="155" y="85"
       width="70" height="50"
       text="90 systolic
       60 diastolic"
@@ -77,14 +77,14 @@
 		</s:Rect> -->
 
 	<s:Group>
-		<s:Rect height="40" width="180"
+		<s:Rect height="40" width="120"
 				x="40" y="40">
 			<s:fill>
 				<s:SolidColor color="red" />
 			</s:fill>
 		</s:Rect>
-		<s:Rect height="40" width="100"
-				x="220" y="40">
+		<s:Rect height="40" width="160"
+				x="160" y="40">
 			<s:fill>
 				<s:SolidColor color="green" />
 			</s:fill>
@@ -101,6 +101,14 @@
 		>
 			<s:fill>
 				<s:SolidColor color="black"/>
+			</s:fill>
+		</s:Rect>
+		<s:Rect height="40" width="10"
+				x = "{_model.mostRecentDiastolic * 2}"
+				y="40"
+		>
+			<s:fill>
+				<s:SolidColor color="yellow"/>
 			</s:fill>
 		</s:Rect>
 	</s:Group>

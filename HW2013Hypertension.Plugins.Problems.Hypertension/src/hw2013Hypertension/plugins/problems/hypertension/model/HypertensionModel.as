@@ -30,6 +30,7 @@ package hw2013Hypertension.plugins.problems.hypertension.model
 
 		private var _currentDateSource:ICurrentDateSource;
 		private var _mostRecentSystolic:Number;
+		private var _mostRecentDiastolic:Number;
 
 
 		public function HypertensionModel(activeRecordAccount:Account)
@@ -63,14 +64,21 @@ package hw2013Hypertension.plugins.problems.hypertension.model
 			var goodreadings:int = 0;
 			var totalscore:int = 0;
 
-			var mostRecentDiastolic:Number;
+			//var mostRecentDiastolic:Number;
+
 
 			var systolicVitalSignsCollection:ArrayCollection = _record.vitalSignsModel.getVitalSignsByCategory(VitalSignsModel.SYSTOLIC_CATEGORY);
+			var diastolicVitalSignsCollection:ArrayCollection = _record.vitalSignsModel.getVitalSignsByCategory(VitalSignsModel.DIASTOLIC_CATEGORY);
 
 			if (systolicVitalSignsCollection && systolicVitalSignsCollection.length != 0)
 			{
 				var mostRecentSystolicVitalSign:VitalSign =  systolicVitalSignsCollection.getItemAt(systolicVitalSignsCollection.length - 1) as VitalSign;
 				mostRecentSystolic = mostRecentSystolicVitalSign.resultAsNumber;
+			}
+			if (diastolicVitalSignsCollection && diastolicVitalSignsCollection.length !=0)
+			{
+				var mostRecentDiastolicVitalSign:VitalSign = diastolicVitalSignsCollection.getItemAt(diastolicVitalSignsCollection.length -1) as VitalSign;
+				mostRecentDiastolic = mostRecentDiastolicVitalSign.resultAsNumber;
 			}
 
 			for each (var healthActionSchedule:HealthActionSchedule in _healthActionScheduleCollection)
@@ -252,6 +260,16 @@ package hw2013Hypertension.plugins.problems.hypertension.model
 		public function set messages1(value:ArrayCollection):void
 		{
 			messages1 = value;
+		}
+
+		public function get mostRecentDiastolic():Number
+		{
+			return _mostRecentDiastolic;
+		}
+
+		public function set mostRecentDiastolic(value:Number):void
+		{
+			_mostRecentDiastolic = value;
 		}
 	}
 }
