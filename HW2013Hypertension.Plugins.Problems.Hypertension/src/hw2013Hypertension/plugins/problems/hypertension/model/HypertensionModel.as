@@ -26,8 +26,10 @@ package hw2013Hypertension.plugins.problems.hypertension.model
 		private var _healthActionScheduleCollection:ArrayCollection;
 		private var _percentBloodPressureAdherence:int;
 		private var _messages:ArrayCollection = new ArrayCollection();
+		private var _messages1:ArrayCollection = new ArrayCollection();
 
 		private var _currentDateSource:ICurrentDateSource;
+		private var _mostRecentSystolic:Number;
 
 
 		public function HypertensionModel(activeRecordAccount:Account)
@@ -61,6 +63,15 @@ package hw2013Hypertension.plugins.problems.hypertension.model
 			var goodreadings:int = 0;
 			var totalscore:int = 0;
 
+			var mostRecentDiastolic:Number;
+
+			var systolicVitalSignsCollection:ArrayCollection = _record.vitalSignsModel.getVitalSignsByCategory(VitalSignsModel.SYSTOLIC_CATEGORY);
+
+			if (systolicVitalSignsCollection && systolicVitalSignsCollection.length != 0)
+			{
+				var mostRecentSystolicVitalSign:VitalSign =  systolicVitalSignsCollection.getItemAt(systolicVitalSignsCollection.length - 1) as VitalSign;
+				mostRecentSystolic = mostRecentSystolicVitalSign.resultAsNumber;
+			}
 
 			for each (var healthActionSchedule:HealthActionSchedule in _healthActionScheduleCollection)
 			{
@@ -191,7 +202,8 @@ package hw2013Hypertension.plugins.problems.hypertension.model
 						}
 					}
 				}
-			}
+			}_messages1.addItem("Every time you take positive actions towards controlling your blood +" +
+								"\n"+"pressure, your buddy gets rewarded!");
 
 			percentBloodPressureAdherence = adherenceCount / 7 * 100;
 		}
@@ -214,6 +226,32 @@ package hw2013Hypertension.plugins.problems.hypertension.model
 		public function get messages():ArrayCollection
 		{
 			return _messages;
+
+		}
+
+		public function get currentDateSource():ICurrentDateSource
+		{
+			return _currentDateSource;
+		}
+
+		public function get mostRecentSystolic():Number
+		{
+			return _mostRecentSystolic;
+		}
+
+		public function set mostRecentSystolic(value:Number):void
+		{
+			_mostRecentSystolic = value;
+		}
+
+		public function get messages1():ArrayCollection
+		{
+			return _messages1;
+		}
+
+		public function set messages1(value:ArrayCollection):void
+		{
+			messages1 = value;
 		}
 	}
 }
