@@ -5,7 +5,7 @@
    <LoadableIndivoDocument>
       <document>
          <Equipment xmlns="http://indivo.org/vocab/xml/documents#">
-            <dateStarted>2009-12-15</dateStarted>
+            <dateStarted>2013-01-01</dateStarted>
             <type>blood pressure monitor</type>
             <name xmlns="">FORA D40b</name>
          </Equipment>
@@ -17,9 +17,9 @@
                   <HealthActionSchedule xmlns="http://indivo.org/vocab/xml/documents#">
                      <name xmlns="">FORA D40b</name>
                      <scheduledBy>jking@records.media.mit.edu</scheduledBy>
-                     <dateScheduled>2011-07-14T19:13:11Z</dateScheduled>
-                     <dateStart>2011-07-15T13:00:00Z</dateStart>
-                     <dateEnd>2011-07-15T17:00:00Z</dateEnd>
+                     <dateScheduled>2013-01-01T08:02:00Z</dateScheduled>
+                     <dateStart>2013-01-01T08:00:00Z</dateStart>
+                     <dateEnd>2013-01-01T12:00:00Z</dateEnd>
                      <recurrenceRule>
                         <frequency>DAILY</frequency>
                         <count>90</count>
@@ -37,7 +37,7 @@
                               <name xmlns="">FORA D40b</name>
                               <reportedBy xmlns="">csantos@records.media.mit.edu</reportedBy>
                               <dateReported>2013-01-01T18:05:00Z</dateReported>
-                              <recurrenceIndex>536</recurrenceIndex>
+                              <recurrenceIndex>6</recurrenceIndex>
                               <adherence>true</adherence>
                            </AdherenceItem>
                         </document>
@@ -50,7 +50,7 @@
                                        <measuredBy>csantos@records.media.mit.edu</measuredBy>
                                        <dateMeasuredStart>2013-01-01T18:05:00Z</dateMeasuredStart>
                                        <result>
-                                          <value>155</value>
+                                          <value>12</value>
                                           <unit type="http://codes.indivo.org/units/" value="31" abbrev="mmHg">millimeters of mercury</unit>
                                        </result>
                                        <site>left arm</site>
@@ -97,7 +97,7 @@
                               <name xmlns="">FORA D40b</name>
                               <reportedBy xmlns="">csantos@records.media.mit.edu</reportedBy>
                               <dateReported>2013-01-02T17:59:00Z</dateReported>
-                              <recurrenceIndex>537</recurrenceIndex>
+                              <recurrenceIndex>7</recurrenceIndex>
                               <adherence>true</adherence>
                            </AdherenceItem>
                         </document>
@@ -110,7 +110,7 @@
                                        <measuredBy>csantos@records.media.mit.edu</measuredBy>
                                        <dateMeasuredStart>2013-01-02T17:59:00Z</dateMeasuredStart>
                                        <result>
-                                          <value>155</value>
+                                          <value>12</value>
                                           <unit type="http://codes.indivo.org/units/" value="31" abbrev="mmHg">millimeters of mercury</unit>
                                        </result>
                                        <site>left arm</site>
@@ -157,7 +157,7 @@
                               <name xmlns="">FORA D40b</name>
                               <reportedBy xmlns="">csantos@records.media.mit.edu</reportedBy>
                               <dateReported>2013-01-03T17:48:00Z</dateReported>
-                              <recurrenceIndex>538</recurrenceIndex>
+                              <recurrenceIndex>8</recurrenceIndex>
                               <adherence>true</adherence>
                            </AdherenceItem>
                         </document>
@@ -216,8 +216,8 @@
                            <AdherenceItem xmlns="http://indivo.org/vocab/xml/documents#">
                               <name xmlns="">FORA D40b</name>
                               <reportedBy xmlns="">csantos@records.media.mit.edu</reportedBy>
-                              <dateReported>2013-01-04T17:55:00Z</dateReported>
-                              <recurrenceIndex>539</recurrenceIndex>
+                              <dateReported>2013-01-04T17:02:00Z</dateReported>
+                              <recurrenceIndex>9</recurrenceIndex>
                               <adherence>true</adherence>
                            </AdherenceItem>
                         </document>
@@ -228,7 +228,7 @@
                                     <VitalSign xmlns="http://indivo.org/vocab/xml/documents#">
                                        <name type="http://codes.indivo.org/vitalsigns/" value="123" abbrev="BPsys">Blood Pressure Systolic</name>
                                        <measuredBy>csantos@records.media.mit.edu</measuredBy>
-                                       <dateMeasuredStart>2013-01-04T17:55:00Z</dateMeasuredStart>
+                                       <dateMeasuredStart>2013-01-04T17:02:00Z</dateMeasuredStart>
                                        <result>
                                           <value>150</value>
                                           <unit type="http://codes.indivo.org/units/" value="31" abbrev="mmHg">millimeters of mercury</unit>
@@ -243,7 +243,7 @@
                                     <VitalSign xmlns="http://indivo.org/vocab/xml/documents#">
                                        <name type="http://codes.indivo.org/vitalsigns/" value="124" abbrev="BPdia">Blood Pressure Diastolic</name>
                                        <measuredBy>csantos@records.media.mit.edu</measuredBy>
-                                       <dateMeasuredStart>2013-01-04T17:55:00Z</dateMeasuredStart>
+                                       <dateMeasuredStart>2013-01-04T17:02:00Z</dateMeasuredStart>
                                        <result>
                                           <value>91</value>
                                           <unit type="http://codes.indivo.org/units/" value="31" abbrev="mmHg">millimeters of mercury</unit>
@@ -258,7 +258,7 @@
                                     <VitalSign xmlns="http://indivo.org/vocab/xml/documents#">
                                        <name type="http://codes.indivo.org/vitalsigns/" value="125" abbrev="HR">Heart Rate</name>
                                        <measuredBy>csantos@records.media.mit.edu</measuredBy>
-                                       <dateMeasuredStart>2013-01-04T17:55:00Z</dateMeasuredStart>
+                                       <dateMeasuredStart>2013-01-04T17:02:00Z</dateMeasuredStart>
                                        <result>
                                           <value>87</value>
                                           <unit type="http://codes.indivo.org/units/" value="30" abbrev="bpm">beats per minute</unit>
@@ -277,7 +277,7 @@
                               <name xmlns="">FORA D40b</name>
                               <reportedBy xmlns="">csantos@records.media.mit.edu</reportedBy>
                               <dateReported>2013-01-05T18:16:00Z</dateReported>
-                              <recurrenceIndex>540</recurrenceIndex>
+                              <recurrenceIndex>10</recurrenceIndex>
                               <adherence>true</adherence>
                            </AdherenceItem>
                         </document>
@@ -337,7 +337,7 @@
                               <name xmlns="">FORA D40b</name>
                               <reportedBy xmlns="">csantos@records.media.mit.edu</reportedBy>
                               <dateReported>2013-01-06T18:25:00Z</dateReported>
-                              <recurrenceIndex>541</recurrenceIndex>
+                              <recurrenceIndex>11</recurrenceIndex>
                               <adherence>true</adherence>
                            </AdherenceItem>
                         </document>
@@ -397,7 +397,7 @@
                               <name xmlns="">FORA D40b</name>
                               <reportedBy xmlns="">csantos@records.media.mit.edu</reportedBy>
                               <dateReported>2013-01-07T18:44:00Z</dateReported>
-                              <recurrenceIndex>542</recurrenceIndex>
+                              <recurrenceIndex>12</recurrenceIndex>
                               <adherence>true</adherence>
                            </AdherenceItem>
                         </document>
@@ -457,7 +457,7 @@
                               <name xmlns="">FORA D40b</name>
                               <reportedBy xmlns="">csantos@records.media.mit.edu</reportedBy>
                               <dateReported>2013-01-08T19:00:00Z</dateReported>
-                              <recurrenceIndex>543</recurrenceIndex>
+                              <recurrenceIndex>13</recurrenceIndex>
                               <adherence>true</adherence>
                            </AdherenceItem>
                         </document>
@@ -517,7 +517,7 @@
                               <name xmlns="">FORA D40b</name>
                               <reportedBy xmlns="">csantos@records.media.mit.edu</reportedBy>
                               <dateReported>2013-01-09T18:34:00Z</dateReported>
-                              <recurrenceIndex>544</recurrenceIndex>
+                              <recurrenceIndex>14</recurrenceIndex>
                               <adherence>true</adherence>
                            </AdherenceItem>
                         </document>
@@ -577,7 +577,7 @@
                               <name xmlns="">FORA D40b</name>
                               <reportedBy xmlns="">csantos@records.media.mit.edu</reportedBy>
                               <dateReported>2013-01-10T18:26:00Z</dateReported>
-                              <recurrenceIndex>545</recurrenceIndex>
+                              <recurrenceIndex>15</recurrenceIndex>
                               <adherence>true</adherence>
                            </AdherenceItem>
                         </document>
@@ -637,7 +637,7 @@
                               <name xmlns="">FORA D40b</name>
                               <reportedBy xmlns="">csantos@records.media.mit.edu</reportedBy>
                               <dateReported>2013-01-11T17:07:00Z</dateReported>
-                              <recurrenceIndex>546</recurrenceIndex>
+                              <recurrenceIndex>16</recurrenceIndex>
                               <adherence>true</adherence>
                            </AdherenceItem>
                         </document>
@@ -697,7 +697,7 @@
                               <name xmlns="">FORA D40b</name>
                               <reportedBy xmlns="">csantos@records.media.mit.edu</reportedBy>
                               <dateReported>2013-01-12T17:25:00Z</dateReported>
-                              <recurrenceIndex>547</recurrenceIndex>
+                              <recurrenceIndex>17</recurrenceIndex>
                               <adherence>true</adherence>
                            </AdherenceItem>
                         </document>
@@ -757,7 +757,7 @@
                               <name xmlns="">FORA D40b</name>
                               <reportedBy xmlns="">csantos@records.media.mit.edu</reportedBy>
                               <dateReported>2013-01-13T17:58:00Z</dateReported>
-                              <recurrenceIndex>548</recurrenceIndex>
+                              <recurrenceIndex>18</recurrenceIndex>
                               <adherence>true</adherence>
                            </AdherenceItem>
                         </document>
@@ -817,7 +817,7 @@
                               <name xmlns="">FORA D40b</name>
                               <reportedBy xmlns="">csantos@records.media.mit.edu</reportedBy>
                               <dateReported>2013-01-14T18:09:00Z</dateReported>
-                              <recurrenceIndex>549</recurrenceIndex>
+                              <recurrenceIndex>19</recurrenceIndex>
                               <adherence>true</adherence>
                            </AdherenceItem>
                         </document>
@@ -877,7 +877,7 @@
                               <name xmlns="">FORA D40b</name>
                               <reportedBy xmlns="">csantos@records.media.mit.edu</reportedBy>
                               <dateReported>2013-01-15T18:34:00Z</dateReported>
-                              <recurrenceIndex>550</recurrenceIndex>
+                              <recurrenceIndex>20</recurrenceIndex>
                               <adherence>true</adherence>
                            </AdherenceItem>
                         </document>
@@ -937,7 +937,7 @@
                               <name xmlns="">FORA D40b</name>
                               <reportedBy xmlns="">csantos@records.media.mit.edu</reportedBy>
                               <dateReported>2013-01-16T17:46:00Z</dateReported>
-                              <recurrenceIndex>551</recurrenceIndex>
+                              <recurrenceIndex>21</recurrenceIndex>
                               <adherence>true</adherence>
                            </AdherenceItem>
                         </document>
@@ -997,7 +997,7 @@
                               <name xmlns="">FORA D40b</name>
                               <reportedBy xmlns="">csantos@records.media.mit.edu</reportedBy>
                               <dateReported>2013-01-17T17:09:00Z</dateReported>
-                              <recurrenceIndex>552</recurrenceIndex>
+                              <recurrenceIndex>22</recurrenceIndex>
                               <adherence>true</adherence>
                            </AdherenceItem>
                         </document>
@@ -1057,7 +1057,7 @@
                               <name xmlns="">FORA D40b</name>
                               <reportedBy xmlns="">csantos@records.media.mit.edu</reportedBy>
                               <dateReported>2013-01-18T18:03:00Z</dateReported>
-                              <recurrenceIndex>553</recurrenceIndex>
+                              <recurrenceIndex>23</recurrenceIndex>
                               <adherence>true</adherence>
                            </AdherenceItem>
                         </document>
@@ -1117,7 +1117,7 @@
                               <name xmlns="">FORA D40b</name>
                               <reportedBy xmlns="">csantos@records.media.mit.edu</reportedBy>
                               <dateReported>2013-01-19T18:17:00Z</dateReported>
-                              <recurrenceIndex>554</recurrenceIndex>
+                              <recurrenceIndex>24</recurrenceIndex>
                               <adherence>true</adherence>
                            </AdherenceItem>
                         </document>
@@ -1177,7 +1177,7 @@
                               <name xmlns="">FORA D40b</name>
                               <reportedBy xmlns="">csantos@records.media.mit.edu</reportedBy>
                               <dateReported>2013-01-20T18:15:00Z</dateReported>
-                              <recurrenceIndex>555</recurrenceIndex>
+                              <recurrenceIndex>25</recurrenceIndex>
                               <adherence>true</adherence>
                            </AdherenceItem>
                         </document>
@@ -1237,7 +1237,7 @@
                               <name xmlns="">FORA D40b</name>
                               <reportedBy xmlns="">csantos@records.media.mit.edu</reportedBy>
                               <dateReported>2013-01-21T18:49:00Z</dateReported>
-                              <recurrenceIndex>556</recurrenceIndex>
+                              <recurrenceIndex>26</recurrenceIndex>
                               <adherence>true</adherence>
                            </AdherenceItem>
                         </document>

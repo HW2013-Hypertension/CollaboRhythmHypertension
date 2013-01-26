@@ -18,12 +18,12 @@
 <settings xmlns="http://collaborhythm.org/application/settings">
 	<mode>patient</mode>
 	<indivoServerBaseURL>https://indivo-demo.media.mit.edu:8000</indivoServerBaseURL>
-	<username>shared-csantos</username>
-	<password>shared-csantos</password>
+	<username>groberts</username>
+	<password>example-patient</password>
 	<clinicianTeamMembers>
-		<clinicianTeamMember>shared-jking@records.media.mit.edu</clinicianTeamMember>
+		<clinicianTeamMember>hypertension-jking@records.media.mit.edu</clinicianTeamMember>
 	</clinicianTeamMembers>
-	<primaryClinicianTeamMember>shared-jking@records.media.mit.edu</primaryClinicianTeamMember>
+	<primaryClinicianTeamMember>hypertension-jking@records.media.mit.edu</primaryClinicianTeamMember>
 	<useFileTarget>true</useFileTarget>
 	<useTraceTarget>true</useTraceTarget>
 	<useSyslogTarget>false</useSyslogTarget>
@@ -64,7 +64,7 @@
 		<pluginSearchPath>$APPLICATION_DIRECTORY$/plugins/HIVPluginModule.swf</pluginSearchPath>
 		<pluginSearchPath>$APPLICATION_DIRECTORY$/plugins</pluginSearchPath>
 	</pluginSearchPaths>
-	<demoModeEnabled>true</demoModeEnabled>
+	<demoModeEnabled>false</demoModeEnabled>
 	<adherenceVoidingEnabled>true</adherenceVoidingEnabled>
 	<includeAdherenceVoidingMenuItem>true</includeAdherenceVoidingMenuItem>
 	<targetDate>2011-08-14T10:40:00-5:00</targetDate>

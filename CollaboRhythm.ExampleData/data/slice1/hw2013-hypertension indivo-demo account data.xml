@@ -1,0 +1,414 @@
+<?xml version="1.0" encoding="utf-8"?>
+<dataroot>
+  
+  <indivoServerBaseURL>https://indivo-demo.media.mit.edu:8000</indivoServerBaseURL>
+  
+  <AccountSource>
+    
+    <accountId>example-clinician@records.media.mit.edu</accountId>
+    
+    <contactEmail>not_used@localhost</contactEmail>
+    
+    <fullName>Example Clinician</fullName>
+    
+    <username>example-clinician</username>
+    
+    <password>example-clinician</password>
+    
+    <givenName>Example</givenName>
+    
+    <familyName>Clinician</familyName>
+    
+    <streetAddress>1066 Spinel Rd</streetAddress>
+    
+    <postalCode>2142</postalCode>
+    
+    <locality>Cambridge</locality>
+    
+    <region>Massachusetts</region>
+    
+    <country>US</country>
+    
+    <timeZone>-5GMT</timeZone>
+    
+    <emailPersonal>example-clinician@records.media.mit.edu</emailPersonal>
+    
+    <phoneNumberHome>1-555-555-6548</phoneNumberHome>
+    
+    <phoneNumberWork>1-555-555-8654</phoneNumberWork>
+    
+    <instantMessengerName>example-clinician@records.media.mit.edu</instantMessengerName>
+    
+    <dateOfBirth>1957-03-29T00:00:00Z</dateOfBirth>
+    
+    <age>53</age>
+    
+    <gender>Male</gender>
+    
+    <ethnicity>White</ethnicity>
+    
+    <language>English</language>
+    
+    <maritalStatus>Married</maritalStatus>
+    
+    <employmentStatus>Employed</employmentStatus>
+    
+    <employmentIndustry>Medical</employmentIndustry>
+    
+    <occupation>Doctor</occupation>
+    
+    <religion>Protestant</religion>
+    
+    <highestEducation>University</highestEducation>
+    
+    <organDonar>true</organDonar>
+    
+    <recordId>Please do not use this account</recordId>
+    
+    <status/>
+    
+    <accessKey/>
+    
+    <accessSecret/>
+    
+    <demographicsId/>
+    
+    <notes>Use "Account -&gt; Duplicate Account Source" to make your own account based on this one</notes>
+    
+    <recordSeed/>
+    
+    <mode>clinician</mode>
+    
+  </AccountSource>
+  
+  <AccountSource>
+    
+    <accountId>example-patient@records.media.mit.edu</accountId>
+    
+    <contactEmail>not_used@localhost</contactEmail>
+    
+    <fullName>Example Patient</fullName>
+    
+    <username>example-patient</username>
+    
+    <password>example-patient</password>
+    
+    <givenName>Example</givenName>
+    
+    <familyName>Patient</familyName>
+    
+    <streetAddress>84 Spruce Street</streetAddress>
+    
+    <postalCode>2215</postalCode>
+    
+    <locality>Boston</locality>
+    
+    <region>Massachusetts</region>
+    
+    <country>US</country>
+    
+    <timeZone>-5GMT</timeZone>
+    
+    <emailPersonal>example-patient@records.media.mit.edu</emailPersonal>
+    
+    <phoneNumberHome>1-555-555-6548</phoneNumberHome>
+    
+    <phoneNumberWork>1-555-555-8654</phoneNumberWork>
+    
+    <instantMessengerName>example-patient@records.media.mit.edu</instantMessengerName>
+    
+    <dateOfBirth>1940-02-24T00:00:00Z</dateOfBirth>
+    
+    <age>70</age>
+    
+    <gender>Female</gender>
+    
+    <ethnicity>White</ethnicity>
+    
+    <language>English</language>
+    
+    <maritalStatus>Widowed</maritalStatus>
+    
+    <employmentStatus>Retired</employmentStatus>
+    
+    <employmentIndustry>Education</employmentIndustry>
+    
+    <occupation>Teacher</occupation>
+    
+    <religion>Protestant</religion>
+    
+    <highestEducation>University</highestEducation>
+    
+    <organDonar>true</organDonar>
+    
+    <recordId>Please do not use this account</recordId>
+    
+    <accessKey/>
+    
+    <accessSecret/>
+    
+    <status/>
+    
+    <demographicsId>18124489-3b91-45bd-90a9-375a520eca26</demographicsId>
+    
+    <recordSeed/>
+    
+    <shareAccountId>example-clinician@records.media.mit.edu</shareAccountId>
+    
+    <notes>Use "Account -&gt; Duplicate Account Source" to make your own account based on this one</notes>
+    
+    <shareRole>Coach</shareRole>
+    
+    <documentsDirectory>mbrooks</documentsDirectory>
+    
+    <mode>patient</mode>
+    
+  </AccountSource>
+  
+  <AccountSource>
+    
+    <accountId>hypertension-jking@records.media.mit.edu</accountId>
+    
+    <contactEmail>not_used@localhost</contactEmail>
+    
+    <fullName>James King</fullName>
+    
+    <username>hypertension-jking</username>
+    
+    <password>example-clinician</password>
+    
+    <givenName>James</givenName>
+    
+    <familyName>King</familyName>
+    
+    <streetAddress>1066 Spinel Rd</streetAddress>
+    
+    <postalCode>2142</postalCode>
+    
+    <locality>Cambridge</locality>
+    
+    <region>Massachusetts</region>
+    
+    <country>US</country>
+    
+    <timeZone>-5GMT</timeZone>
+    
+    <emailPersonal>example-clinician@records.media.mit.edu</emailPersonal>
+    
+    <phoneNumberHome>1-555-555-6548</phoneNumberHome>
+    
+    <phoneNumberWork>1-555-555-8654</phoneNumberWork>
+    
+    <instantMessengerName>example-clinician@records.media.mit.edu</instantMessengerName>
+    
+    <dateOfBirth>1957-03-29T00:00:00Z</dateOfBirth>
+    
+    <age>53</age>
+    
+    <gender>Male</gender>
+    
+    <ethnicity>White</ethnicity>
+    
+    <language>English</language>
+    
+    <maritalStatus>Married</maritalStatus>
+    
+    <employmentStatus>Employed</employmentStatus>
+    
+    <employmentIndustry>Medical</employmentIndustry>
+    
+    <occupation>Doctor</occupation>
+    
+    <religion>Protestant</religion>
+    
+    <highestEducation>University</highestEducation>
+    
+    <organDonar>true</organDonar>
+    
+    <recordId>3a2cf069-fbaa-4d8b-a82e-26b4888abf4d</recordId>
+    
+    <status>Demographics document created. Id: d2673854-68e3-4d81-baff-7f0e756bf8e5</status>
+    
+    <accessKey>C2Kwma9FdBOSv3DsNjFh</accessKey>
+    
+    <accessSecret>dETExvXElWRJi6QPzFLf</accessSecret>
+    
+    <demographicsId>d2673854-68e3-4d81-baff-7f0e756bf8e5</demographicsId>
+    
+    <notes/>
+    
+    <recordSeed/>
+    
+    <mode>clinician</mode>
+    
+  </AccountSource>
+  
+  <AccountSource>
+    
+    <accountId>groberts@records.media.mit.edu</accountId>
+    
+    <contactEmail>not_used@localhost</contactEmail>
+    
+    <fullName>George Roberts</fullName>
+    
+    <username>groberts</username>
+    
+    <password>example-patient</password>
+    
+    <givenName>George</givenName>
+    
+    <familyName>Roberts</familyName>
+    
+    <streetAddress>84 Spruce Street</streetAddress>
+    
+    <postalCode>2215</postalCode>
+    
+    <locality>Boston</locality>
+    
+    <region>Massachusetts</region>
+    
+    <country>US</country>
+    
+    <timeZone>-5GMT</timeZone>
+    
+    <emailPersonal>example-patient@records.media.mit.edu</emailPersonal>
+    
+    <phoneNumberHome>1-555-555-6548</phoneNumberHome>
+    
+    <phoneNumberWork>1-555-555-8654</phoneNumberWork>
+    
+    <instantMessengerName>example-patient@records.media.mit.edu</instantMessengerName>
+    
+    <dateOfBirth>1940-02-24T00:00:00Z</dateOfBirth>
+    
+    <age>70</age>
+    
+    <gender>Male</gender>
+    
+    <ethnicity>White</ethnicity>
+    
+    <language>English</language>
+    
+    <maritalStatus>Widowed</maritalStatus>
+    
+    <employmentStatus>Retired</employmentStatus>
+    
+    <employmentIndustry>Education</employmentIndustry>
+    
+    <occupation>Teacher</occupation>
+    
+    <religion>Protestant</religion>
+    
+    <highestEducation>University</highestEducation>
+    
+    <organDonar>true</organDonar>
+    
+    <recordId>d8e4cc0d-0a55-49e4-bcf9-51acb0473f69</recordId>
+    
+    <accessKey>5kdEuUCV3x8GAb6SZAAl</accessKey>
+    
+    <accessSecret>5tDr1Jju1H2Gvouzsnyf</accessSecret>
+    
+    <status>Created 43/127 documents, 41/125 relationships</status>
+    
+    <demographicsId>d41b3c8a-03fa-4b4e-bb64-54674e6b473f</demographicsId>
+    
+    <recordSeed>4</recordSeed>
+    
+    <shareAccountId>hypertension-jking@records.media.mit.edu</shareAccountId>
+    
+    <notes/>
+    
+    <shareRole>Coach</shareRole>
+    
+    <documentsDirectory/>
+    
+    <mode>patient</mode>
+    
+  </AccountSource>
+  
+  <AccountSource>
+    
+    <accountId>gsmith@records.media.mit.edu</accountId>
+    
+    <contactEmail>not_used@localhost</contactEmail>
+    
+    <fullName>Gertrude Smith</fullName>
+    
+    <username>gsmith</username>
+    
+    <password>example-patient</password>
+    
+    <givenName>Gertrude</givenName>
+    
+    <familyName>Smith</familyName>
+    
+    <streetAddress>84 Spruce Street</streetAddress>
+    
+    <postalCode>2215</postalCode>
+    
+    <locality>Boston</locality>
+    
+    <region>Massachusetts</region>
+    
+    <country>US</country>
+    
+    <timeZone>-5GMT</timeZone>
+    
+    <emailPersonal>example-patient@records.media.mit.edu</emailPersonal>
+    
+    <phoneNumberHome>1-555-555-6548</phoneNumberHome>
+    
+    <phoneNumberWork>1-555-555-8654</phoneNumberWork>
+    
+    <instantMessengerName>example-patient@records.media.mit.edu</instantMessengerName>
+    
+    <dateOfBirth>1940-02-24T00:00:00Z</dateOfBirth>
+    
+    <age>63</age>
+    
+    <gender>Female</gender>
+    
+    <ethnicity>White</ethnicity>
+    
+    <language>English</language>
+    
+    <maritalStatus>Widowed</maritalStatus>
+    
+    <employmentStatus>Retired</employmentStatus>
+    
+    <employmentIndustry>Education</employmentIndustry>
+    
+    <occupation>Teacher</occupation>
+    
+    <religion>Protestant</religion>
+    
+    <highestEducation>University</highestEducation>
+    
+    <organDonar>true</organDonar>
+    
+    <recordId>292cf3d5-9a75-4b3a-982e-7c61c316c115</recordId>
+    
+    <accessKey>XV9cDi3zQxgsKrUxzPu1</accessKey>
+    
+    <accessSecret>N8FN2cB85iA1ugdfysQ4</accessSecret>
+    
+    <status>Created 86/86 documents, 83/84 relationships</status>
+    
+    <demographicsId>7f1a32bd-b31c-4903-9cd8-aeb241322ade</demographicsId>
+    
+    <recordSeed/>
+    
+    <shareAccountId>hypertension-jking@records.media.mit.edu</shareAccountId>
+    
+    <notes/>
+    
+    <shareRole>Coach</shareRole>
+    
+    <documentsDirectory/>
+    
+    <mode>patient</mode>
+    
+  </AccountSource>
+  
+</dataroot>
