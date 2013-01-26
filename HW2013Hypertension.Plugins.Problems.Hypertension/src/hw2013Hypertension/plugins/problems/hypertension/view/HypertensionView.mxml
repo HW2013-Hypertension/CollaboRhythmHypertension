@@ -30,9 +30,12 @@
 
 		private var _controller:HypertensionAppController;
 
+
 		[Bindable]
 		private var _model:HypertensionModel;
 		private var _messages:ArrayCollection;
+		private var _messages1:ArrayCollection;
+
 
 
 		override public function set data(value:Object):void
@@ -41,6 +44,7 @@
 
 			_model = value as HypertensionModel;
 			_messages = _model.messages;
+			_messages1 = _model.messages1;
 		}
 
 		]]></fx:Script>
@@ -49,8 +53,18 @@
 					 text="Blood Pressure Progress"
 					 styleName="titleHeader"
 					/>
-	<s:Group x="40" y="40" height="40">
-		<s:Rect height="100%" width="500">
+	<s:Label x="215" y="85"
+      width="70" height="50"
+      text="90 systolic
+      60 diastolic"
+		fontSize="11"/>
+ <s:Label x="315" y="85"
+      width="70" height="50"
+      text="140 systolic
+      90 diastolic"
+      fontSize="11"/>
+
+		<!---	<s:Rect height="40" width="500">
 			<s:fill>
 				<s:SolidColor color="black"/>
 			</s:fill>
@@ -60,37 +74,69 @@
 			<s:fill>
 				<s:SolidColor color="green"/>
 			</s:fill>
-		</s:Rect>
+		</s:Rect> -->
 
+	<s:Group>
+		<s:Rect height="40" width="180"
+				x="40" y="40">
+			<s:fill>
+				<s:SolidColor color="red" />
+			</s:fill>
+		</s:Rect>
+		<s:Rect height="40" width="100"
+				x="220" y="40">
+			<s:fill>
+				<s:SolidColor color="green" />
+			</s:fill>
+		</s:Rect>
+		<s:Rect height="40" width="120"
+				x="320" y="40">
+			<s:fill>
+				<s:SolidColor color="red" />
+			</s:fill>
+		</s:Rect>
+		<s:Rect height="40" width="10"
+				x = "{_model.mostRecentSystolic * 2}"
+				y="40"
+		>
+			<s:fill>
+				<s:SolidColor color="black"/>
+			</s:fill>
+		</s:Rect>
 	</s:Group>
 
-	<s:Group x="40" y="260" height="400">
-
-
+	<s:Group x="40" y="280" height="400">
 			<s:Panel height="100%" width="500" title="Personal Rewards">
 
 			</s:Panel>
 
 		</s:Group>
 
-	<s:Group x="590" y="260" height="400">
+	<s:Group x="590" y="280" height="400">
 				<s:Panel  width="500" height="100%" title="BP Buddy Rewards">
 
 				</s:Panel>
 
 			</s:Group>
 
-	<s:List x="40" y="120"
+	<s:List x="40" y="130"
 				width="500" height="100"
 				horizontalCenter="true"
 				borderVisible="true"
 				borderColor="black"
 				borderAlpha="0.5"
 				dataProvider="{_messages}" />
+	<s:List x="590" y="130"
+					width="500" height="100"
+					horizontalCenter="true"
+					borderVisible="true"
+					borderColor="black"
+					borderAlpha="0.5"
+					dataProvider="{_messages1}" />
 
 
 <s:Group x="590" y="40" height="40">
-		<s:Rect height="100%" width="500">
+		<s:Rect height="40" width="500">
 			<s:fill>
 				<s:SolidColor color="black"/>
 			</s:fill>
@@ -104,12 +150,13 @@
 
 	</s:Group>
 
-	<s:RichText  x="590" y="120"
+<!---	<s:RichText  x="590" y="120"
 						 width="500" height="40"
 						 text="Every time you take positive actions towards controlling your blood pressure, your buddy gets rewarded!"
 						 textAlign="center"
 						 styleName="titleHeader"
 
 						/>
+-->
 
 </tablet:TabletViewBase>
