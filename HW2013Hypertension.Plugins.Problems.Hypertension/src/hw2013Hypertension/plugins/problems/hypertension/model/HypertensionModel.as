@@ -199,7 +199,7 @@ package hw2013Hypertension.plugins.problems.hypertension.model
 						}
 					}
 				}
-			}_messages1.addItem("Every time you take positive actions towards controlling your blood +" +
+			}_messages1.addItem("Every time you take positive actions towards controlling your blood" +
 								"\n"+"pressure, your buddy gets rewarded!");
 
 			percentBloodPressureAdherence = adherenceCount / 7 * 100;
