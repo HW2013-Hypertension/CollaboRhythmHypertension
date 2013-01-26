@@ -53,16 +53,18 @@
 					 text="Blood Pressure Progress"
 					 styleName="titleHeader"
 					/>
-	<s:Label x="155" y="85"
+	<s:Label x="148" y="85"
       width="70" height="50"
       text="90 systolic
       60 diastolic"
-		fontSize="11"/>
- <s:Label x="315" y="85"
+		fontSize="11"
+		fontWeight="bold"	/>
+ <s:Label x="308" y="85"
       width="70" height="50"
       text="140 systolic
       90 diastolic"
-      fontSize="11"/>
+      fontSize="11"
+	  fontWeight="bold" />
 
 		<!---	<s:Rect height="40" width="500">
 			<s:fill>
@@ -86,7 +88,7 @@
 		<s:Rect height="40" width="160"
 				x="160" y="40">
 			<s:fill>
-				<s:SolidColor color="green" />
+				<s:SolidColor color="0x99033" />
 			</s:fill>
 		</s:Rect>
 		<s:Rect height="40" width="120"
@@ -100,7 +102,7 @@
 				y="40"
 		>
 			<s:fill>
-				<s:SolidColor color="black"/>
+				<s:SolidColor color="0x224488"/>
 			</s:fill>
 		</s:Rect>
 		<s:Rect height="40" width="10"
@@ -108,7 +110,7 @@
 				y="40"
 		>
 			<s:fill>
-				<s:SolidColor color="yellow"/>
+				<s:SolidColor color="0xfdf700"/>
 			</s:fill>
 		</s:Rect>
 	</s:Group>
