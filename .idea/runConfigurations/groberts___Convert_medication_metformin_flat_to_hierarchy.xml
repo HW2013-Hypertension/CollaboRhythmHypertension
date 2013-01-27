@@ -1,6 +1,6 @@
 <component name="ProjectRunConfigurationManager">
-  <configuration default="false" name="hw2013-hypertension-george-Convert medication metformin flat to hierarchy" type="XSLT" factoryName="XSLT">
-    <option name="myOutputFile" value="C:\Users\Ismini\Desktop\GitHub\CollaboRhythmHypertension\CollaboRhythm.ExampleData\data\slice1\hw2013-hypertension-george\medication_metformin_hierarchy.xml" />
+  <configuration default="false" name="groberts - Convert medication metformin flat to hierarchy" type="XSLT" factoryName="XSLT">
+    <option name="myOutputFile" value="C:\Users\Ismini\Desktop\GitHub\CollaboRhythmHypertension\CollaboRhythm.ExampleData\data\slice1\groberts\medication_metformin_hierarchy.xml" />
     <option name="myOpenOutputFile" value="true" />
     <option name="myOpenInBrowser" value="false" />
     <option name="mySmartErrorHandling" value="true" />

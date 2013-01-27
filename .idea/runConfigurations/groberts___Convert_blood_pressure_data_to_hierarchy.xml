@@ -1,6 +1,6 @@
 <component name="ProjectRunConfigurationManager">
-  <configuration default="false" name="hw2013-hypertension-george - Convert blood pressure data to hierarchy" type="XSLT" factoryName="XSLT">
-    <option name="myOutputFile" value="C:\Users\Ismini\Desktop\GitHub\CollaboRhythmHypertension\CollaboRhythm.ExampleData\data\slice1\hw2013-hypertension-george\blood_glucose_data_converted.xml" />
+  <configuration default="false" name="groberts - Convert blood pressure data to hierarchy" type="XSLT" factoryName="XSLT">
+    <option name="myOutputFile" value="C:\Users\Ismini\Desktop\GitHub\CollaboRhythmHypertension\CollaboRhythm.ExampleData\data\slice1\groberts\blood_glucose_data_converted.xml" />
     <option name="myOpenOutputFile" value="true" />
     <option name="myOpenInBrowser" value="false" />
     <option name="mySmartErrorHandling" value="true" />
