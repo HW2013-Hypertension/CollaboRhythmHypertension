@@ -15,6 +15,7 @@
             <dateExpires>2012-07-14T09:00:00-04:00</dateExpires>
             <ns1:indication xmlns:ns1="http://indivo.org/vocab/xml/documents#"
                             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">diabetes</ns1:indication>
+
             <amountOrdered>
                <value>90</value>
                <unit type="http://indivo.org/codes/units#" value="tab" abbrev="tab">tablet</unit>
