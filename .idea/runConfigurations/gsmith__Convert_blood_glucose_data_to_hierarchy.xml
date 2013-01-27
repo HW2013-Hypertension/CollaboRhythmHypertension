@@ -1,6 +1,6 @@
 <component name="ProjectRunConfigurationManager">
-  <configuration default="false" name="hw2013-hypertension-patient2 - Convert blood glucose data to hierarchy" type="XSLT" factoryName="XSLT">
-    <option name="myOutputFile" value="C:\Users\Ismini\Desktop\GitHub\CollaboRhythmHypertension\CollaboRhythm.ExampleData\data\slice1\hw2013-hypertension-patient2\blood_glucose_data_converted.xml" />
+  <configuration default="false" name="gsmith- Convert blood glucose data to hierarchy" type="XSLT" factoryName="XSLT">
+    <option name="myOutputFile" value="C:\Users\Ismini\Desktop\GitHub\CollaboRhythmHypertension\CollaboRhythm.ExampleData\data\slice1\gsmith\blood_glucose_data_converted.xml" />
     <option name="myOpenOutputFile" value="true" />
     <option name="myOpenInBrowser" value="false" />
     <option name="mySmartErrorHandling" value="true" />

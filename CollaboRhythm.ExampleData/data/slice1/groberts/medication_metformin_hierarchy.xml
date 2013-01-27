@@ -11,8 +11,8 @@
                       value="310798">Hydrochlorothiazide 25 MG Oral Tablet</ns1:name>
             <orderType>prescribed</orderType>
             <orderedBy>jking@records.media.mit.edu</orderedBy>
-            <dateOrdered>2011-07-14T19:13:11Z</dateOrdered>
-            <dateExpires>2012-07-14T09:00:00-04:00</dateExpires>
+            <dateOrdered>2013-01-14T19:13:11Z</dateOrdered>
+            <dateExpires>2014-07-14T09:00:00-04:00</dateExpires>
             <ns1:indication xmlns:ns1="http://indivo.org/vocab/xml/documents#"
                             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">diabetes</ns1:indication>
             <amountOrdered>
