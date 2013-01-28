@@ -10,6 +10,8 @@
 		<systolic>148</systolic>
 		<diastolic>94</diastolic>
 		<heartRate>82</heartRate>
+		<scheduleDateStart>2013-01-01T07:00:00-05:00</scheduleDateStart>
+		<scheduleDateEnd>2013-01-01T21:00:00-05:00</scheduleDateEnd>
 	</BloodPressureAdherenceItem>
 	<BloodPressureAdherenceItem>
 		<name>FORA D40b</name>

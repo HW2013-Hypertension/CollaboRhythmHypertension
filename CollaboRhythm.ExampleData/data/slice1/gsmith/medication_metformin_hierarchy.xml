@@ -11,8 +11,8 @@
                       value="310798">Hydrochlorothiazide 25 MG Oral Tablet</ns1:name>
             <orderType>prescribed</orderType>
             <orderedBy>jking@records.media.mit.edu</orderedBy>
-            <dateOrdered>2011-07-14T19:13:11Z</dateOrdered>
-            <dateExpires>2012-07-14T09:00:00-04:00</dateExpires>
+            <dateOrdered>2011-07-14T19:13:11-05:00</dateOrdered>
+            <dateExpires>2012-07-14T09:00:00-05:00</dateExpires>
             <ns1:indication xmlns:ns1="http://indivo.org/vocab/xml/documents#"
                             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">diabetes</ns1:indication>
             <amountOrdered>
@@ -33,7 +33,7 @@
                                type="http://rxnav.nlm.nih.gov/REST/rxcui/"
                                value="310798">Hydrochlorothiazide 25 MG Oral Tablet</ns1:name>
                      <filledBy>ljohnson@records.media.mit.edu</filledBy>
-                     <dateFilled>2011-07-14T19:13:11Z</dateFilled>
+                     <dateFilled>2011-07-14T19:13:11-05:00</dateFilled>
                      <amountFilled>
                         <value>90</value>
                         <unit>tab</unit>
@@ -54,9 +54,9 @@
                                type="http://rxnav.nlm.nih.gov/REST/rxcui/"
                                value="310798">Hydrochlorothiazide 25 MG Oral Tablet</ns1:name>
                      <scheduledBy>jking@records.media.mit.edu</scheduledBy>
-                     <dateScheduled>2011-07-14T19:13:11Z</dateScheduled>
-                     <dateStart>2011-07-15T13:00:00Z</dateStart>
-                     <dateEnd>2011-07-15T17:00:00Z</dateEnd>
+                     <dateScheduled>2013-01-01T19:13:11-05:00</dateScheduled>
+                     <dateStart>2011-07-15T13:00:00-05:00</dateStart>
+                     <dateEnd>2011-07-15T17:00:00-05:00</dateEnd>
                      <recurrenceRule>
                         <frequency>DAILY</frequency>
                         <count>90</count>
