@@ -36,6 +36,7 @@
 		private var _messages:ArrayCollection;
 		private var _messages1:ArrayCollection;
 		private var _messages2:ArrayCollection;
+		private var _messages3:ArrayCollection;
 
 
 
@@ -47,31 +48,49 @@
 			_messages = _model.messages;
 			_messages1 = _model.messages1;
 			_messages2 = _model.messages2;
+			_messages3 = _model.messages3;
+
 		}
 
 		]]></fx:Script>
 	<s:Label x="40" y="20"
-					 width="200" height="20"
-					 text="Blood Pressure Progress"
+					 width="300" height="20"
+					 text="Most Recent Blood Pressure"
 					 styleName="titleHeader"
+					 fontWeight="bold"
+					 fontSize="20"
 					/>
 	<s:Label x="590" y="20"
 					 width="200" height="20"
 					 text="Reward Progress"
 					 styleName="titleHeader"
+					 fontWeight="bold"
+					 fontSize="20"
 					/>
-	<s:Label x="148" y="85"
+	<s:Label x="148" y="55"
       width="70" height="50"
-      text="90 systolic
-      60 diastolic"
-		fontSize="11"
-		fontWeight="bold"	/>
- <s:Label x="308" y="85"
+      text="90 systolic"
+		fontSize="13"
+		fontWeight="bold"
+		color="blue"/>
+	<s:Label x="148" y="115"
       width="70" height="50"
-      text="140 systolic
-      90 diastolic"
-      fontSize="11"
-	  fontWeight="bold" />
+      text="60 diastolic"
+		fontSize="13"
+		fontWeight="bold"
+		color="black"/>
+ <s:Label x="308" y="55"
+      width="70" height="50"
+      text="140 systolic"
+      fontSize="13"
+	  fontWeight="bold"
+	  color="blue"/>
+	<s:Label x="308" y="115"
+	      width="70" height="50"
+	      text="90 diastolic"
+	      fontSize="13"
+		  fontWeight="bold"
+		  color="black"/>
 
 		<!---	<s:Rect height="40" width="500">
 			<s:fill>
@@ -87,44 +106,44 @@
 
 	<s:Group>
 		<s:Rect height="40" width="120"
-				x="40" y="40">
+				x="40" y="70">
 			<s:fill>
 				<s:SolidColor color="red" />
 			</s:fill>
 		</s:Rect>
 		<s:Rect height="40" width="160"
-				x="160" y="40">
+				x="160" y="70">
 			<s:fill>
 				<s:SolidColor color="0x99033" />
 			</s:fill>
 		</s:Rect>
 		<s:Rect height="40" width="120"
-				x="320" y="40">
+				x="320" y="70">
 			<s:fill>
 				<s:SolidColor color="red" />
 			</s:fill>
 		</s:Rect>
 		<s:Rect height="40" width="10"
 				x = "{_model.mostRecentSystolic * 2}"
-				y="40"
+				y="70"
 		>
 			<s:fill>
-				<s:SolidColor color="0x224488"/>
+				<s:SolidColor color="blue"/>
 			</s:fill>
 		</s:Rect>
 		<s:Rect height="40" width="10"
 				x = "{_model.mostRecentDiastolic * 2}"
-				y="40"
+				y="70"
 		>
 			<s:fill>
-				<s:SolidColor color="0xfdf700"/>
+				<s:SolidColor color="black"/>
 			</s:fill>
 		</s:Rect>
 	</s:Group>
 
 	<s:Group x="40" y="280" height="400">
 			<s:Panel height="100%" width="500" title="Personal Rewards">
-
+				<s:List dataProvider="{_messages3}" width="100%" height="100%"/>
 			</s:Panel>
 
 		</s:Group>
@@ -135,15 +154,15 @@
 				</s:Panel>
 			</s:Group>
 
-	<s:List x="40" y="130"
-				width="500" height="100"
+	<s:List x="40" y="150"
+				width="500" height="110"
 				horizontalCenter="true"
 				borderVisible="true"
 				borderColor="black"
 				borderAlpha="0.5"
 				dataProvider="{_messages}" />
-	<s:List x="590" y="130"
-					width="500" height="100"
+	<s:List x="590" y="150"
+					width="500" height="110"
 					horizontalCenter="true"
 					borderVisible="true"
 					borderColor="black"
@@ -151,7 +170,7 @@
 					dataProvider="{_messages1}" />
 
 
-<s:Group x="590" y="40" height="40">
+<s:Group x="590" y="70" height="40">
 		<s:Rect height="40" width="420">
 			<s:fill>
 				<s:SolidColor color="#C0C0C0"/>
@@ -165,22 +184,22 @@
 		</s:Rect>
 
 	</s:Group>
-	<s:Label x="685" y="90"
+	<s:Label x="685" y="115"
       width="70" height="50"
       text="25%"
 		fontSize="11"
 		fontWeight="bold"	/>
-	<s:Label x="790" y="90"
+	<s:Label x="790" y="115"
       width="70" height="50"
       text="50%"
 		fontSize="11"
 		fontWeight="bold"	/>
-	<s:Label x="895" y="90"
+	<s:Label x="895" y="115"
       width="70" height="50"
       text="75%"
 		fontSize="11"
 		fontWeight="bold"	/>
-	<s:Label x="1000" y="90"
+	<s:Label x="1000" y="115"
       width="70" height="50"
       text="100%"
 		fontSize="11"
