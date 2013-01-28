@@ -7,7 +7,7 @@
          <Equipment xmlns="http://indivo.org/vocab/xml/documents#">
             <dateStarted>2009-12-15</dateStarted>
             <type>blood pressure monitor</type>
-            <name xmlns="">FORA D40b</name>
+            <name xmlns="" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">FORA D40b</name>
          </Equipment>
       </document>
       <relatesTo>
@@ -15,18 +15,16 @@
             <LoadableIndivoDocument>
                <document>
                   <HealthActionSchedule xmlns="http://indivo.org/vocab/xml/documents#">
-                     <name xmlns="">FORA D40b</name>
+                     <name xmlns="" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">FORA D40b</name>
                      <scheduledBy>jking@records.media.mit.edu</scheduledBy>
-                     <dateScheduled>2013-01-01T19:13:11Z</dateScheduled>
-                     <dateStart>2013-01-01T13:00:00Z</dateStart>
-                     <dateEnd>2013-07-14T17:00:00Z</dateEnd>
+                     <dateScheduled>2011-07-14T19:13:11Z</dateScheduled>
+                     <dateStart>2013-01-01T07:00:00-05:00</dateStart>
+                     <dateEnd>2013-01-01T21:00:00-05:00</dateEnd>
                      <recurrenceRule>
                         <frequency>DAILY</frequency>
                         <count>90</count>
                      </recurrenceRule>
-                     <instructions xmlns="">Use device to record blood pressure systolic and blood pressure diastolic readings. Heart rate
-			will also be recorded. Press the power button and wait several seconds to take reading.
-		</instructions>
+                     <instructions xmlns="" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">Use device to record blood pressure systolic and blood pressure diastolic readings. Heart rate 			will also be recorded. Press the power button and wait several seconds to take reading.</instructions>
                   </HealthActionSchedule>
                </document>
                <relatesTo>
@@ -34,10 +32,10 @@
                      <LoadableIndivoDocument>
                         <document>
                            <AdherenceItem xmlns="http://indivo.org/vocab/xml/documents#">
-                              <name xmlns="">FORA D40b</name>
-                              <reportedBy xmlns="">csantos@records.media.mit.edu</reportedBy>
-                              <dateReported>2013-01-01T18:05:00Z</dateReported>
-                              <recurrenceIndex>1</recurrenceIndex>
+                              <name xmlns="" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">FORA D40b</name>
+                              <reportedBy xmlns="" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">csantos@records.media.mit.edu</reportedBy>
+                              <dateReported>2013-01-01T18:05:00-05:00</dateReported>
+                              <recurrenceIndex>0</recurrenceIndex>
                               <adherence>true</adherence>
                            </AdherenceItem>
                         </document>
@@ -48,7 +46,7 @@
                                     <VitalSign xmlns="http://indivo.org/vocab/xml/documents#">
                                        <name type="http://codes.indivo.org/vitalsigns/" value="123" abbrev="BPsys">Blood Pressure Systolic</name>
                                        <measuredBy>csantos@records.media.mit.edu</measuredBy>
-                                       <dateMeasuredStart>2013-01-01T18:05:00Z</dateMeasuredStart>
+                                       <dateMeasuredStart>2013-01-01T18:05:00-05:00</dateMeasuredStart>
                                        <result>
                                           <value>148</value>
                                           <unit type="http://codes.indivo.org/units/" value="31" abbrev="mmHg">millimeters of mercury</unit>
@@ -63,7 +61,7 @@
                                     <VitalSign xmlns="http://indivo.org/vocab/xml/documents#">
                                        <name type="http://codes.indivo.org/vitalsigns/" value="124" abbrev="BPdia">Blood Pressure Diastolic</name>
                                        <measuredBy>csantos@records.media.mit.edu</measuredBy>
-                                       <dateMeasuredStart>2013-01-01T18:05:00Z</dateMeasuredStart>
+                                       <dateMeasuredStart>2013-01-01T18:05:00-05:00</dateMeasuredStart>
                                        <result>
                                           <value>94</value>
                                           <unit type="http://codes.indivo.org/units/" value="31" abbrev="mmHg">millimeters of mercury</unit>
@@ -78,7 +76,7 @@
                                     <VitalSign xmlns="http://indivo.org/vocab/xml/documents#">
                                        <name type="http://codes.indivo.org/vitalsigns/" value="125" abbrev="HR">Heart Rate</name>
                                        <measuredBy>csantos@records.media.mit.edu</measuredBy>
-                                       <dateMeasuredStart>2013-01-01T18:05:00Z</dateMeasuredStart>
+                                       <dateMeasuredStart>2013-01-01T18:05:00-05:00</dateMeasuredStart>
                                        <result>
                                           <value>82</value>
                                           <unit type="http://codes.indivo.org/units/" value="30" abbrev="bpm">beats per minute</unit>
@@ -94,10 +92,10 @@
                      <LoadableIndivoDocument>
                         <document>
                            <AdherenceItem xmlns="http://indivo.org/vocab/xml/documents#">
-                              <name xmlns="">FORA D40b</name>
-                              <reportedBy xmlns="">csantos@records.media.mit.edu</reportedBy>
-                              <dateReported>2013-01-02T17:59:00Z</dateReported>
-                              <recurrenceIndex>2</recurrenceIndex>
+                              <name xmlns="" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">FORA D40b</name>
+                              <reportedBy xmlns="" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">csantos@records.media.mit.edu</reportedBy>
+                              <dateReported>2013-01-02T17:59:00-05:00</dateReported>
+                              <recurrenceIndex>1</recurrenceIndex>
                               <adherence>true</adherence>
                            </AdherenceItem>
                         </document>
@@ -108,7 +106,7 @@
                                     <VitalSign xmlns="http://indivo.org/vocab/xml/documents#">
                                        <name type="http://codes.indivo.org/vitalsigns/" value="123" abbrev="BPsys">Blood Pressure Systolic</name>
                                        <measuredBy>csantos@records.media.mit.edu</measuredBy>
-                                       <dateMeasuredStart>2013-01-02T17:59:00Z</dateMeasuredStart>
+                                       <dateMeasuredStart>2013-01-02T17:59:00-05:00</dateMeasuredStart>
                                        <result>
                                           <value>152</value>
                                           <unit type="http://codes.indivo.org/units/" value="31" abbrev="mmHg">millimeters of mercury</unit>
@@ -123,7 +121,7 @@
                                     <VitalSign xmlns="http://indivo.org/vocab/xml/documents#">
                                        <name type="http://codes.indivo.org/vitalsigns/" value="124" abbrev="BPdia">Blood Pressure Diastolic</name>
                                        <measuredBy>csantos@records.media.mit.edu</measuredBy>
-                                       <dateMeasuredStart>2013-01-02T17:59:00Z</dateMeasuredStart>
+                                       <dateMeasuredStart>2013-01-02T17:59:00-05:00</dateMeasuredStart>
                                        <result>
                                           <value>92</value>
                                           <unit type="http://codes.indivo.org/units/" value="31" abbrev="mmHg">millimeters of mercury</unit>
@@ -138,7 +136,7 @@
                                     <VitalSign xmlns="http://indivo.org/vocab/xml/documents#">
                                        <name type="http://codes.indivo.org/vitalsigns/" value="125" abbrev="HR">Heart Rate</name>
                                        <measuredBy>csantos@records.media.mit.edu</measuredBy>
-                                       <dateMeasuredStart>2013-01-02T17:59:00Z</dateMeasuredStart>
+                                       <dateMeasuredStart>2013-01-02T17:59:00-05:00</dateMeasuredStart>
                                        <result>
                                           <value>79</value>
                                           <unit type="http://codes.indivo.org/units/" value="30" abbrev="bpm">beats per minute</unit>
@@ -154,10 +152,10 @@
                      <LoadableIndivoDocument>
                         <document>
                            <AdherenceItem xmlns="http://indivo.org/vocab/xml/documents#">
-                              <name xmlns="">FORA D40b</name>
-                              <reportedBy xmlns="">csantos@records.media.mit.edu</reportedBy>
-                              <dateReported>2013-01-03T17:48:00Z</dateReported>
-                              <recurrenceIndex>3</recurrenceIndex>
+                              <name xmlns="" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">FORA D40b</name>
+                              <reportedBy xmlns="" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">csantos@records.media.mit.edu</reportedBy>
+                              <dateReported>2013-01-03T17:48:00-05:00</dateReported>
+                              <recurrenceIndex>2</recurrenceIndex>
                               <adherence>true</adherence>
                            </AdherenceItem>
                         </document>
@@ -168,7 +166,7 @@
                                     <VitalSign xmlns="http://indivo.org/vocab/xml/documents#">
                                        <name type="http://codes.indivo.org/vitalsigns/" value="123" abbrev="BPsys">Blood Pressure Systolic</name>
                                        <measuredBy>csantos@records.media.mit.edu</measuredBy>
-                                       <dateMeasuredStart>2013-01-03T17:48:00Z</dateMeasuredStart>
+                                       <dateMeasuredStart>2013-01-03T17:48:00-05:00</dateMeasuredStart>
                                        <result>
                                           <value>150</value>
                                           <unit type="http://codes.indivo.org/units/" value="31" abbrev="mmHg">millimeters of mercury</unit>
@@ -183,7 +181,7 @@
                                     <VitalSign xmlns="http://indivo.org/vocab/xml/documents#">
                                        <name type="http://codes.indivo.org/vitalsigns/" value="124" abbrev="BPdia">Blood Pressure Diastolic</name>
                                        <measuredBy>csantos@records.media.mit.edu</measuredBy>
-                                       <dateMeasuredStart>2013-01-03T17:48:00Z</dateMeasuredStart>
+                                       <dateMeasuredStart>2013-01-03T17:48:00-05:00</dateMeasuredStart>
                                        <result>
                                           <value>94</value>
                                           <unit type="http://codes.indivo.org/units/" value="31" abbrev="mmHg">millimeters of mercury</unit>
@@ -198,7 +196,7 @@
                                     <VitalSign xmlns="http://indivo.org/vocab/xml/documents#">
                                        <name type="http://codes.indivo.org/vitalsigns/" value="125" abbrev="HR">Heart Rate</name>
                                        <measuredBy>csantos@records.media.mit.edu</measuredBy>
-                                       <dateMeasuredStart>2013-01-03T17:48:00Z</dateMeasuredStart>
+                                       <dateMeasuredStart>2013-01-03T17:48:00-05:00</dateMeasuredStart>
                                        <result>
                                           <value>81</value>
                                           <unit type="http://codes.indivo.org/units/" value="30" abbrev="bpm">beats per minute</unit>
@@ -214,9 +212,20 @@
                      <LoadableIndivoDocument>
                         <document>
                            <AdherenceItem xmlns="http://indivo.org/vocab/xml/documents#">
-                              <name xmlns="">FORA D40b</name>
-                              <reportedBy xmlns="">csantos@records.media.mit.edu</reportedBy>
-                              <dateReported>2013-01-04T17:55:00Z</dateReported>
+                              <name xmlns="" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">FORA D40b</name>
+                              <reportedBy xmlns="" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">csantos@records.media.mit.edu</reportedBy>
+                              <dateReported>2013-01-04T17:55:00-05:00</dateReported>
+                              <recurrenceIndex>3</recurrenceIndex>
+                              <adherence>false</adherence>
+                           </AdherenceItem>
+                        </document>
+                     </LoadableIndivoDocument>
+                     <LoadableIndivoDocument>
+                        <document>
+                           <AdherenceItem xmlns="http://indivo.org/vocab/xml/documents#">
+                              <name xmlns="" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">FORA D40b</name>
+                              <reportedBy xmlns="" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">csantos@records.media.mit.edu</reportedBy>
+                              <dateReported>2013-01-05T18:16:00-05:00</dateReported>
                               <recurrenceIndex>4</recurrenceIndex>
                               <adherence>false</adherence>
                            </AdherenceItem>
@@ -225,9 +234,9 @@
                      <LoadableIndivoDocument>
                         <document>
                            <AdherenceItem xmlns="http://indivo.org/vocab/xml/documents#">
-                              <name xmlns="">FORA D40b</name>
-                              <reportedBy xmlns="">csantos@records.media.mit.edu</reportedBy>
-                              <dateReported>2013-01-05T18:16:00Z</dateReported>
+                              <name xmlns="" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">FORA D40b</name>
+                              <reportedBy xmlns="" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">csantos@records.media.mit.edu</reportedBy>
+                              <dateReported>2013-01-06T18:25:00-05:00</dateReported>
                               <recurrenceIndex>5</recurrenceIndex>
                               <adherence>false</adherence>
                            </AdherenceItem>
@@ -236,21 +245,10 @@
                      <LoadableIndivoDocument>
                         <document>
                            <AdherenceItem xmlns="http://indivo.org/vocab/xml/documents#">
-                              <name xmlns="">FORA D40b</name>
-                              <reportedBy xmlns="">csantos@records.media.mit.edu</reportedBy>
-                              <dateReported>2013-01-06T18:25:00Z</dateReported>
+                              <name xmlns="" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">FORA D40b</name>
+                              <reportedBy xmlns="" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">csantos@records.media.mit.edu</reportedBy>
+                              <dateReported>2013-01-07T18:44:00-05:00</dateReported>
                               <recurrenceIndex>6</recurrenceIndex>
-                              <adherence>false</adherence>
-                           </AdherenceItem>
-                        </document>
-                     </LoadableIndivoDocument>
-                     <LoadableIndivoDocument>
-                        <document>
-                           <AdherenceItem xmlns="http://indivo.org/vocab/xml/documents#">
-                              <name xmlns="">FORA D40b</name>
-                              <reportedBy xmlns="">csantos@records.media.mit.edu</reportedBy>
-                              <dateReported>2013-01-07T18:44:00Z</dateReported>
-                              <recurrenceIndex>7</recurrenceIndex>
                               <adherence>true</adherence>
                            </AdherenceItem>
                         </document>
@@ -261,7 +259,7 @@
                                     <VitalSign xmlns="http://indivo.org/vocab/xml/documents#">
                                        <name type="http://codes.indivo.org/vitalsigns/" value="123" abbrev="BPsys">Blood Pressure Systolic</name>
                                        <measuredBy>csantos@records.media.mit.edu</measuredBy>
-                                       <dateMeasuredStart>2013-01-07T18:44:00Z</dateMeasuredStart>
+                                       <dateMeasuredStart>2013-01-07T18:44:00-05:00</dateMeasuredStart>
                                        <result>
                                           <value>146</value>
                                           <unit type="http://codes.indivo.org/units/" value="31" abbrev="mmHg">millimeters of mercury</unit>
@@ -276,7 +274,7 @@
                                     <VitalSign xmlns="http://indivo.org/vocab/xml/documents#">
                                        <name type="http://codes.indivo.org/vitalsigns/" value="124" abbrev="BPdia">Blood Pressure Diastolic</name>
                                        <measuredBy>csantos@records.media.mit.edu</measuredBy>
-                                       <dateMeasuredStart>2013-01-07T18:44:00Z</dateMeasuredStart>
+                                       <dateMeasuredStart>2013-01-07T18:44:00-05:00</dateMeasuredStart>
                                        <result>
                                           <value>90</value>
                                           <unit type="http://codes.indivo.org/units/" value="31" abbrev="mmHg">millimeters of mercury</unit>
@@ -291,7 +289,7 @@
                                     <VitalSign xmlns="http://indivo.org/vocab/xml/documents#">
                                        <name type="http://codes.indivo.org/vitalsigns/" value="125" abbrev="HR">Heart Rate</name>
                                        <measuredBy>csantos@records.media.mit.edu</measuredBy>
-                                       <dateMeasuredStart>2013-01-07T18:44:00Z</dateMeasuredStart>
+                                       <dateMeasuredStart>2013-01-07T18:44:00-05:00</dateMeasuredStart>
                                        <result>
                                           <value>78</value>
                                           <unit type="http://codes.indivo.org/units/" value="30" abbrev="bpm">beats per minute</unit>
@@ -307,9 +305,20 @@
                      <LoadableIndivoDocument>
                         <document>
                            <AdherenceItem xmlns="http://indivo.org/vocab/xml/documents#">
-                              <name xmlns="">FORA D40b</name>
-                              <reportedBy xmlns="">csantos@records.media.mit.edu</reportedBy>
-                              <dateReported>2013-01-08T19:00:00Z</dateReported>
+                              <name xmlns="" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">FORA D40b</name>
+                              <reportedBy xmlns="" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">csantos@records.media.mit.edu</reportedBy>
+                              <dateReported>2013-01-08T19:00:00-05:00</dateReported>
+                              <recurrenceIndex>7</recurrenceIndex>
+                              <adherence>false</adherence>
+                           </AdherenceItem>
+                        </document>
+                     </LoadableIndivoDocument>
+                     <LoadableIndivoDocument>
+                        <document>
+                           <AdherenceItem xmlns="http://indivo.org/vocab/xml/documents#">
+                              <name xmlns="" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">FORA D40b</name>
+                              <reportedBy xmlns="" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">csantos@records.media.mit.edu</reportedBy>
+                              <dateReported>2013-01-09T18:34:00-05:00</dateReported>
                               <recurrenceIndex>8</recurrenceIndex>
                               <adherence>false</adherence>
                            </AdherenceItem>
@@ -318,9 +327,9 @@
                      <LoadableIndivoDocument>
                         <document>
                            <AdherenceItem xmlns="http://indivo.org/vocab/xml/documents#">
-                              <name xmlns="">FORA D40b</name>
-                              <reportedBy xmlns="">csantos@records.media.mit.edu</reportedBy>
-                              <dateReported>2013-01-09T18:34:00Z</dateReported>
+                              <name xmlns="" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">FORA D40b</name>
+                              <reportedBy xmlns="" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">csantos@records.media.mit.edu</reportedBy>
+                              <dateReported>2013-01-10T18:26:00-05:00</dateReported>
                               <recurrenceIndex>9</recurrenceIndex>
                               <adherence>false</adherence>
                            </AdherenceItem>
@@ -329,21 +338,10 @@
                      <LoadableIndivoDocument>
                         <document>
                            <AdherenceItem xmlns="http://indivo.org/vocab/xml/documents#">
-                              <name xmlns="">FORA D40b</name>
-                              <reportedBy xmlns="">csantos@records.media.mit.edu</reportedBy>
-                              <dateReported>2013-01-10T18:26:00Z</dateReported>
+                              <name xmlns="" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">FORA D40b</name>
+                              <reportedBy xmlns="" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">csantos@records.media.mit.edu</reportedBy>
+                              <dateReported>2013-01-11T17:07:00-05:00</dateReported>
                               <recurrenceIndex>10</recurrenceIndex>
-                              <adherence>false</adherence>
-                           </AdherenceItem>
-                        </document>
-                     </LoadableIndivoDocument>
-                     <LoadableIndivoDocument>
-                        <document>
-                           <AdherenceItem xmlns="http://indivo.org/vocab/xml/documents#">
-                              <name xmlns="">FORA D40b</name>
-                              <reportedBy xmlns="">csantos@records.media.mit.edu</reportedBy>
-                              <dateReported>2013-01-11T17:07:00Z</dateReported>
-                              <recurrenceIndex>11</recurrenceIndex>
                               <adherence>true</adherence>
                            </AdherenceItem>
                         </document>
@@ -354,7 +352,7 @@
                                     <VitalSign xmlns="http://indivo.org/vocab/xml/documents#">
                                        <name type="http://codes.indivo.org/vitalsigns/" value="123" abbrev="BPsys">Blood Pressure Systolic</name>
                                        <measuredBy>csantos@records.media.mit.edu</measuredBy>
-                                       <dateMeasuredStart>2013-01-11T17:07:00Z</dateMeasuredStart>
+                                       <dateMeasuredStart>2013-01-11T17:07:00-05:00</dateMeasuredStart>
                                        <result>
                                           <value>149</value>
                                           <unit type="http://codes.indivo.org/units/" value="31" abbrev="mmHg">millimeters of mercury</unit>
@@ -369,7 +367,7 @@
                                     <VitalSign xmlns="http://indivo.org/vocab/xml/documents#">
                                        <name type="http://codes.indivo.org/vitalsigns/" value="124" abbrev="BPdia">Blood Pressure Diastolic</name>
                                        <measuredBy>csantos@records.media.mit.edu</measuredBy>
-                                       <dateMeasuredStart>2013-01-11T17:07:00Z</dateMeasuredStart>
+                                       <dateMeasuredStart>2013-01-11T17:07:00-05:00</dateMeasuredStart>
                                        <result>
                                           <value>91</value>
                                           <unit type="http://codes.indivo.org/units/" value="31" abbrev="mmHg">millimeters of mercury</unit>
@@ -384,7 +382,7 @@
                                     <VitalSign xmlns="http://indivo.org/vocab/xml/documents#">
                                        <name type="http://codes.indivo.org/vitalsigns/" value="125" abbrev="HR">Heart Rate</name>
                                        <measuredBy>csantos@records.media.mit.edu</measuredBy>
-                                       <dateMeasuredStart>2013-01-11T17:07:00Z</dateMeasuredStart>
+                                       <dateMeasuredStart>2013-01-11T17:07:00-05:00</dateMeasuredStart>
                                        <result>
                                           <value>93</value>
                                           <unit type="http://codes.indivo.org/units/" value="30" abbrev="bpm">beats per minute</unit>
@@ -400,10 +398,10 @@
                      <LoadableIndivoDocument>
                         <document>
                            <AdherenceItem xmlns="http://indivo.org/vocab/xml/documents#">
-                              <name xmlns="">FORA D40b</name>
-                              <reportedBy xmlns="">csantos@records.media.mit.edu</reportedBy>
-                              <dateReported>2013-01-12T17:25:00Z</dateReported>
-                              <recurrenceIndex>12</recurrenceIndex>
+                              <name xmlns="" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">FORA D40b</name>
+                              <reportedBy xmlns="" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">csantos@records.media.mit.edu</reportedBy>
+                              <dateReported>2013-01-12T17:25:00-05:00</dateReported>
+                              <recurrenceIndex>11</recurrenceIndex>
                               <adherence>false</adherence>
                            </AdherenceItem>
                         </document>
@@ -411,10 +409,10 @@
                      <LoadableIndivoDocument>
                         <document>
                            <AdherenceItem xmlns="http://indivo.org/vocab/xml/documents#">
-                              <name xmlns="">FORA D40b</name>
-                              <reportedBy xmlns="">csantos@records.media.mit.edu</reportedBy>
-                              <dateReported>2013-01-13T17:58:00Z</dateReported>
-                              <recurrenceIndex>13</recurrenceIndex>
+                              <name xmlns="" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">FORA D40b</name>
+                              <reportedBy xmlns="" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">csantos@records.media.mit.edu</reportedBy>
+                              <dateReported>2013-01-13T17:58:00-05:00</dateReported>
+                              <recurrenceIndex>12</recurrenceIndex>
                               <adherence>true</adherence>
                            </AdherenceItem>
                         </document>
@@ -425,7 +423,7 @@
                                     <VitalSign xmlns="http://indivo.org/vocab/xml/documents#">
                                        <name type="http://codes.indivo.org/vitalsigns/" value="123" abbrev="BPsys">Blood Pressure Systolic</name>
                                        <measuredBy>csantos@records.media.mit.edu</measuredBy>
-                                       <dateMeasuredStart>2013-01-13T17:58:00Z</dateMeasuredStart>
+                                       <dateMeasuredStart>2013-01-13T17:58:00-05:00</dateMeasuredStart>
                                        <result>
                                           <value>154</value>
                                           <unit type="http://codes.indivo.org/units/" value="31" abbrev="mmHg">millimeters of mercury</unit>
@@ -440,7 +438,7 @@
                                     <VitalSign xmlns="http://indivo.org/vocab/xml/documents#">
                                        <name type="http://codes.indivo.org/vitalsigns/" value="124" abbrev="BPdia">Blood Pressure Diastolic</name>
                                        <measuredBy>csantos@records.media.mit.edu</measuredBy>
-                                       <dateMeasuredStart>2013-01-13T17:58:00Z</dateMeasuredStart>
+                                       <dateMeasuredStart>2013-01-13T17:58:00-05:00</dateMeasuredStart>
                                        <result>
                                           <value>91</value>
                                           <unit type="http://codes.indivo.org/units/" value="31" abbrev="mmHg">millimeters of mercury</unit>
@@ -455,7 +453,7 @@
                                     <VitalSign xmlns="http://indivo.org/vocab/xml/documents#">
                                        <name type="http://codes.indivo.org/vitalsigns/" value="125" abbrev="HR">Heart Rate</name>
                                        <measuredBy>csantos@records.media.mit.edu</measuredBy>
-                                       <dateMeasuredStart>2013-01-13T17:58:00Z</dateMeasuredStart>
+                                       <dateMeasuredStart>2013-01-13T17:58:00-05:00</dateMeasuredStart>
                                        <result>
                                           <value>88</value>
                                           <unit type="http://codes.indivo.org/units/" value="30" abbrev="bpm">beats per minute</unit>
@@ -471,10 +469,10 @@
                      <LoadableIndivoDocument>
                         <document>
                            <AdherenceItem xmlns="http://indivo.org/vocab/xml/documents#">
-                              <name xmlns="">FORA D40b</name>
-                              <reportedBy xmlns="">csantos@records.media.mit.edu</reportedBy>
-                              <dateReported>2013-01-14T18:09:00Z</dateReported>
-                              <recurrenceIndex>14</recurrenceIndex>
+                              <name xmlns="" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">FORA D40b</name>
+                              <reportedBy xmlns="" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">csantos@records.media.mit.edu</reportedBy>
+                              <dateReported>2013-01-14T18:09:00-05:00</dateReported>
+                              <recurrenceIndex>13</recurrenceIndex>
                               <adherence>true</adherence>
                            </AdherenceItem>
                         </document>
@@ -485,7 +483,7 @@
                                     <VitalSign xmlns="http://indivo.org/vocab/xml/documents#">
                                        <name type="http://codes.indivo.org/vitalsigns/" value="123" abbrev="BPsys">Blood Pressure Systolic</name>
                                        <measuredBy>csantos@records.media.mit.edu</measuredBy>
-                                       <dateMeasuredStart>2013-01-14T18:09:00Z</dateMeasuredStart>
+                                       <dateMeasuredStart>2013-01-14T18:09:00-05:00</dateMeasuredStart>
                                        <result>
                                           <value>156</value>
                                           <unit type="http://codes.indivo.org/units/" value="31" abbrev="mmHg">millimeters of mercury</unit>
@@ -500,7 +498,7 @@
                                     <VitalSign xmlns="http://indivo.org/vocab/xml/documents#">
                                        <name type="http://codes.indivo.org/vitalsigns/" value="124" abbrev="BPdia">Blood Pressure Diastolic</name>
                                        <measuredBy>csantos@records.media.mit.edu</measuredBy>
-                                       <dateMeasuredStart>2013-01-14T18:09:00Z</dateMeasuredStart>
+                                       <dateMeasuredStart>2013-01-14T18:09:00-05:00</dateMeasuredStart>
                                        <result>
                                           <value>93</value>
                                           <unit type="http://codes.indivo.org/units/" value="31" abbrev="mmHg">millimeters of mercury</unit>
@@ -515,7 +513,7 @@
                                     <VitalSign xmlns="http://indivo.org/vocab/xml/documents#">
                                        <name type="http://codes.indivo.org/vitalsigns/" value="125" abbrev="HR">Heart Rate</name>
                                        <measuredBy>csantos@records.media.mit.edu</measuredBy>
-                                       <dateMeasuredStart>2013-01-14T18:09:00Z</dateMeasuredStart>
+                                       <dateMeasuredStart>2013-01-14T18:09:00-05:00</dateMeasuredStart>
                                        <result>
                                           <value>79</value>
                                           <unit type="http://codes.indivo.org/units/" value="30" abbrev="bpm">beats per minute</unit>
@@ -531,9 +529,20 @@
                      <LoadableIndivoDocument>
                         <document>
                            <AdherenceItem xmlns="http://indivo.org/vocab/xml/documents#">
-                              <name xmlns="">FORA D40b</name>
-                              <reportedBy xmlns="">csantos@records.media.mit.edu</reportedBy>
-                              <dateReported>2013-01-15T18:34:00Z</dateReported>
+                              <name xmlns="" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">FORA D40b</name>
+                              <reportedBy xmlns="" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">csantos@records.media.mit.edu</reportedBy>
+                              <dateReported>2013-01-15T18:34:00-05:00</dateReported>
+                              <recurrenceIndex>14</recurrenceIndex>
+                              <adherence>false</adherence>
+                           </AdherenceItem>
+                        </document>
+                     </LoadableIndivoDocument>
+                     <LoadableIndivoDocument>
+                        <document>
+                           <AdherenceItem xmlns="http://indivo.org/vocab/xml/documents#">
+                              <name xmlns="" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">FORA D40b</name>
+                              <reportedBy xmlns="" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">csantos@records.media.mit.edu</reportedBy>
+                              <dateReported>2013-01-16T17:46:00-05:00</dateReported>
                               <recurrenceIndex>15</recurrenceIndex>
                               <adherence>false</adherence>
                            </AdherenceItem>
@@ -542,21 +551,10 @@
                      <LoadableIndivoDocument>
                         <document>
                            <AdherenceItem xmlns="http://indivo.org/vocab/xml/documents#">
-                              <name xmlns="">FORA D40b</name>
-                              <reportedBy xmlns="">csantos@records.media.mit.edu</reportedBy>
-                              <dateReported>2013-01-16T17:46:00Z</dateReported>
+                              <name xmlns="" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">FORA D40b</name>
+                              <reportedBy xmlns="" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">csantos@records.media.mit.edu</reportedBy>
+                              <dateReported>2013-01-17T17:09:00-05:00</dateReported>
                               <recurrenceIndex>16</recurrenceIndex>
-                              <adherence>false</adherence>
-                           </AdherenceItem>
-                        </document>
-                     </LoadableIndivoDocument>
-                     <LoadableIndivoDocument>
-                        <document>
-                           <AdherenceItem xmlns="http://indivo.org/vocab/xml/documents#">
-                              <name xmlns="">FORA D40b</name>
-                              <reportedBy xmlns="">csantos@records.media.mit.edu</reportedBy>
-                              <dateReported>2013-01-17T17:09:00Z</dateReported>
-                              <recurrenceIndex>17</recurrenceIndex>
                               <adherence>true</adherence>
                            </AdherenceItem>
                         </document>
@@ -567,7 +565,7 @@
                                     <VitalSign xmlns="http://indivo.org/vocab/xml/documents#">
                                        <name type="http://codes.indivo.org/vitalsigns/" value="123" abbrev="BPsys">Blood Pressure Systolic</name>
                                        <measuredBy>csantos@records.media.mit.edu</measuredBy>
-                                       <dateMeasuredStart>2013-01-17T17:09:00Z</dateMeasuredStart>
+                                       <dateMeasuredStart>2013-01-17T17:09:00-05:00</dateMeasuredStart>
                                        <result>
                                           <value>155</value>
                                           <unit type="http://codes.indivo.org/units/" value="31" abbrev="mmHg">millimeters of mercury</unit>
@@ -582,7 +580,7 @@
                                     <VitalSign xmlns="http://indivo.org/vocab/xml/documents#">
                                        <name type="http://codes.indivo.org/vitalsigns/" value="124" abbrev="BPdia">Blood Pressure Diastolic</name>
                                        <measuredBy>csantos@records.media.mit.edu</measuredBy>
-                                       <dateMeasuredStart>2013-01-17T17:09:00Z</dateMeasuredStart>
+                                       <dateMeasuredStart>2013-01-17T17:09:00-05:00</dateMeasuredStart>
                                        <result>
                                           <value>90</value>
                                           <unit type="http://codes.indivo.org/units/" value="31" abbrev="mmHg">millimeters of mercury</unit>
@@ -597,7 +595,7 @@
                                     <VitalSign xmlns="http://indivo.org/vocab/xml/documents#">
                                        <name type="http://codes.indivo.org/vitalsigns/" value="125" abbrev="HR">Heart Rate</name>
                                        <measuredBy>csantos@records.media.mit.edu</measuredBy>
-                                       <dateMeasuredStart>2013-01-17T17:09:00Z</dateMeasuredStart>
+                                       <dateMeasuredStart>2013-01-17T17:09:00-05:00</dateMeasuredStart>
                                        <result>
                                           <value>80</value>
                                           <unit type="http://codes.indivo.org/units/" value="30" abbrev="bpm">beats per minute</unit>
@@ -613,9 +611,20 @@
                      <LoadableIndivoDocument>
                         <document>
                            <AdherenceItem xmlns="http://indivo.org/vocab/xml/documents#">
-                              <name xmlns="">FORA D40b</name>
-                              <reportedBy xmlns="">csantos@records.media.mit.edu</reportedBy>
-                              <dateReported>2013-01-18T18:03:00Z</dateReported>
+                              <name xmlns="" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">FORA D40b</name>
+                              <reportedBy xmlns="" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">csantos@records.media.mit.edu</reportedBy>
+                              <dateReported>2013-01-18T18:03:00-05:00</dateReported>
+                              <recurrenceIndex>17</recurrenceIndex>
+                              <adherence>false</adherence>
+                           </AdherenceItem>
+                        </document>
+                     </LoadableIndivoDocument>
+                     <LoadableIndivoDocument>
+                        <document>
+                           <AdherenceItem xmlns="http://indivo.org/vocab/xml/documents#">
+                              <name xmlns="" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">FORA D40b</name>
+                              <reportedBy xmlns="" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">csantos@records.media.mit.edu</reportedBy>
+                              <dateReported>2013-01-19T18:17:00-05:00</dateReported>
                               <recurrenceIndex>18</recurrenceIndex>
                               <adherence>false</adherence>
                            </AdherenceItem>
@@ -624,9 +633,9 @@
                      <LoadableIndivoDocument>
                         <document>
                            <AdherenceItem xmlns="http://indivo.org/vocab/xml/documents#">
-                              <name xmlns="">FORA D40b</name>
-                              <reportedBy xmlns="">csantos@records.media.mit.edu</reportedBy>
-                              <dateReported>2013-01-19T18:17:00Z</dateReported>
+                              <name xmlns="" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">FORA D40b</name>
+                              <reportedBy xmlns="" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">csantos@records.media.mit.edu</reportedBy>
+                              <dateReported>2013-01-20T18:15:00-05:00</dateReported>
                               <recurrenceIndex>19</recurrenceIndex>
                               <adherence>false</adherence>
                            </AdherenceItem>
@@ -635,21 +644,10 @@
                      <LoadableIndivoDocument>
                         <document>
                            <AdherenceItem xmlns="http://indivo.org/vocab/xml/documents#">
-                              <name xmlns="">FORA D40b</name>
-                              <reportedBy xmlns="">csantos@records.media.mit.edu</reportedBy>
-                              <dateReported>2013-01-20T18:15:00Z</dateReported>
+                              <name xmlns="" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">FORA D40b</name>
+                              <reportedBy xmlns="" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">csantos@records.media.mit.edu</reportedBy>
+                              <dateReported>2013-01-21T18:49:00-05:00</dateReported>
                               <recurrenceIndex>20</recurrenceIndex>
-                              <adherence>false</adherence>
-                           </AdherenceItem>
-                        </document>
-                     </LoadableIndivoDocument>
-                     <LoadableIndivoDocument>
-                        <document>
-                           <AdherenceItem xmlns="http://indivo.org/vocab/xml/documents#">
-                              <name xmlns="">FORA D40b</name>
-                              <reportedBy xmlns="">csantos@records.media.mit.edu</reportedBy>
-                              <dateReported>2013-01-21T18:49:00Z</dateReported>
-                              <recurrenceIndex>21</recurrenceIndex>
                               <adherence>true</adherence>
                            </AdherenceItem>
                         </document>
@@ -660,7 +658,7 @@
                                     <VitalSign xmlns="http://indivo.org/vocab/xml/documents#">
                                        <name type="http://codes.indivo.org/vitalsigns/" value="123" abbrev="BPsys">Blood Pressure Systolic</name>
                                        <measuredBy>csantos@records.media.mit.edu</measuredBy>
-                                       <dateMeasuredStart>2013-01-21T18:49:00Z</dateMeasuredStart>
+                                       <dateMeasuredStart>2013-01-21T18:49:00-05:00</dateMeasuredStart>
                                        <result>
                                           <value>156</value>
                                           <unit type="http://codes.indivo.org/units/" value="31" abbrev="mmHg">millimeters of mercury</unit>
@@ -675,7 +673,7 @@
                                     <VitalSign xmlns="http://indivo.org/vocab/xml/documents#">
                                        <name type="http://codes.indivo.org/vitalsigns/" value="124" abbrev="BPdia">Blood Pressure Diastolic</name>
                                        <measuredBy>csantos@records.media.mit.edu</measuredBy>
-                                       <dateMeasuredStart>2013-01-21T18:49:00Z</dateMeasuredStart>
+                                       <dateMeasuredStart>2013-01-21T18:49:00-05:00</dateMeasuredStart>
                                        <result>
                                           <value>94</value>
                                           <unit type="http://codes.indivo.org/units/" value="31" abbrev="mmHg">millimeters of mercury</unit>
@@ -690,7 +688,7 @@
                                     <VitalSign xmlns="http://indivo.org/vocab/xml/documents#">
                                        <name type="http://codes.indivo.org/vitalsigns/" value="125" abbrev="HR">Heart Rate</name>
                                        <measuredBy>csantos@records.media.mit.edu</measuredBy>
-                                       <dateMeasuredStart>2013-01-21T18:49:00Z</dateMeasuredStart>
+                                       <dateMeasuredStart>2013-01-21T18:49:00-05:00</dateMeasuredStart>
                                        <result>
                                           <value>78</value>
                                           <unit type="http://codes.indivo.org/units/" value="30" abbrev="bpm">beats per minute</unit>

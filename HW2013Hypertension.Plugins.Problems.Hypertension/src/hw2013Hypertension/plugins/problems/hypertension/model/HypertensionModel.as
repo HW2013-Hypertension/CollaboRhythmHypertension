@@ -36,6 +36,7 @@ package hw2013Hypertension.plugins.problems.hypertension.model
 		private var _currentDateSource:ICurrentDateSource;
 		private var _mostRecentSystolic:Number;
 		private var _mostRecentDiastolic:Number;
+		private var _medicationSchedule:ArrayCollection;
 
 		public function HypertensionModel(activeRecordAccount:Account)
 		{
@@ -49,7 +50,8 @@ package hw2013Hypertension.plugins.problems.hypertension.model
 			_currentDateSource = WorkstationKernel.instance.resolve(ICurrentDateSource) as ICurrentDateSource;
 
 			_healthActionScheduleCollection = _record.healthActionSchedulesModel.healthActionScheduleCollection;
-//			BindingUtils.bindSetter(healthActionSchedulesModel_isStitchedHandler, _record.healthActionSchedulesModel, "isStitched");
+			_medicationSchedule= _record.medicationScheduleItemsModel.medicationScheduleItemCollection
+// BindingUtils.bindSetter(healthActionSchedulesModel_isStitchedHandler, _record.healthActionSchedulesModel, "isStitched");
 
 			BindingUtils.bindSetter(record_isLoading, _record, "isLoading");
 		}
