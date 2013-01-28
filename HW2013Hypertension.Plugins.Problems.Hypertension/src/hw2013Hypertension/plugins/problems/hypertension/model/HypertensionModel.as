@@ -235,7 +235,7 @@ package hw2013Hypertension.plugins.problems.hypertension.model
 							var beginningOfToday:Date = new Date(_currentDateSource.now().fullYear, _currentDateSource.now().month, _currentDateSource.now().date)
 							if (adherenceItem.dateReported.time > beginningOfToday.time)
 							{
-								messages2.addItem("Your earned 100 points because you took your medication today");
+								messages2.addItem("Your buddy earned 100 points because you took your medication today");
 							}
 						}
 					}
@@ -254,7 +254,7 @@ package hw2013Hypertension.plugins.problems.hypertension.model
 							if (adherenceItem.adherence)
 							{
 								rewardScore = rewardScore + 100;
-								messages2.addItem("Your earned 100 points because you took your blood pressure today");
+								_messages2.addItem("Your buddy earned 100 points because you took your blood pressure"+"/n"+currentDateSource.now()+"");
 							}
 						}
 					}
@@ -274,8 +274,8 @@ package hw2013Hypertension.plugins.problems.hypertension.model
 							var totalscore:int = 0;
 							var totalsystolic:int=0;
 							var totaldiastolic:int=0;
-							var averagesystolic:Number=0;
-							var averagediastolic:Number=0;
+							var averagesystolic:int=0;
+							var averagediastolic:int=0;
 							var count:int=0;
 
 							//var mostRecentDiastolic:Number;
@@ -347,13 +347,12 @@ package hw2013Hypertension.plugins.problems.hypertension.model
 							averagediastolic=totaldiastolic/count;
 				           if (averagediastolic>60 && averagediastolic<90 &&averagesystolic>90 && averagesystolic<140)
 								 {
-							   _messages3.addItem("aaaaaaaaa  diastolic "+averagediastolic+" systolic   "+averagesystolic+" " +
-									   "metrhths"+count+"");
+									 _messages3.addItem("Congratulations your  average systolic this week was "+averagesystolic+" and your" +
+											 "\n"+"average diastolic was "+averagediastolic+". You are rewarded with a coupon for a free" +
+											 "\n"+" health check at the local pharmacy clinic.");
 								 }
 
-							else{
-							   _messages3.addItem("oxiiiiiiiii diastolic"+averagediastolic+"    systolic"+averagesystolic+"metrhths"+count+"");
-						   }
+
 						}
 
 		public function get record():Record
