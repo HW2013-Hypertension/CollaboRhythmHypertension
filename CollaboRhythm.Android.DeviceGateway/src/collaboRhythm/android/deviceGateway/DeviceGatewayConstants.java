@@ -24,6 +24,7 @@ public class DeviceGatewayConstants {
 	public static final String EQUIPMENT_NAME_KEY = "equipmentName";
 	public static final String HEALTH_ACTION_NAME_KEY = "healthActionName";
 	public static final String EQUIPMENT_HEALTH_ACTION_TYPE = "Equipment";
+	public static final String BOTTLE_STATE = "Bottle State";
 	public static final String CORRECTED_MEASURED_DATE_KEY = "correctedMeasuredDate";
 	public static final String DEVICE_MEASURED_DATE_KEY = "deviceMeasuredDate";
 	public static final String LOCAL_TRANSMITTED_DATE_KEY = "localTransmittedDate";

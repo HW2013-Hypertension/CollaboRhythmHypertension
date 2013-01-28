@@ -17,7 +17,7 @@
   -->
 <settings xmlns="http://collaborhythm.org/application/settings">
 	<mode>clinician</mode>
-	<indivoServerBaseURL>http://184.106.136.151:8000</indivoServerBaseURL>
+	<indivoServerBaseURL>https://indivo-demo.media.mit.edu:8000</indivoServerBaseURL>
 	<username>jking</username>
 	<password>jking-dope75</password>
 	<useFileTarget>true</useFileTarget>

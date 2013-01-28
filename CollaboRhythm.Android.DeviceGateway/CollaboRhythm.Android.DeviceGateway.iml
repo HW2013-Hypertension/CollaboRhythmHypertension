@@ -43,7 +43,7 @@
       <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/gen" isTestSource="false" />
     </content>
-    <orderEntry type="jdk" jdkName="Android 2.2 Platform" jdkType="Android SDK" />
+    <orderEntry type="jdk" jdkName="Android SDK" jdkType="Android SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module-library">
       <library name="microlog4android-1.1-build-21.jar">
@@ -54,8 +54,8 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library">
-      <library>
+    <orderEntry type="module-library" exported="">
+      <library name="C:\Program Files\android\adt-bundle-windows-x86_64\sdk\extras\android\support\v4\">
         <CLASSES>
           <root url="jar://C:/Program Files (x86)/Android/android-sdk/extras/android/compatibility/v4/android-support-v4.jar!/" />
         </CLASSES>

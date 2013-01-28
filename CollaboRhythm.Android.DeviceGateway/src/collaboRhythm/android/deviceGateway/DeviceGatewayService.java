@@ -38,6 +38,9 @@ import com.google.code.microlog4android.appender.FileAppender;
 import com.google.code.microlog4android.appender.LogCatAppender;
 import com.google.code.microlog4android.appender.SyslogAppender;
 
+import java.util.Set;
+import java.util.UUID;
+
 public class DeviceGatewayService extends Service {
 
 	private static final String TAG = "CollaboRhythm.Android.DeviceGateway";
@@ -73,7 +76,7 @@ public class DeviceGatewayService extends Service {
 	// A separate class that extends Thread and implements IBluetoothSocketThread must be created for each device. The class must
 	// provide a BluetoothSocketThreadAnnotation that specifies the name of the Bluetooth device that it handles. The name
 	// of each class must then be added to this array.
-	private String mBluetoothSocketThreadNames[] = {"collaboRhythm.android.deviceGateway.ForaD40bBluetoothSocketThread"};
+	private String mBluetoothSocketThreadNames[] = {"collaboRhythm.android.deviceGateway.AdhereTechBluetoothSocketThread"};
 
 	@Override
 	public IBinder onBind(Intent arg0) {
@@ -101,6 +104,7 @@ public class DeviceGatewayService extends Service {
 		// with actions named "custom-event-name".
 		this.getApplicationContext().registerReceiver(mMessageReceiver,
 				new IntentFilter("CollaboRhythm-health-action-received-v1"));
+
 	}
 
 	// Our handler for received Intents. This will be called whenever an Intent
@@ -136,7 +140,6 @@ public class DeviceGatewayService extends Service {
 				}
 			}
 		}
-
 		// Continue running until it is explicitly stopped
 		return START_STICKY;
 	}

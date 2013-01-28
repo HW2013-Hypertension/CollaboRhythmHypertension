@@ -10,6 +10,8 @@ package hw2013Hypertension.plugins.problems.hypertension.controller
 	import collaboRhythm.shared.pluginsSupport.IPlugin;
 	import collaboRhythm.shared.ui.healthCharts.model.modifiers.IChartModifierFactory;
 
+	import hw2013Hypertension.plugins.problems.hypertension.model.AdhereTechBottleHealthActionInputControllerFactory;
+
 	import hw2013Hypertension.plugins.problems.hypertension.controller.HypertensionChartsAppController;
 
 	import mx.modules.ModuleBase;
@@ -32,6 +34,10 @@ package hw2013Hypertension.plugins.problems.hypertension.controller
 			componentContainer.registerComponentInstance(ReflectionUtils.getClassInfo(HypertensionChartsAppController).name,
 					AppControllerInfo,
 					new AppControllerInfo(HypertensionChartsAppController));
+
+			componentContainer.registerComponentInstance(ReflectionUtils.getClassInfo(AdhereTechBottleHealthActionInputControllerFactory).name,
+					IHealthActionInputControllerFactory,
+					new AdhereTechBottleHealthActionInputControllerFactory());
 
 /*			componentContainer.registerComponentInstance(ReflectionUtils.getClassInfo(HypertensionHealthActionListViewAdapterFactory).name,
 					IHealthActionListViewAdapterFactory,
