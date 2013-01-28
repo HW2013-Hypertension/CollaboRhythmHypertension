@@ -15,7 +15,6 @@
             <dateExpires>2012-07-14T09:00:00-04:00</dateExpires>
             <ns1:indication xmlns:ns1="http://indivo.org/vocab/xml/documents#"
                             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">diabetes</ns1:indication>
-
             <amountOrdered>
                <value>90</value>
                <unit type="http://indivo.org/codes/units#" value="tab" abbrev="tab">tablet</unit>
@@ -81,7 +80,7 @@
                               <ns1:reportedBy xmlns:ns1="http://indivo.org/vocab/xml/documents#"
                                               xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">csantos@records.media.mit.edu</ns1:reportedBy>
                               <dateReported>2013-01-01T08:02:00-05:00</dateReported>
-                              <recurrenceIndex>536</recurrenceIndex>
+                              <recurrenceIndex>0</recurrenceIndex>
                               <adherence>false</adherence>
                            </AdherenceItem>
                         </document>
@@ -96,7 +95,7 @@
                               <ns1:reportedBy xmlns:ns1="http://indivo.org/vocab/xml/documents#"
                                               xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">csantos@records.media.mit.edu</ns1:reportedBy>
                               <dateReported>2013-01-02T08:05:00-05:00</dateReported>
-                              <recurrenceIndex>537</recurrenceIndex>
+                              <recurrenceIndex>1</recurrenceIndex>
                               <adherence>true</adherence>
                            </AdherenceItem>
                         </document>
@@ -137,7 +136,7 @@
                               <ns1:reportedBy xmlns:ns1="http://indivo.org/vocab/xml/documents#"
                                               xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">csantos@records.media.mit.edu</ns1:reportedBy>
                               <dateReported>2013-01-03T08:12:00-05:00</dateReported>
-                              <recurrenceIndex>538</recurrenceIndex>
+                              <recurrenceIndex>2</recurrenceIndex>
                               <adherence>true</adherence>
                            </AdherenceItem>
                         </document>
@@ -178,7 +177,7 @@
                               <ns1:reportedBy xmlns:ns1="http://indivo.org/vocab/xml/documents#"
                                               xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">csantos@records.media.mit.edu</ns1:reportedBy>
                               <dateReported>2013-01-04T08:45:00-05:00</dateReported>
-                              <recurrenceIndex>539</recurrenceIndex>
+                              <recurrenceIndex>3</recurrenceIndex>
                               <adherence>true</adherence>
                            </AdherenceItem>
                         </document>
@@ -219,7 +218,7 @@
                               <ns1:reportedBy xmlns:ns1="http://indivo.org/vocab/xml/documents#"
                                               xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">csantos@records.media.mit.edu</ns1:reportedBy>
                               <dateReported>2013-01-05T08:50:00-05:00</dateReported>
-                              <recurrenceIndex>540</recurrenceIndex>
+                              <recurrenceIndex>4</recurrenceIndex>
                               <adherence>true</adherence>
                            </AdherenceItem>
                         </document>
@@ -260,7 +259,7 @@
                               <ns1:reportedBy xmlns:ns1="http://indivo.org/vocab/xml/documents#"
                                               xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">csantos@records.media.mit.edu</ns1:reportedBy>
                               <dateReported>2013-01-06T07:12:00-05:00</dateReported>
-                              <recurrenceIndex>540</recurrenceIndex>
+                              <recurrenceIndex>5</recurrenceIndex>
                               <adherence>true</adherence>
                            </AdherenceItem>
                         </document>
@@ -301,7 +300,7 @@
                               <ns1:reportedBy xmlns:ns1="http://indivo.org/vocab/xml/documents#"
                                               xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">csantos@records.media.mit.edu</ns1:reportedBy>
                               <dateReported>2013-01-07T07:59:00-05:00</dateReported>
-                              <recurrenceIndex>541</recurrenceIndex>
+                              <recurrenceIndex>6</recurrenceIndex>
                               <adherence>false</adherence>
                            </AdherenceItem>
                         </document>
@@ -316,7 +315,7 @@
                               <ns1:reportedBy xmlns:ns1="http://indivo.org/vocab/xml/documents#"
                                               xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">csantos@records.media.mit.edu</ns1:reportedBy>
                               <dateReported>2013-01-08T10:24:00-05:00</dateReported>
-                              <recurrenceIndex>543</recurrenceIndex>
+                              <recurrenceIndex>7</recurrenceIndex>
                               <adherence>true</adherence>
                            </AdherenceItem>
                         </document>
@@ -357,7 +356,7 @@
                               <ns1:reportedBy xmlns:ns1="http://indivo.org/vocab/xml/documents#"
                                               xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">csantos@records.media.mit.edu</ns1:reportedBy>
                               <dateReported>2013-01-09T11:54:00-05:00</dateReported>
-                              <recurrenceIndex>544</recurrenceIndex>
+                              <recurrenceIndex>8</recurrenceIndex>
                               <adherence>true</adherence>
                            </AdherenceItem>
                         </document>
@@ -398,7 +397,7 @@
                               <ns1:reportedBy xmlns:ns1="http://indivo.org/vocab/xml/documents#"
                                               xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">csantos@records.media.mit.edu</ns1:reportedBy>
                               <dateReported>2013-01-10T12:02:00-05:00</dateReported>
-                              <recurrenceIndex>545</recurrenceIndex>
+                              <recurrenceIndex>9</recurrenceIndex>
                               <adherence>true</adherence>
                            </AdherenceItem>
                         </document>
@@ -439,7 +438,7 @@
                               <ns1:reportedBy xmlns:ns1="http://indivo.org/vocab/xml/documents#"
                                               xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">csantos@records.media.mit.edu</ns1:reportedBy>
                               <dateReported>2013-01-11T08:13:00-05:00</dateReported>
-                              <recurrenceIndex>546</recurrenceIndex>
+                              <recurrenceIndex>10</recurrenceIndex>
                               <adherence>false</adherence>
                            </AdherenceItem>
                         </document>
@@ -454,7 +453,7 @@
                               <ns1:reportedBy xmlns:ns1="http://indivo.org/vocab/xml/documents#"
                                               xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">csantos@records.media.mit.edu</ns1:reportedBy>
                               <dateReported>2013-01-12T08:01:00-05:00</dateReported>
-                              <recurrenceIndex>547</recurrenceIndex>
+                              <recurrenceIndex>11</recurrenceIndex>
                               <adherence>false</adherence>
                            </AdherenceItem>
                         </document>
@@ -469,7 +468,7 @@
                               <ns1:reportedBy xmlns:ns1="http://indivo.org/vocab/xml/documents#"
                                               xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">csantos@records.media.mit.edu</ns1:reportedBy>
                               <dateReported>2013-01-13T08:08:00-05:00</dateReported>
-                              <recurrenceIndex>548</recurrenceIndex>
+                              <recurrenceIndex>12</recurrenceIndex>
                               <adherence>false</adherence>
                            </AdherenceItem>
                         </document>
@@ -484,7 +483,7 @@
                               <ns1:reportedBy xmlns:ns1="http://indivo.org/vocab/xml/documents#"
                                               xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">csantos@records.media.mit.edu</ns1:reportedBy>
                               <dateReported>2013-01-14T09:32:00-05:00</dateReported>
-                              <recurrenceIndex>549</recurrenceIndex>
+                              <recurrenceIndex>13</recurrenceIndex>
                               <adherence>true</adherence>
                            </AdherenceItem>
                         </document>
@@ -525,7 +524,7 @@
                               <ns1:reportedBy xmlns:ns1="http://indivo.org/vocab/xml/documents#"
                                               xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">csantos@records.media.mit.edu</ns1:reportedBy>
                               <dateReported>2013-01-15T08:07:00-05:00</dateReported>
-                              <recurrenceIndex>550</recurrenceIndex>
+                              <recurrenceIndex>14</recurrenceIndex>
                               <adherence>false</adherence>
                            </AdherenceItem>
                         </document>
@@ -540,7 +539,7 @@
                               <ns1:reportedBy xmlns:ns1="http://indivo.org/vocab/xml/documents#"
                                               xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">csantos@records.media.mit.edu</ns1:reportedBy>
                               <dateReported>2013-01-16T09:14:00-05:00</dateReported>
-                              <recurrenceIndex>551</recurrenceIndex>
+                              <recurrenceIndex>15</recurrenceIndex>
                               <adherence>true</adherence>
                            </AdherenceItem>
                         </document>
@@ -581,7 +580,7 @@
                               <ns1:reportedBy xmlns:ns1="http://indivo.org/vocab/xml/documents#"
                                               xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">csantos@records.media.mit.edu</ns1:reportedBy>
                               <dateReported>2013-01-17T09:12:00-05:00</dateReported>
-                              <recurrenceIndex>552</recurrenceIndex>
+                              <recurrenceIndex>16</recurrenceIndex>
                               <adherence>true</adherence>
                            </AdherenceItem>
                         </document>
@@ -622,7 +621,7 @@
                               <ns1:reportedBy xmlns:ns1="http://indivo.org/vocab/xml/documents#"
                                               xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">csantos@records.media.mit.edu</ns1:reportedBy>
                               <dateReported>2013-01-18T07:56:00-05:00</dateReported>
-                              <recurrenceIndex>552</recurrenceIndex>
+                              <recurrenceIndex>17</recurrenceIndex>
                               <adherence>false</adherence>
                            </AdherenceItem>
                         </document>
@@ -637,7 +636,7 @@
                               <ns1:reportedBy xmlns:ns1="http://indivo.org/vocab/xml/documents#"
                                               xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">csantos@records.media.mit.edu</ns1:reportedBy>
                               <dateReported>2013-01-19T08:04:00-05:00</dateReported>
-                              <recurrenceIndex>554</recurrenceIndex>
+                              <recurrenceIndex>18</recurrenceIndex>
                               <adherence>false</adherence>
                            </AdherenceItem>
                         </document>
@@ -652,7 +651,7 @@
                               <ns1:reportedBy xmlns:ns1="http://indivo.org/vocab/xml/documents#"
                                               xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">csantos@records.media.mit.edu</ns1:reportedBy>
                               <dateReported>2013-01-20T10:05:00-05:00</dateReported>
-                              <recurrenceIndex>555</recurrenceIndex>
+                              <recurrenceIndex>19</recurrenceIndex>
                               <adherence>true</adherence>
                            </AdherenceItem>
                         </document>
@@ -693,7 +692,7 @@
                               <ns1:reportedBy xmlns:ns1="http://indivo.org/vocab/xml/documents#"
                                               xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">csantos@records.media.mit.edu</ns1:reportedBy>
                               <dateReported>2013-01-21T08:10:00-05:00</dateReported>
-                              <recurrenceIndex>556</recurrenceIndex>
+                              <recurrenceIndex>20</recurrenceIndex>
                               <adherence>false</adherence>
                            </AdherenceItem>
                         </document>

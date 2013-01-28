@@ -18,7 +18,7 @@
 <settings xmlns="http://collaborhythm.org/application/settings">
 	<mode>patient</mode>
 	<indivoServerBaseURL>https://indivo-demo.media.mit.edu:8000</indivoServerBaseURL>
-	<username>groberts</username>
+	<username>gsmith</username>
 	<password>example-patient</password>
 	<clinicianTeamMembers>
 		<clinicianTeamMember>hypertension-jking@records.media.mit.edu</clinicianTeamMember>

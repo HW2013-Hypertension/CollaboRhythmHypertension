@@ -7,8 +7,9 @@
 		<ns1:adherence>false</ns1:adherence>
 		<ns1:ndc>6033856</ns1:ndc>
 		<ns1:indication>diabetes</ns1:indication>
+
 		<scheduleDateStart>2013-01-01T17:00:00-05:00</scheduleDateStart>
-		<scheduleDateEnd>2013-01-01T21:00:00-05:00</scheduleDateEnd>
+				<scheduleDateEnd>2013-01-01T21:00:00-05:00</scheduleDateEnd>
 	</ns1:AdherenceItem>
 	<ns1:AdherenceItem>
 		<ns1:name type="http://rxnav.nlm.nih.gov/REST/rxcui/" value="310798">Hydrochlorothiazide 25 MG Oral Tablet</ns1:name>
