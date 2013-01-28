@@ -130,7 +130,7 @@
 		<reportedBy>csantos@records.media.mit.edu</reportedBy>
 		<dateReported>2013-01-12T17:25:00-05:00</dateReported>
 		<adherence>true</adherence>
-		<systolic>145</systolic>
+		<systolic>140</systolic>
 		<diastolic>88</diastolic>
 		<heartRate>76</heartRate>
 	</BloodPressureAdherenceItem>
@@ -152,7 +152,7 @@
 		<reportedBy>csantos@records.media.mit.edu</reportedBy>
 		<dateReported>2013-01-14T18:09:00-05:00</dateReported>
 		<adherence>true</adherence>
-		<systolic>142</systolic>
+		<systolic>138</systolic>
 		<diastolic>87</diastolic>
 		<heartRate>78</heartRate>
 	</BloodPressureAdherenceItem>
@@ -163,7 +163,7 @@
 		<reportedBy>csantos@records.media.mit.edu</reportedBy>
 		<dateReported>2013-01-15T18:34:00-05:00</dateReported>
 		<adherence>true</adherence>
-		<systolic>140</systolic>
+		<systolic>139</systolic>
 		<diastolic>88</diastolic>
 		<heartRate>79</heartRate>
 	</BloodPressureAdherenceItem>
@@ -174,7 +174,7 @@
 		<reportedBy>csantos@records.media.mit.edu</reportedBy>
 		<dateReported>2013-01-16T17:46:00-05:00</dateReported>
 		<adherence>true</adherence>
-		<systolic>140</systolic>
+		<systolic>136</systolic>
 		<diastolic>86</diastolic>
 		<heartRate>76</heartRate>
 	</BloodPressureAdherenceItem>

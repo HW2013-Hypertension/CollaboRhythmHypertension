@@ -36,6 +36,7 @@
 		private var _messages:ArrayCollection;
 		private var _messages1:ArrayCollection;
 		private var _messages2:ArrayCollection;
+		private var _messages3:ArrayCollection;
 
 
 
@@ -47,6 +48,8 @@
 			_messages = _model.messages;
 			_messages1 = _model.messages1;
 			_messages2 = _model.messages2;
+			_messages3 = _model.messages3;
+
 		}
 
 		]]></fx:Script>
@@ -124,7 +127,7 @@
 
 	<s:Group x="40" y="280" height="400">
 			<s:Panel height="100%" width="500" title="Personal Rewards">
-
+				<s:List dataProvider="{_messages3}" width="100%" height="100%"/>
 			</s:Panel>
 
 		</s:Group>

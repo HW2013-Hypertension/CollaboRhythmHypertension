@@ -708,7 +708,7 @@
                                        <measuredBy>csantos@records.media.mit.edu</measuredBy>
                                        <dateMeasuredStart>2013-01-12T17:25:00-05:00</dateMeasuredStart>
                                        <result>
-                                          <value>145</value>
+                                          <value>140</value>
                                           <unit type="http://codes.indivo.org/units/" value="31" abbrev="mmHg">millimeters of mercury</unit>
                                        </result>
                                        <site>left arm</site>
@@ -828,7 +828,7 @@
                                        <measuredBy>csantos@records.media.mit.edu</measuredBy>
                                        <dateMeasuredStart>2013-01-14T18:09:00-05:00</dateMeasuredStart>
                                        <result>
-                                          <value>142</value>
+                                          <value>138</value>
                                           <unit type="http://codes.indivo.org/units/" value="31" abbrev="mmHg">millimeters of mercury</unit>
                                        </result>
                                        <site>left arm</site>
@@ -888,7 +888,7 @@
                                        <measuredBy>csantos@records.media.mit.edu</measuredBy>
                                        <dateMeasuredStart>2013-01-15T18:34:00-05:00</dateMeasuredStart>
                                        <result>
-                                          <value>140</value>
+                                          <value>139</value>
                                           <unit type="http://codes.indivo.org/units/" value="31" abbrev="mmHg">millimeters of mercury</unit>
                                        </result>
                                        <site>left arm</site>
@@ -948,7 +948,7 @@
                                        <measuredBy>csantos@records.media.mit.edu</measuredBy>
                                        <dateMeasuredStart>2013-01-16T17:46:00-05:00</dateMeasuredStart>
                                        <result>
-                                          <value>140</value>
+                                          <value>136</value>
                                           <unit type="http://codes.indivo.org/units/" value="31" abbrev="mmHg">millimeters of mercury</unit>
                                        </result>
                                        <site>left arm</site>

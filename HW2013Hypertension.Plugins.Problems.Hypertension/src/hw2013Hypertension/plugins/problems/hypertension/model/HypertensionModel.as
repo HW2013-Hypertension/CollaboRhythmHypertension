@@ -11,9 +11,15 @@ package hw2013Hypertension.plugins.problems.hypertension.model
 	import collaboRhythm.shared.model.services.ICurrentDateSource;
 	import collaboRhythm.shared.model.services.WorkstationKernel;
 
+	import flash.sampler.getSampleCount;
+
+	import flashx.textLayout.formats.ClearFloats;
+
 	import mx.binding.utils.BindingUtils;
 
 	import mx.collections.ArrayCollection;
+	import mx.formatters.NumberBase;
+	import mx.formatters.NumberBaseRoundType;
 
 	[Bindable]
 	public class HypertensionModel
@@ -33,6 +39,7 @@ package hw2013Hypertension.plugins.problems.hypertension.model
 
 
 		private var _messages2:ArrayCollection = new ArrayCollection();
+		private var _messages3:ArrayCollection = new ArrayCollection();
 		private var _currentDateSource:ICurrentDateSource;
 		private var _mostRecentSystolic:Number;
 		private var _mostRecentDiastolic:Number;
@@ -62,6 +69,7 @@ package hw2013Hypertension.plugins.problems.hypertension.model
 			{
 				calculatePercentAdherence();
 				calculateScore();
+				calculateWeekly();
 			}
 		}
 
@@ -71,6 +79,11 @@ package hw2013Hypertension.plugins.problems.hypertension.model
 			var totalreadings:int = 0;
 			var goodreadings:int = 0;
 			var totalscore:int = 0;
+			var totalsystolic:int=0;
+			var totaldiastolic:int=0;
+			var averagesystolic:Number=0;
+			var averagediastolic:Number=0;
+			var count:int=0;
 
 			//var mostRecentDiastolic:Number;
 
@@ -96,7 +109,7 @@ package hw2013Hypertension.plugins.problems.hypertension.model
 				if (healthActionSchedule.name.text == BLOOD_PRESSURE_HEALTH_ACTION_SCHEDULE)
 				{
 					var dateWeekEnd:Date = _currentDateSource.now();
-					var dateWeekStart:Date = new Date(dateWeekEnd.time - NUMBER_OF_MILLISECONDS_IN_WEEK * 2);
+					var dateWeekStart:Date = new Date(dateWeekEnd.time - NUMBER_OF_MILLISECONDS_IN_WEEK);
 
 					for each (var adherenceItem:AdherenceItem in healthActionSchedule.adherenceItems)
 					{
@@ -111,8 +124,10 @@ package hw2013Hypertension.plugins.problems.hypertension.model
 								var systolic:Number;
 								var diastolic:Number;
 
+
 								for each (var adherenceResult:DocumentBase in adherenceResults)
 								{
+
 									var vitalSign:VitalSign = adherenceResult as VitalSign;
 									if (vitalSign)
 									{
@@ -120,10 +135,12 @@ package hw2013Hypertension.plugins.problems.hypertension.model
 										if (vitalSign.name.text == VitalSignsModel.SYSTOLIC_CATEGORY)
 										{
 											systolic = vitalSign.resultAsNumber;
+
 										}
 										else if (vitalSign.name.text == VitalSignsModel.DIASTOLIC_CATEGORY)
 										{
 											diastolic = vitalSign.resultAsNumber;
+
 										}
 									}
 								}
@@ -197,7 +214,6 @@ package hw2013Hypertension.plugins.problems.hypertension.model
 			}
 		}
 
-
 		private function calculatePercentAdherence():void
 		{
 			var adherenceCount:int = 0;
@@ -249,6 +265,96 @@ package hw2013Hypertension.plugins.problems.hypertension.model
 
 			percentBloodPressureAdherence = adherenceCount / 7 * 100;
 		}
+
+		private function calculateWeekly():void
+						{
+							var score:int = 0;
+							var totalreadings:int = 0;
+							var goodreadings:int = 0;
+							var totalscore:int = 0;
+							var totalsystolic:int=0;
+							var totaldiastolic:int=0;
+							var averagesystolic:Number=0;
+							var averagediastolic:Number=0;
+							var count:int=0;
+
+							//var mostRecentDiastolic:Number;
+
+
+							var systolicVitalSignsCollection:ArrayCollection = _record.vitalSignsModel.getVitalSignsByCategory(VitalSignsModel.SYSTOLIC_CATEGORY);
+							var diastolicVitalSignsCollection:ArrayCollection = _record.vitalSignsModel.getVitalSignsByCategory(VitalSignsModel.DIASTOLIC_CATEGORY);
+
+							if (systolicVitalSignsCollection && systolicVitalSignsCollection.length != 0)
+							{
+								var mostRecentSystolicVitalSign:VitalSign = systolicVitalSignsCollection.getItemAt(systolicVitalSignsCollection.length -
+										1) as VitalSign;
+								mostRecentSystolic = mostRecentSystolicVitalSign.resultAsNumber;
+							}
+							if (diastolicVitalSignsCollection && diastolicVitalSignsCollection.length != 0)
+							{
+								var mostRecentDiastolicVitalSign:VitalSign = diastolicVitalSignsCollection.getItemAt(diastolicVitalSignsCollection.length -
+										1) as VitalSign;
+								mostRecentDiastolic = mostRecentDiastolicVitalSign.resultAsNumber;
+							}
+
+							for each (var healthActionSchedule:HealthActionSchedule in _healthActionScheduleCollection)
+							{
+								if (healthActionSchedule.name.text == BLOOD_PRESSURE_HEALTH_ACTION_SCHEDULE)
+								{
+									var dateWeekEnd:Date = _currentDateSource.now();
+									var dateWeekStart:Date = new Date(dateWeekEnd.time - NUMBER_OF_MILLISECONDS_IN_WEEK);
+
+									for each (var adherenceItem:AdherenceItem in healthActionSchedule.adherenceItems)
+									{ count= count +1;
+
+											var adherenceResults:Vector.<DocumentBase> = adherenceItem.adherenceResults;
+
+											if (adherenceResults.length != 0)
+											{
+												var systolic:Number;
+												var diastolic:Number;
+
+
+												for each (var adherenceResult:DocumentBase in adherenceResults)
+												{
+
+													var vitalSign:VitalSign = adherenceResult as VitalSign;
+													if (vitalSign)
+													{
+
+														if (vitalSign.name.text == VitalSignsModel.SYSTOLIC_CATEGORY)
+														{
+															systolic = vitalSign.resultAsNumber;
+															totalsystolic=totalsystolic+systolic;
+														}
+														else if (vitalSign.name.text == VitalSignsModel.DIASTOLIC_CATEGORY)
+														{
+															diastolic = vitalSign.resultAsNumber;
+															totaldiastolic = totaldiastolic+ diastolic;
+														}
+													}
+												}
+
+
+
+
+										}
+									}
+								}
+							}
+
+							averagesystolic= totalsystolic/count;
+							averagediastolic=totaldiastolic/count;
+				           if (averagediastolic>60 && averagediastolic<90 &&averagesystolic>90 && averagesystolic<140)
+								 {
+							   _messages3.addItem("aaaaaaaaa  diastolic "+averagediastolic+" systolic   "+averagesystolic+" " +
+									   "metrhths"+count+"");
+								 }
+
+							else{
+							   _messages3.addItem("oxiiiiiiiii diastolic"+averagediastolic+"    systolic"+averagesystolic+"metrhths"+count+"");
+						   }
+						}
 
 		public function get record():Record
 		{
@@ -324,6 +430,16 @@ package hw2013Hypertension.plugins.problems.hypertension.model
 		public function set rewardScore(value:int):void
 		{
 			_rewardScore = value;
+		}
+
+		public function get messages3():ArrayCollection
+		{
+			return _messages3;
+		}
+
+		public function set messages3(value:ArrayCollection):void
+		{
+			_messages3 = value;
 		}
 	}
 }
