@@ -50,9 +50,14 @@
 		}
 
 		]]></fx:Script>
-	<s:Label x="50" y="20"
+	<s:Label x="40" y="20"
 					 width="200" height="20"
 					 text="Blood Pressure Progress"
+					 styleName="titleHeader"
+					/>
+	<s:Label x="590" y="20"
+					 width="200" height="20"
+					 text="Reward Progress"
 					 styleName="titleHeader"
 					/>
 	<s:Label x="148" y="85"
@@ -126,11 +131,8 @@
 
 	<s:Group x="590" y="280" height="400">
 				<s:Panel  width="500" height="100%" title="BP Buddy Rewards">
-
+					<s:List dataProvider="{_messages2}" width="100%" height="100%"/>
 				</s:Panel>
-		<s:List
-				dataProvider="{_messages2}" />
-
 			</s:Group>
 
 	<s:List x="40" y="130"
@@ -150,19 +152,39 @@
 
 
 <s:Group x="590" y="40" height="40">
-		<s:Rect height="40" width="500">
+		<s:Rect height="40" width="420">
 			<s:fill>
-				<s:SolidColor color="black"/>
+				<s:SolidColor color="#C0C0C0"/>
 			</s:fill>
 		</s:Rect>
-		<s:Rect height="100%" width="{_model.percentBloodPressureAdherence * 5}">
+		<s:Rect height="100%" width="{_model.rewardScore}">
 
 			<s:fill>
-				<s:SolidColor color="green"/>
+				<s:SolidColor color="#151B54"/>
 			</s:fill>
 		</s:Rect>
 
 	</s:Group>
+	<s:Label x="685" y="90"
+      width="70" height="50"
+      text="25%"
+		fontSize="11"
+		fontWeight="bold"	/>
+	<s:Label x="790" y="90"
+      width="70" height="50"
+      text="50%"
+		fontSize="11"
+		fontWeight="bold"	/>
+	<s:Label x="895" y="90"
+      width="70" height="50"
+      text="75%"
+		fontSize="11"
+		fontWeight="bold"	/>
+	<s:Label x="1000" y="90"
+      width="70" height="50"
+      text="100%"
+		fontSize="11"
+		fontWeight="bold"	/>
 
 <!---	<s:RichText  x="590" y="120"
 						 width="500" height="40"

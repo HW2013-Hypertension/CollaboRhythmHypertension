@@ -216,6 +216,11 @@ package hw2013Hypertension.plugins.problems.hypertension.model
 						if (adherenceItem.adherence)
 						{
 							rewardScore += 100;
+							var beginningOfToday:Date = new Date(_currentDateSource.now().fullYear, _currentDateSource.now().month, _currentDateSource.now().date)
+							if (adherenceItem.dateReported.time > beginningOfToday.time)
+							{
+								messages2.addItem("Your earned 100 points because you took your medication today");
+							}
 						}
 					}
 				}
@@ -233,6 +238,7 @@ package hw2013Hypertension.plugins.problems.hypertension.model
 							if (adherenceItem.adherence)
 							{
 								rewardScore = rewardScore + 100;
+								messages2.addItem("Your earned 100 points because you took your blood pressure today");
 							}
 						}
 					}

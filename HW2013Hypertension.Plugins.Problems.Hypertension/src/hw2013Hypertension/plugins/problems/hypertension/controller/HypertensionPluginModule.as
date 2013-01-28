@@ -10,6 +10,8 @@ package hw2013Hypertension.plugins.problems.hypertension.controller
 	import collaboRhythm.shared.pluginsSupport.IPlugin;
 	import collaboRhythm.shared.ui.healthCharts.model.modifiers.IChartModifierFactory;
 
+	import hw2013Hypertension.plugins.problems.hypertension.controller.HypertensionChartsAppController;
+
 	import mx.modules.ModuleBase;
 
 	public class HypertensionPluginModule extends ModuleBase implements IPlugin
@@ -25,6 +27,11 @@ package hw2013Hypertension.plugins.problems.hypertension.controller
 			componentContainer.registerComponentInstance(ReflectionUtils.getClassInfo(HypertensionAppController).name,
 					AppControllerInfo,
 					new AppControllerInfo(HypertensionAppController));
+
+						// TODO: each plugin should register one or more of the following components; implement or delete the code below as appropriate; using the CollaboRhythm file templates in IntelliJ IDEA may make this easier
+			componentContainer.registerComponentInstance(ReflectionUtils.getClassInfo(HypertensionChartsAppController).name,
+					AppControllerInfo,
+					new AppControllerInfo(HypertensionChartsAppController));
 
 /*			componentContainer.registerComponentInstance(ReflectionUtils.getClassInfo(HypertensionHealthActionListViewAdapterFactory).name,
 					IHealthActionListViewAdapterFactory,
