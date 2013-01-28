@@ -113,10 +113,11 @@ package hw2013Hypertension.plugins.problems.hypertension.model
 
 					for each (var adherenceItem:AdherenceItem in healthActionSchedule.adherenceItems)
 					{
+							totalreadings = totalreadings + 1;
 						if (adherenceItem.dateReported.time > dateWeekStart.time &&
 								adherenceItem.dateReported.time < dateWeekEnd.time)
 						{
-							totalreadings = totalreadings + 1;
+
 							var adherenceResults:Vector.<DocumentBase> = adherenceItem.adherenceResults;
 
 							if (adherenceResults.length != 0)
@@ -166,8 +167,8 @@ package hw2013Hypertension.plugins.problems.hypertension.model
 			{
 				_messages.addItem("Having a high blood pressure, but not knowing about it, can be really" +
 						"\n" + "dangerous.This is why they call high blood pressure 'The Silent Killer'." +
-						"\n" + "To know how your blood pressure is doing make sure to take at least 3" +
-						"\n" + "readings per week!");
+						"\n" + "To know how your blood pressure is doing make sure to take at least"+
+						"\n" + "3 readings per week!");
 			}
 
 			else
@@ -181,11 +182,11 @@ package hw2013Hypertension.plugins.problems.hypertension.model
 				else
 				{
 					_messages.addItem("It is good that you are measuring your blood pressure on a regular basis" +
-							"\n" + "That is the first and foremost step towards a pressure free life." +
-							"\n" + "Continue to eat well, sleep well, exercise and adhere to your drug" +
-							"\n" + "regimen, and you should see your blood pressure drop accordingly. If" +
-							"\n" + "not, make sure to consult your local pharmacy, as different" +
-							"\n" + "treatmeant might be better suited to you");
+							"\n" + "That is the first and foremost step towards a pressure free life. Continue" +
+							"\n" + "to eat well, sleep well, exercise and adhere to your drug regimen, and" +
+							"\n" + "you should see your blood pressure drop accordingly. If not, make sure" +
+							"\n" + "to consult your local pharmacy, as different treatment might be better " +
+							"\n" + "suited to you." +"");
 				}
 			}
 			/*if (score > 0.75*28)
@@ -254,7 +255,8 @@ package hw2013Hypertension.plugins.problems.hypertension.model
 							if (adherenceItem.adherence)
 							{
 								rewardScore = rewardScore + 100;
-								_messages2.addItem("Your buddy earned 100 points because you took your blood pressure"+"/n"+currentDateSource.now()+"");
+								_messages2.addItem("Your buddy earned 100 points because you took your blood pressure"+
+										"/n"+currentDateSource.now()+"");
 							}
 						}
 					}
@@ -349,7 +351,7 @@ package hw2013Hypertension.plugins.problems.hypertension.model
 								 {
 									 _messages3.addItem("Congratulations your  average systolic this week was "+averagesystolic+" and your" +
 											 "\n"+"average diastolic was "+averagediastolic+". You are rewarded with a coupon for a free" +
-											 "\n"+" health check at the local pharmacy clinic.");
+											 "\n"+"health check at the local pharmacy clinic.");
 								 }
 
 

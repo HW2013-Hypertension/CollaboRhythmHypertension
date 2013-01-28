@@ -155,14 +155,14 @@
 			</s:Group>
 
 	<s:List x="40" y="150"
-				width="500" height="100"
+				width="500" height="110"
 				horizontalCenter="true"
 				borderVisible="true"
 				borderColor="black"
 				borderAlpha="0.5"
 				dataProvider="{_messages}" />
 	<s:List x="590" y="150"
-					width="500" height="100"
+					width="500" height="110"
 					horizontalCenter="true"
 					borderVisible="true"
 					borderColor="black"
