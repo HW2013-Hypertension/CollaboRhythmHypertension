@@ -5,6 +5,7 @@ package hw2013Hypertension.plugins.problems.hypertension.model
 	import collaboRhythm.shared.model.healthRecord.DocumentBase;
 	import collaboRhythm.shared.model.healthRecord.document.AdherenceItem;
 	import collaboRhythm.shared.model.healthRecord.document.HealthActionSchedule;
+	import collaboRhythm.shared.model.healthRecord.document.MedicationScheduleItem;
 	import collaboRhythm.shared.model.healthRecord.document.VitalSign;
 	import collaboRhythm.shared.model.healthRecord.document.VitalSignsModel;
 	import collaboRhythm.shared.model.services.ICurrentDateSource;
@@ -24,10 +25,14 @@ package hw2013Hypertension.plugins.problems.hypertension.model
 
 		private var _record:Record;
 		private var _healthActionScheduleCollection:ArrayCollection;
+		private var _medicationScheduleItemCollection:ArrayCollection;
 		private var _percentBloodPressureAdherence:int;
+		private var _rewardScore:int;
 		private var _messages:ArrayCollection = new ArrayCollection();
 		private var _messages1:ArrayCollection = new ArrayCollection();
 
+
+		private var _messages2:ArrayCollection = new ArrayCollection();
 		private var _currentDateSource:ICurrentDateSource;
 		private var _mostRecentSystolic:Number;
 		private var _mostRecentDiastolic:Number;
@@ -38,6 +43,8 @@ package hw2013Hypertension.plugins.problems.hypertension.model
 			super();
 
 			_record = activeRecordAccount.primaryRecord;
+			_medicationScheduleItemCollection = _record.medicationScheduleItemsModel.medicationScheduleItemCollection;
+
 
 			_currentDateSource = WorkstationKernel.instance.resolve(ICurrentDateSource) as ICurrentDateSource;
 
@@ -71,12 +78,14 @@ package hw2013Hypertension.plugins.problems.hypertension.model
 
 			if (systolicVitalSignsCollection && systolicVitalSignsCollection.length != 0)
 			{
-				var mostRecentSystolicVitalSign:VitalSign =  systolicVitalSignsCollection.getItemAt(systolicVitalSignsCollection.length - 1) as VitalSign;
+				var mostRecentSystolicVitalSign:VitalSign = systolicVitalSignsCollection.getItemAt(systolicVitalSignsCollection.length -
+						1) as VitalSign;
 				mostRecentSystolic = mostRecentSystolicVitalSign.resultAsNumber;
 			}
-			if (diastolicVitalSignsCollection && diastolicVitalSignsCollection.length !=0)
+			if (diastolicVitalSignsCollection && diastolicVitalSignsCollection.length != 0)
 			{
-				var mostRecentDiastolicVitalSign:VitalSign = diastolicVitalSignsCollection.getItemAt(diastolicVitalSignsCollection.length -1) as VitalSign;
+				var mostRecentDiastolicVitalSign:VitalSign = diastolicVitalSignsCollection.getItemAt(diastolicVitalSignsCollection.length -
+						1) as VitalSign;
 				mostRecentDiastolic = mostRecentDiastolicVitalSign.resultAsNumber;
 			}
 
@@ -92,7 +101,7 @@ package hw2013Hypertension.plugins.problems.hypertension.model
 						if (adherenceItem.dateReported.time > dateWeekStart.time &&
 								adherenceItem.dateReported.time < dateWeekEnd.time)
 						{
-							totalreadings= totalreadings +1;
+							totalreadings = totalreadings + 1;
 							var adherenceResults:Vector.<DocumentBase> = adherenceItem.adherenceResults;
 
 							if (adherenceResults.length != 0)
@@ -120,7 +129,7 @@ package hw2013Hypertension.plugins.problems.hypertension.model
 								if (systolic < 140 && diastolic < 90)
 								{
 									score = score + 2;
-									goodreadings= goodreadings +1;
+									goodreadings = goodreadings + 1;
 								}
 								else if (systolic < 140 || diastolic < 90)
 								{
@@ -132,49 +141,49 @@ package hw2013Hypertension.plugins.problems.hypertension.model
 					}
 				}
 			}
-			 totalscore= (goodreadings/totalreadings)*0.75 +0.25;
+			totalscore = (goodreadings / totalreadings) * 0.75 + 0.25;
 
 			if (totalreadings < 6)
 			{
-				_messages.addItem("Having a high blood pressure, but not knowing about it, can be really"+
-						      "\n"+"dangerous.This is why they call high blood pressure 'The Silent Killer'."+
-						      "\n"+"To know how your blood pressure is doing make sure to take at least 3"+
-						      "\n"+"readings per week!" );
+				_messages.addItem("Having a high blood pressure, but not knowing about it, can be really" +
+						"\n" + "dangerous.This is why they call high blood pressure 'The Silent Killer'." +
+						"\n" + "To know how your blood pressure is doing make sure to take at least 3" +
+						"\n" + "readings per week!");
 			}
 
 			else
 			{
 
-				 if(totalscore>= 65)
+				if (totalscore >= 65)
 				{
-					_messages.addItem("Great job, you are taking control of your blood pressure, and your"+
-									"\n"+"own health. Keep up the good work and enjoy a pressure free life.");
+					_messages.addItem("Great job, you are taking control of your blood pressure, and your" +
+							"\n" + "own health. Keep up the good work and enjoy a pressure free life.");
 				}
 				else
 				{
-					_messages.addItem("It is good that you are measuring your blood pressure on a regular basis"+
-									  "\n"+"That is the first and foremost step towards a pressure free life." +
-									  "\n"+"Continue to eat well, sleep well, exercise and adhere to your drug" +
-									  "\n"+"regimen, and you should see your blood pressure drop accordingly. If"+
-									  "\n"+"not, make sure to consult your local pharmacy, as different"+
-									  "\n"+"treatmeant might be better suited to you" );
+					_messages.addItem("It is good that you are measuring your blood pressure on a regular basis" +
+							"\n" + "That is the first and foremost step towards a pressure free life." +
+							"\n" + "Continue to eat well, sleep well, exercise and adhere to your drug" +
+							"\n" + "regimen, and you should see your blood pressure drop accordingly. If" +
+							"\n" + "not, make sure to consult your local pharmacy, as different" +
+							"\n" + "treatmeant might be better suited to you");
 				}
 			}
 			/*if (score > 0.75*28)
-			{
-				_messages.addItem("Congratulations, your score was " + score.toString()+
-						           "\n"+"you have your blood pressure well under control");
-			}
-			else if(0.50*28<score<=0.75*28)
-			{
-				_messages.addItem("It is difficult to tell whether your blood pressure is under control," +
-							       "\n"+"remember to take at least 3 measurements per week");
-			}
-			else
-			{
-				_messages.addItem("Your blood pressure levels are higher than they should be. Remember to exercise, " +
-						 "\n"+"eat well, sleep well and adhere to your regiman ")
-			}*/
+			 {
+			 _messages.addItem("Congratulations, your score was " + score.toString()+
+			 "\n"+"you have your blood pressure well under control");
+			 }
+			 else if(0.50*28<score<=0.75*28)
+			 {
+			 _messages.addItem("It is difficult to tell whether your blood pressure is under control," +
+			 "\n"+"remember to take at least 3 measurements per week");
+			 }
+			 else
+			 {
+			 _messages.addItem("Your blood pressure levels are higher than they should be. Remember to exercise, " +
+			 "\n"+"eat well, sleep well and adhere to your regiman ")
+			 }*/
 
 		}
 
@@ -190,25 +199,45 @@ package hw2013Hypertension.plugins.problems.hypertension.model
 		private function calculatePercentAdherence():void
 		{
 			var adherenceCount:int = 0;
+			rewardScore = 0;
+
+			var dateWeekEnd:Date = _currentDateSource.now();
+			var dateWeekStart:Date = new Date(dateWeekEnd.time - NUMBER_OF_MILLISECONDS_IN_WEEK);
+
+			for each (var medicationScheduleItem:MedicationScheduleItem in _medicationScheduleItemCollection)
+			{
+				for each (var adherenceItem:AdherenceItem in medicationScheduleItem.adherenceItems)
+				{
+					if (adherenceItem.dateReported.time > dateWeekStart.time &&
+							adherenceItem.dateReported.time < dateWeekEnd.time)
+					{
+						if (adherenceItem.adherence)
+						{
+							rewardScore += 100;
+						}
+					}
+				}
+			}
 
 			for each (var healthActionSchedule:HealthActionSchedule in _healthActionScheduleCollection)
 			{
 				if (healthActionSchedule.name.text == BLOOD_PRESSURE_HEALTH_ACTION_SCHEDULE)
 				{
-					var dateWeekEnd:Date = _currentDateSource.now();
-					var dateWeekStart:Date = new Date(dateWeekEnd.time - NUMBER_OF_MILLISECONDS_IN_WEEK);
-
 					for each (var adherenceItem:AdherenceItem in healthActionSchedule.adherenceItems)
 					{
 						if (adherenceItem.dateReported.time > dateWeekStart.time &&
 								adherenceItem.dateReported.time < dateWeekEnd.time)
 						{
-							adherenceCount++;
+							if (adherenceItem.adherence)
+							{
+								rewardScore = rewardScore + 100;
+							}
 						}
 					}
 				}
-			}_messages1.addItem("Every time you take positive actions towards controlling your blood" +
-								"\n"+"pressure, your buddy gets rewarded!");
+			}
+			_messages1.addItem("Every time you take positive actions towards controlling your blood" +
+					"\n" + "pressure, your buddy gets rewarded!");
 
 			percentBloodPressureAdherence = adherenceCount / 7 * 100;
 		}
@@ -267,6 +296,26 @@ package hw2013Hypertension.plugins.problems.hypertension.model
 		public function set mostRecentDiastolic(value:Number):void
 		{
 			_mostRecentDiastolic = value;
+		}
+
+		public function get messages2():ArrayCollection
+		{
+			return _messages2;
+		}
+
+		public function set messages2(value:ArrayCollection):void
+		{
+			_messages2 = value;
+		}
+
+		public function get rewardScore():int
+		{
+			return _rewardScore;
+		}
+
+		public function set rewardScore(value:int):void
+		{
+			_rewardScore = value;
 		}
 	}
 }
