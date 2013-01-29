@@ -37,6 +37,7 @@
 		private var _messages1:ArrayCollection;
 		private var _messages2:ArrayCollection;
 		private var _messages3:ArrayCollection;
+		private const REWARD_SCORE_BAR:Number = 420;
 
 
 
@@ -61,8 +62,8 @@
 					 fontSize="20"
 					/>
 	<s:Label x="590" y="20"
-					 width="200" height="20"
-					 text="Reward Progress"
+					 width="300" height="20"
+					 text="Buddy Reward Progress"
 					 styleName="titleHeader"
 					 fontWeight="bold"
 					 fontSize="20"
@@ -171,12 +172,12 @@
 
 
 <s:Group x="590" y="70" height="40">
-		<s:Rect height="40" width="420">
+		<s:Rect height="40" width="{REWARD_SCORE_BAR}">
 			<s:fill>
 				<s:SolidColor color="#C0C0C0"/>
 			</s:fill>
 		</s:Rect>
-		<s:Rect height="100%" width="{_model.rewardScore}">
+		<s:Rect height="100%" width="{(_model.rewardScore / _model.perfectScore) * REWARD_SCORE_BAR}">
 
 			<s:fill>
 				<s:SolidColor color="#151B54"/>
