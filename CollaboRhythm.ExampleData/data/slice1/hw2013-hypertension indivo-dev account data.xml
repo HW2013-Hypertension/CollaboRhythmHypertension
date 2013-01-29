@@ -1,0 +1,456 @@
+<?xml version="1.0" encoding="utf-8"?>
+<dataroot>
+  
+  <indivoServerBaseURL>http://indivo-dev.media.mit.edu:9291</indivoServerBaseURL>
+  
+  <AccountSource>
+    
+    <accountId>example-clinician@records.media.mit.edu</accountId>
+    
+    <contactEmail>not_used@localhost.com</contactEmail>
+    
+    <fullName>Example Clinician</fullName>
+    
+    <username>example-clinician</username>
+    
+    <password>example-clinician</password>
+    
+    <givenName>Example</givenName>
+    
+    <familyName>Clinician</familyName>
+    
+    <streetAddress>1066 Spinel Rd</streetAddress>
+    
+    <postalCode>2142</postalCode>
+    
+    <locality>Cambridge</locality>
+    
+    <region>Massachusetts</region>
+    
+    <country>US</country>
+    
+    <timeZone>-5GMT</timeZone>
+    
+    <emailPersonal>example-clinician@records.media.mit.edu</emailPersonal>
+    
+    <phoneNumberHome>1-555-555-6548</phoneNumberHome>
+    
+    <phoneNumberWork>1-555-555-8654</phoneNumberWork>
+    
+    <instantMessengerName>example-clinician@records.media.mit.edu</instantMessengerName>
+    
+    <dateOfBirth>1957-03-29T00:00:00Z</dateOfBirth>
+    
+    <age>53</age>
+    
+    <gender>Male</gender>
+    
+    <ethnicity>White</ethnicity>
+    
+    <language>English</language>
+    
+    <maritalStatus>Married</maritalStatus>
+    
+    <employmentStatus>Employed</employmentStatus>
+    
+    <employmentIndustry>Medical</employmentIndustry>
+    
+    <occupation>Doctor</occupation>
+    
+    <religion>Protestant</religion>
+    
+    <highestEducation>University</highestEducation>
+    
+    <organDonar>true</organDonar>
+    
+    <recordId/>
+    
+    <status/>
+    
+    <accessKey/>
+    
+    <accessSecret/>
+    
+    <demographicsId/>
+    
+    <notes>Use "Account -&gt; Duplicate Account Source" to make your own account based on this one</notes>
+    
+    <recordSeed/>
+    
+    <mode>clinician</mode>
+    
+  </AccountSource>
+  
+  <AccountSource>
+    
+    <accountId>example-patient@records.media.mit.edu</accountId>
+    
+    <contactEmail>not_used@localhost.com</contactEmail>
+    
+    <fullName>Example Patient</fullName>
+    
+    <username>example-patient</username>
+    
+    <password>example-patient</password>
+    
+    <givenName>Example</givenName>
+    
+    <familyName>Patient</familyName>
+    
+    <streetAddress>84 Spruce Street</streetAddress>
+    
+    <postalCode>2215</postalCode>
+    
+    <locality>Boston</locality>
+    
+    <region>Massachusetts</region>
+    
+    <country>US</country>
+    
+    <timeZone>-5GMT</timeZone>
+    
+    <emailPersonal>example-patient@records.media.mit.edu</emailPersonal>
+    
+    <phoneNumberHome>1-555-555-6548</phoneNumberHome>
+    
+    <phoneNumberWork>1-555-555-8654</phoneNumberWork>
+    
+    <instantMessengerName>example-patient@records.media.mit.edu</instantMessengerName>
+    
+    <dateOfBirth>1940-02-24T00:00:00Z</dateOfBirth>
+    
+    <age>70</age>
+    
+    <gender>Female</gender>
+    
+    <ethnicity>White</ethnicity>
+    
+    <language>English</language>
+    
+    <maritalStatus>Widowed</maritalStatus>
+    
+    <employmentStatus>Retired</employmentStatus>
+    
+    <employmentIndustry>Education</employmentIndustry>
+    
+    <occupation>Teacher</occupation>
+    
+    <religion>Protestant</religion>
+    
+    <highestEducation>University</highestEducation>
+    
+    <organDonar>true</organDonar>
+    
+    <recordId/>
+    
+    <accessKey/>
+    
+    <accessSecret/>
+    
+    <status/>
+    
+    <demographicsId>18124489-3b91-45bd-90a9-375a520eca26</demographicsId>
+    
+    <recordSeed/>
+    
+    <shareAccountId>example-clinician@records.media.mit.edu</shareAccountId>
+    
+    <notes>Use "Account -&gt; Duplicate Account Source" to make your own account based on this one</notes>
+    
+    <shareRole>Coach</shareRole>
+    
+    <documentsDirectory>mbrooks</documentsDirectory>
+    
+    <mode>patient</mode>
+    
+  </AccountSource>
+  
+  <AccountSource>
+    
+    <accountId>hypertension-jking@records.media.mit.edu</accountId>
+    
+    <contactEmail>not_used@localhost.com</contactEmail>
+    
+    <fullName>James King</fullName>
+    
+    <username>hypertension-jking</username>
+    
+    <password>example-clinician</password>
+    
+    <givenName>James</givenName>
+    
+    <familyName>King</familyName>
+    
+    <streetAddress>1066 Spinel Rd</streetAddress>
+    
+    <postalCode>2142</postalCode>
+    
+    <locality>Cambridge</locality>
+    
+    <region>Massachusetts</region>
+    
+    <country>US</country>
+    
+    <timeZone>-5GMT</timeZone>
+    
+    <emailPersonal>example-clinician@records.media.mit.edu</emailPersonal>
+    
+    <phoneNumberHome>1-555-555-6548</phoneNumberHome>
+    
+    <phoneNumberWork>1-555-555-8654</phoneNumberWork>
+    
+    <instantMessengerName>example-clinician@records.media.mit.edu</instantMessengerName>
+    
+    <dateOfBirth>1957-03-29T00:00:00Z</dateOfBirth>
+    
+    <age>53</age>
+    
+    <gender>Male</gender>
+    
+    <ethnicity>White</ethnicity>
+    
+    <language>English</language>
+    
+    <maritalStatus>Married</maritalStatus>
+    
+    <employmentStatus>Employed</employmentStatus>
+    
+    <employmentIndustry>Medical</employmentIndustry>
+    
+    <occupation>Doctor</occupation>
+    
+    <religion>Protestant</religion>
+    
+    <highestEducation>University</highestEducation>
+    
+    <organDonar>true</organDonar>
+    
+    <recordId/>
+    
+    <status>Password set. Creating record Failed on PUT http://indivo-dev.media.mit.edu:9291/records/external/indivoAccountCreator@apps.indivo.org/hypertension-jking-primary- Response: &lt;Error&gt;
+						&lt;InnerError&gt;
+							&lt;type&gt;complete&lt;/type&gt;
+						&lt;/InnerError&gt;
+					&lt;HTTPStatusEvent&gt;
+							&lt;status&gt;403&lt;/status&gt;
+							&lt;data&gt;&amp;lt;!doctype html public "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"&amp;gt;
+&amp;lt;html&amp;gt;
+&amp;lt;head&amp;gt;
+&amp;lt;title&amp;gt;Access Denied&amp;lt;/title&amp;gt;
+&amp;lt;meta http-equiv="pragma" content="no-cache"&amp;gt;&amp;lt;meta http-equiv="expires" content="0"&amp;gt;
+&amp;lt;meta http-equiv="content-type" content="text/html; charset=iso-8859-1"&amp;gt;
+&amp;lt;meta name="author" content="Marc Homden"&amp;gt;
+&amp;lt;meta name="description" content="BT/Novartis Policy Denied"&amp;gt;
+&amp;lt;/head&amp;gt;
+&amp;lt;body style="background: #ffffff; font:14px arial, helvetica, sans-serif; color: #F79646;"&amp;gt;
+&amp;lt;center&amp;gt;
+	&amp;lt;table border=0 cellpadding=1 width="100%"&amp;gt;
+		&amp;lt;tr&amp;gt;
+			&amp;lt;td colspan=2 align="center"&amp;gt;&amp;lt;font size=5&amp;gt;&amp;lt;b&amp;gt;Access Denied by Novartis Policy&amp;lt;/b&amp;gt;&amp;lt;br&amp;gt;&amp;lt;br&amp;gt;&amp;lt;/font&amp;gt;&amp;lt;/td&amp;gt;
+		&amp;lt;/tr&amp;gt;
+		&amp;lt;tr&amp;gt;
+			&amp;lt;td colspan=2 align="center"&amp;gt;&amp;lt;b&amp;gt;Access to the url:&amp;lt;font color=#00000&amp;gt;http://indivo-dev.media.mit.edu:9291/records/external/indivoAccountCreator@apps.indivo.org/hypertension-jking-primary-&amp;lt;/font&amp;gt;&amp;lt;br&amp;gt;Has been barred under company policy on usage of the internet, or to prevent excessive demand conflicting with core business activities.&amp;lt;p&amp;gt;&amp;lt;/b&amp;gt;&amp;lt;/td&amp;gt;
+		&amp;lt;/tr&amp;gt;
+		&amp;lt;tr&amp;gt;
+			&amp;lt;td colspan=2 align="center"&amp;gt;&amp;lt;b&amp;gt;Your IP address: &amp;lt;font color=#00000&amp;gt;&amp;lt;b&amp;gt;86.117.167.238&amp;lt;/b&amp;gt;&amp;lt;/font&amp;gt;&amp;lt;br&amp;gt;Novartis proxy serving this error: &amp;lt;font color=#00000&amp;gt;&amp;lt;b&amp;gt;nvs-sgdc-sis-px01&amp;lt;p&amp;gt;&amp;lt;/b&amp;gt;&amp;lt;/font&amp;gt;&amp;lt;/td&amp;gt;
+		&amp;lt;/tr&amp;gt;
+		&amp;lt;tr&amp;gt;
+			&amp;lt;td colspan=2 align="center"&amp;gt;&amp;lt;b&amp;gt;If you have a &amp;lt;i&amp;gt;&amp;lt;b&amp;gt;business justification&amp;lt;/b&amp;gt;&amp;lt;/i&amp;gt; to access this URL contact your &amp;lt;a target=new href='http://www.itsd.novartis.intra/en/our-contacts.shtml'&amp;gt;IT service Desk&amp;lt;/a&amp;gt;&amp;lt;p&amp;gt;Click &amp;lt;a href='mailto:?subject=Policy Blocked Web Page Access Request&amp;amp;body=PLEASE INCLUDE THIS TEXT IN YOUR MAIL - Barred web page http://indivo-dev.media.mit.edu:9291/records/external/indivoAccountCreator@apps.indivo.org/hypertension-jking-primary-, IP address: 86.117.167.238, Proxy Server: nvs-sgdc-sis-px01'&amp;gt;Here&amp;lt;/a&amp;gt; for an email template&amp;lt;/b&amp;gt;&amp;lt;/td&amp;gt;
+		&amp;lt;/tr&amp;gt;
+	&amp;lt;/table&amp;gt;
+&amp;lt;/font&amp;gt;
+&amp;lt;/center&amp;gt;
+&amp;lt;/body&amp;gt;
+&amp;lt;/html&amp;gt;&lt;/data&gt;
+						&lt;/HTTPStatusEvent&gt;&lt;/Error&gt;</status>
+    
+    <accessKey/>
+    
+    <accessSecret/>
+    
+    <demographicsId>d2673854-68e3-4d81-baff-7f0e756bf8e5</demographicsId>
+    
+    <notes/>
+    
+    <recordSeed/>
+    
+    <mode>clinician</mode>
+    
+  </AccountSource>
+  
+  <AccountSource>
+    
+    <accountId>groberts@records.media.mit.edu</accountId>
+    
+    <contactEmail>not_used@localhost.com</contactEmail>
+    
+    <fullName>George Roberts</fullName>
+    
+    <username>groberts</username>
+    
+    <password>example-patient</password>
+    
+    <givenName>George</givenName>
+    
+    <familyName>Roberts</familyName>
+    
+    <streetAddress>84 Spruce Street</streetAddress>
+    
+    <postalCode>2215</postalCode>
+    
+    <locality>Boston</locality>
+    
+    <region>Massachusetts</region>
+    
+    <country>US</country>
+    
+    <timeZone>-5GMT</timeZone>
+    
+    <emailPersonal>example-patient@records.media.mit.edu</emailPersonal>
+    
+    <phoneNumberHome>1-555-555-6548</phoneNumberHome>
+    
+    <phoneNumberWork>1-555-555-8654</phoneNumberWork>
+    
+    <instantMessengerName>example-patient@records.media.mit.edu</instantMessengerName>
+    
+    <dateOfBirth>1940-02-24T00:00:00Z</dateOfBirth>
+    
+    <age>70</age>
+    
+    <gender>Male</gender>
+    
+    <ethnicity>White</ethnicity>
+    
+    <language>English</language>
+    
+    <maritalStatus>Widowed</maritalStatus>
+    
+    <employmentStatus>Retired</employmentStatus>
+    
+    <employmentIndustry>Education</employmentIndustry>
+    
+    <occupation>Teacher</occupation>
+    
+    <religion>Protestant</religion>
+    
+    <highestEducation>University</highestEducation>
+    
+    <organDonar>true</organDonar>
+    
+    <recordId/>
+    
+    <accessKey/>
+    
+    <accessSecret/>
+    
+    <status>Creating account. Failed on POST http://indivo-dev.media.mit.edu:9291/accounts/ Response: &lt;Error&gt;
+						&lt;InnerError&gt;
+							&lt;type&gt;complete&lt;/type&gt;
+						&lt;/InnerError&gt;
+					&lt;HTTPStatusEvent&gt;
+							&lt;status&gt;400&lt;/status&gt;
+							&lt;data&gt;Contact email not valid&lt;/data&gt;
+						&lt;/HTTPStatusEvent&gt;&lt;/Error&gt;</status>
+    
+    <demographicsId>9477cc49-5e71-4d9d-9416-ed739cb6b909</demographicsId>
+    
+    <recordSeed/>
+    
+    <shareAccountId>hypertension-jking@records.media.mit.edu</shareAccountId>
+    
+    <notes/>
+    
+    <shareRole>Coach</shareRole>
+    
+    <documentsDirectory/>
+    
+    <mode>patient</mode>
+    
+  </AccountSource>
+  
+  <AccountSource>
+    
+    <accountId>gsmith@records.media.mit.edu</accountId>
+    
+    <contactEmail>not_used@localhost.com</contactEmail>
+    
+    <fullName>Gertrude Smith</fullName>
+    
+    <username>gsmith</username>
+    
+    <password>example-patient</password>
+    
+    <givenName>Gertrude</givenName>
+    
+    <familyName>Smith</familyName>
+    
+    <streetAddress>84 Spruce Street</streetAddress>
+    
+    <postalCode>2215</postalCode>
+    
+    <locality>Boston</locality>
+    
+    <region>Massachusetts</region>
+    
+    <country>US</country>
+    
+    <timeZone>-5GMT</timeZone>
+    
+    <emailPersonal>example-patient@records.media.mit.edu</emailPersonal>
+    
+    <phoneNumberHome>1-555-555-6548</phoneNumberHome>
+    
+    <phoneNumberWork>1-555-555-8654</phoneNumberWork>
+    
+    <instantMessengerName>example-patient@records.media.mit.edu</instantMessengerName>
+    
+    <dateOfBirth>1940-02-24T00:00:00Z</dateOfBirth>
+    
+    <age>63</age>
+    
+    <gender>Female</gender>
+    
+    <ethnicity>White</ethnicity>
+    
+    <language>English</language>
+    
+    <maritalStatus>Widowed</maritalStatus>
+    
+    <employmentStatus>Retired</employmentStatus>
+    
+    <employmentIndustry>Education</employmentIndustry>
+    
+    <occupation>Teacher</occupation>
+    
+    <religion>Protestant</religion>
+    
+    <highestEducation>University</highestEducation>
+    
+    <organDonar>true</organDonar>
+    
+    <recordId/>
+    
+    <accessKey/>
+    
+    <accessSecret/>
+    
+    <status/>
+    
+    <demographicsId>f6b129c0-2959-4489-8f50-37db5cd08499</demographicsId>
+    
+    <recordSeed/>
+    
+    <shareAccountId>hypertension-jking@records.media.mit.edu</shareAccountId>
+    
+    <notes/>
+    
+    <shareRole>Coach</shareRole>
+    
+    <documentsDirectory/>
+    
+    <mode>patient</mode>
+    
+  </AccountSource>
+  
+</dataroot>
