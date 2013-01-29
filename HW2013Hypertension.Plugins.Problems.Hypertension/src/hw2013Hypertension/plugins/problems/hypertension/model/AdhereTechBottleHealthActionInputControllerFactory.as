@@ -17,7 +17,7 @@ package hw2013Hypertension.plugins.problems.hypertension.model
 
 	public class AdhereTechBottleHealthActionInputControllerFactory implements IHealthActionInputControllerFactory
 	{
-		private static const EQUIPMENT_NAME:String = "AdhereTechBottle";
+		private static const EQUIPMENT_NAME:String = "AdhereTech";
 
 		public function AdhereTechBottleHealthActionInputControllerFactory()
 		{
@@ -37,7 +37,7 @@ package hw2013Hypertension.plugins.problems.hypertension.model
 				if (medicationHealthAction)
 				{
 					return new AdhereTechBottleHealthActionInputController(scheduleItemOccurrence,
-							healthActionModelDetailsProvider, viewNavigator);
+							healthActionModelDetailsProvider, scheduleCollectionsProvider, viewNavigator);
 				}
 			}
 			return currentHealthActionInputController;
@@ -56,7 +56,7 @@ package hw2013Hypertension.plugins.problems.hypertension.model
 				scheduleItemOccurrence = scheduleCollectionsProvider.findClosestScheduleItemOccurrence(EQUIPMENT_NAME,
 						urlVariables.dateMeasuredStart);
 				return new AdhereTechBottleHealthActionInputController(scheduleItemOccurrence,
-						healthActionModelDetailsProvider, viewNavigator);
+						healthActionModelDetailsProvider, scheduleCollectionsProvider, viewNavigator);
 			}
 			else
 			{

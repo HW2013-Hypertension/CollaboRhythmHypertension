@@ -3,9 +3,13 @@ package hw2013Hypertension.plugins.problems.hypertension.controller
 	import collaboRhythm.plugins.schedule.shared.controller.HealthActionInputControllerBase;
 	import collaboRhythm.plugins.schedule.shared.model.IHealthActionInputController;
 	import collaboRhythm.plugins.schedule.shared.model.IHealthActionModelDetailsProvider;
+	import collaboRhythm.plugins.schedule.shared.model.IScheduleCollectionsProvider;
 	import collaboRhythm.shared.model.healthRecord.document.ScheduleItemOccurrence;
+
 	import flash.events.MouseEvent;
 	import flash.net.URLVariables;
+
+	import hw2013Hypertension.plugins.problems.hypertension.model.AdhereTechBottleHealthActionInputModel;
 	import hw2013Hypertension.plugins.problems.hypertension.view.HypertensionView;
 
 	import spark.components.ViewNavigator;
@@ -14,14 +18,15 @@ package hw2013Hypertension.plugins.problems.hypertension.controller
 	{
 		private const HEALTH_ACTION_INPUT_VIEW_CLASS:Class = HypertensionView;
 
-		//private var _dataInputModel:AdhereTechBottleHealthActionInputModel;
+		private var _dataInputModel:AdhereTechBottleHealthActionInputModel;
 
 		public function AdhereTechBottleHealthActionInputController(scheduleItemOccurrence:ScheduleItemOccurrence,
-																 healthActionModelDetailsProvider:IHealthActionModelDetailsProvider,
-																 viewNavigator:ViewNavigator)
+																	healthActionModelDetailsProvider:IHealthActionModelDetailsProvider,
+																	scheduleCollectionsProvider:IScheduleCollectionsProvider,
+																	viewNavigator:ViewNavigator)
 		{
-		//	_dataInputModel = new AdhereTechBottleHealthActionInputModel(scheduleItemOccurrence,
-		//			healthActionModelDetailsProvider);
+			_dataInputModel = new AdhereTechBottleHealthActionInputModel(scheduleItemOccurrence,
+					healthActionModelDetailsProvider, scheduleCollectionsProvider);
 		}
 
 		public function handleHealthActionResult(initiatedLocally:Boolean):void
@@ -35,7 +40,7 @@ package hw2013Hypertension.plugins.problems.hypertension.controller
 
 		public function handleUrlVariables(urlVariables:URLVariables):void
 		{
-		//	_dataInputModel.urlVariables = urlVariables;
+			_dataInputModel.handleUrlVariable(urlVariables);
 		}
 
 		public function get healthActionInputViewClass():Class
