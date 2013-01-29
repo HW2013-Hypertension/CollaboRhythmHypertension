@@ -225,7 +225,7 @@
     
     <organDonar>true</organDonar>
     
-    <recordId/>
+    <recordId>526f4422-f8d9-4c12-9101-59e6fe6c46ff</recordId>
     
     <status>Password set. Creating record Failed on PUT http://indivo-dev.media.mit.edu:9291/records/external/indivoAccountCreator@apps.indivo.org/hypertension-jking-primary- Response: &lt;Error&gt;
 						&lt;InnerError&gt;
@@ -338,20 +338,13 @@
     
     <organDonar>true</organDonar>
     
-    <recordId/>
+    <recordId>25f487b2-6725-4f57-852f-3da2a6c16deb</recordId>
     
-    <accessKey/>
+    <accessKey>TuTnYDBxG0dBnq3MQ9oo</accessKey>
     
-    <accessSecret/>
+    <accessSecret>g2hnf8MngwbAWM1eOBFJ</accessSecret>
     
-    <status>Creating account. Failed on POST http://indivo-dev.media.mit.edu:9291/accounts/ Response: &lt;Error&gt;
-						&lt;InnerError&gt;
-							&lt;type&gt;complete&lt;/type&gt;
-						&lt;/InnerError&gt;
-					&lt;HTTPStatusEvent&gt;
-							&lt;status&gt;400&lt;/status&gt;
-							&lt;data&gt;Contact email not valid&lt;/data&gt;
-						&lt;/HTTPStatusEvent&gt;&lt;/Error&gt;</status>
+    <status>Created 124/124 documents, 121/122 relationships</status>
     
     <demographicsId>9477cc49-5e71-4d9d-9416-ed739cb6b909</demographicsId>
     
@@ -429,7 +422,91 @@
     
     <organDonar>true</organDonar>
     
-    <recordId/>
+    <recordId>3b20b7e4-aba3-4284-abe3-a5695023edde</recordId>
+    
+    <accessKey>UaU08EJo53fJCRy10uJj</accessKey>
+    
+    <accessSecret>iv1BOdBCYTytpNsoTXFf</accessSecret>
+    
+    <status>Created 86/86 documents, 83/84 relationships</status>
+    
+    <demographicsId>f6b129c0-2959-4489-8f50-37db5cd08499</demographicsId>
+    
+    <recordSeed/>
+    
+    <shareAccountId>hypertension-jking@records.media.mit.edu</shareAccountId>
+    
+    <notes/>
+    
+    <shareRole>Coach</shareRole>
+    
+    <documentsDirectory/>
+    
+    <mode>patient</mode>
+    
+  </AccountSource>
+  
+<AccountSource>
+    
+    <accountId>hw2013-hypertension-test1@records.media.mit.edu</accountId>
+    
+    <contactEmail>not_used@localhost.com</contactEmail>
+    
+    <fullName>Gertrude Smith</fullName>
+    
+    <username>hw2013-hypertension-test1</username>
+    
+    <password>hw2013-hypertension-test1</password>
+    
+    <givenName>Test1</givenName>
+    
+    <familyName>Roberts</familyName>
+    
+    <streetAddress>84 Spruce Street</streetAddress>
+    
+    <postalCode>2215</postalCode>
+    
+    <locality>Boston</locality>
+    
+    <region>Massachusetts</region>
+    
+    <country>US</country>
+    
+    <timeZone>-5GMT</timeZone>
+    
+    <emailPersonal>example-patient@records.media.mit.edu</emailPersonal>
+    
+    <phoneNumberHome>1-555-555-6548</phoneNumberHome>
+    
+    <phoneNumberWork>1-555-555-8654</phoneNumberWork>
+    
+    <instantMessengerName>example-patient@records.media.mit.edu</instantMessengerName>
+    
+    <dateOfBirth>1940-02-24T00:00:00Z</dateOfBirth>
+    
+    <age>63</age>
+    
+    <gender>Female</gender>
+    
+    <ethnicity>White</ethnicity>
+    
+    <language>English</language>
+    
+    <maritalStatus>Widowed</maritalStatus>
+    
+    <employmentStatus>Retired</employmentStatus>
+    
+    <employmentIndustry>Education</employmentIndustry>
+    
+    <occupation>Teacher</occupation>
+    
+    <religion>Protestant</religion>
+    
+    <highestEducation>University</highestEducation>
+    
+    <organDonar>true</organDonar>
+    
+    <recordId>0c1af6af-4d16-41c5-90fa-ef2a0b11f857</recordId>
     
     <accessKey/>
     
@@ -451,6 +528,4 @@
     
     <mode>patient</mode>
     
-  </AccountSource>
-  
-</dataroot>
+  </AccountSource></dataroot>
