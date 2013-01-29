@@ -39,6 +39,7 @@ package collaboRhythm.shared.model
 	import collaboRhythm.shared.model.healthRecord.document.MedicationScheduleItemsModel;
 	import collaboRhythm.shared.model.healthRecord.document.ProblemsModel;
 	import collaboRhythm.shared.model.healthRecord.document.VitalSignsModel;
+	import collaboRhythm.shared.model.healthRecord.document.WellnessModel;
 
 	import j2as3.collection.HashMap;
 
@@ -77,6 +78,7 @@ package collaboRhythm.shared.model
 		private var _healthActionPlansModel:HealthActionPlansModel;
 		private var _healthActionResultsModel:HealthActionResultsModel;
 		private var _healthActionOccurrencesModel:HealthActionOccurrencesModel;
+		private var _wellnessModel:WellnessModel;
 		private var _newRelationships:ArrayCollection = new ArrayCollection(); // of Relationship instances that have not been persisted
 
 		// TODO: move HealthChartsModel to blood pressure plugin; eliminate healthChartsModel property and field; use appData instead
@@ -113,6 +115,7 @@ package collaboRhythm.shared.model
 			healthActionSchedulesModel = new HealthActionSchedulesModel();
 			adherenceItemsModel = new AdherenceItemsModel();
 			vitalSignsModel = new VitalSignsModel();
+			wellnessModel = new WellnessModel();
 			healthActionPlansModel = new HealthActionPlansModel();
 			healthActionResultsModel = new HealthActionResultsModel();
 			healthActionOccurrencesModel = new HealthActionOccurrencesModel();
@@ -130,6 +133,7 @@ package collaboRhythm.shared.model
 			addDocumentCollection(healthActionPlansModel);
 			addDocumentCollection(healthActionResultsModel);
 			addDocumentCollection(healthActionOccurrencesModel);
+			addDocumentCollection(wellnessModel);
 		}
 
 		protected function addDocumentCollection(documentCollection:IDocumentCollection):void
@@ -219,6 +223,16 @@ package collaboRhythm.shared.model
 		public function set adherenceItemsModel(value:AdherenceItemsModel):void
 		{
 			_adherenceItemsModel = value;
+			addDocumentCollection(value);
+		}
+		public function get wellnessModel():WellnessModel
+		{
+			return _wellnessModel;
+		}
+
+		public function set wellnessModel(value:WellnessModel):void
+		{
+			_wellnessModel = value;
 			addDocumentCollection(value);
 		}
 

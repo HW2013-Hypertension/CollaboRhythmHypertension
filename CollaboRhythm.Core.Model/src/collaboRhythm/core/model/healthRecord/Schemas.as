@@ -57,6 +57,9 @@ package collaboRhythm.core.model.healthRecord
 		[Embed("/assets/healthRecord/schemas/data/core/demographics/schema.xsd", mimeType="application/octet-stream")]
 		public static const DemographicsSchema:Class;
 
+		[Embed("/assets/healthRecord/schemas/data/contrib/Wellness/schema.xsd", mimeType="application/octet-stream")]
+		public static const WellnessSchema:Class;
+
 		public function Schemas()
 		{
 		}

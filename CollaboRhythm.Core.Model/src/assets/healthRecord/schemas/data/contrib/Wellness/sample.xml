@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Wellness xmlns="http://indivo.org/vocab/xml/documents#">
+	<measurementDate>2013-01-14T00:00:00-04:00</measurementDate>
+	<reportedBy>surya.narayana@novartis.com</reportedBy>
+	<dateReported>2013-01-14T00:00:00-04:00</dateReported>
+	<numberOfStepsTaken>1000</numberOfStepsTaken>
+	<numberOfHoursSlept>7.56</numberOfHoursSlept>
+	<numberOfTimesAwakened>10</numberOfTimesAwakened>
+</Wellness>
