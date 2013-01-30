@@ -39,9 +39,13 @@ package hw2013Hypertension.plugins.problems.hypertension.controller
 					IHealthActionInputControllerFactory,
 					new AdhereTechBottleHealthActionInputControllerFactory());
 
-			componentContainer.registerComponentInstance(ReflectionUtils.getClassInfo(HypertensionChartModifierFactory).name,
+			componentContainer.registerComponentInstance(ReflectionUtils.getClassInfo(HypertensionBloodPressureChartModifierFactory).name,
 					IChartModifierFactory,
-					new HypertensionChartModifierFactory());
+					new HypertensionBloodPressureChartModifierFactory());
+
+			componentContainer.registerComponentInstance(ReflectionUtils.getClassInfo(StepsPerDayChartModifierFactory).name,
+					IChartModifierFactory,
+					new StepsPerDayChartModifierFactory());
 
 /*			componentContainer.registerComponentInstance(ReflectionUtils.getClassInfo(HypertensionHealthActionListViewAdapterFactory).name,
 					IHealthActionListViewAdapterFactory,

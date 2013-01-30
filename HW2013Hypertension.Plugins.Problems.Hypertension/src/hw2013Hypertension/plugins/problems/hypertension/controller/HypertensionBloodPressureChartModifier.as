@@ -40,7 +40,7 @@ package hw2013Hypertension.plugins.problems.hypertension.controller
 	import spark.components.Label;
 	import spark.components.View;
 
-	public class HypertensionChartModifier extends ChartModifierBase implements IChartModifier
+	public class HypertensionBloodPressureChartModifier extends ChartModifierBase implements IChartModifier
 	{
 		private static const DIASTOLIC_VERTICAL_AXIS_MAXIMUM:Number = 120;
 		private static const DIASTOLIC_VERTICAL_AXIS_MINIMUM:Number = 20;
@@ -57,7 +57,7 @@ package hw2013Hypertension.plugins.problems.hypertension.controller
 		[Embed("/assets/images/background.png")]
 		private var backgroundImageClass:Class;
 
-		public function HypertensionChartModifier(chartDescriptor:VitalSignChartDescriptor,
+		public function HypertensionBloodPressureChartModifier(chartDescriptor:VitalSignChartDescriptor,
 												  chartModelDetails:IChartModelDetails,
 												  decoratedChartModifier:IChartModifier)
 		{

@@ -222,6 +222,7 @@ package collaboRhythm.shared.ui.healthCharts.view
 		private var _chartDataTipsLocation:ChartDataTipsLocation;
 		private var _updateCompleteSinceChartsUpdated:Boolean = false;
 		private var _healthActionInputControllerFactory:MasterHealthActionInputControllerFactory;
+		private const FORCE_CREATION_OF_CHARTS:Boolean = true;
 
 		public function SynchronizedHealthCharts():void
 		{
@@ -789,6 +790,8 @@ package collaboRhythm.shared.ui.healthCharts.view
 		{
 			_chartModifiers = new OrderedMap();
 
+			createAdditionalChartDescriptors();
+
 			for each (var chartDescriptor:IChartDescriptor in _chartDescriptors.values())
 			{
 				var currentModifier:IChartModifier = null;
@@ -801,6 +804,16 @@ package collaboRhythm.shared.ui.healthCharts.view
 				{
 					_chartModifiers.addKeyValue(currentModifier.chartKey, currentModifier);
 				}
+			}
+		}
+
+		private function createAdditionalChartDescriptors():void
+		{
+			for each (var chartModifierFactory:IChartModifierFactory in _chartModifierFactories)
+			{
+				var updatedChartDescriptors:OrderedMap = chartModifierFactory.updateChartDescriptors(_chartDescriptors);
+				if (updatedChartDescriptors)
+					_chartDescriptors = updatedChartDescriptors;
 			}
 		}
 
@@ -1268,7 +1281,7 @@ package collaboRhythm.shared.ui.healthCharts.view
 			var healthActionSchedule:HealthActionSchedule = getMatchingHealthActionSchedule(vitalSignKey);
 			var vitalSignCollection:ArrayCollection = getVitalSignSeriesDataCollection(vitalSignChartDescriptor);
 
-			if (healthActionSchedule || (vitalSignCollection && vitalSignCollection.length > 0 && vitalSignCollection[0]))
+			if (FORCE_CREATION_OF_CHARTS || healthActionSchedule || (vitalSignCollection && vitalSignCollection.length > 0 && vitalSignCollection[0]))
 			{
 				// TODO: if the collection starts null (because there is no data yet) we need to detect when the collection is first created so we can start listening for changes
 				if (vitalSignCollection)

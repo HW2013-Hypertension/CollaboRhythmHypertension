@@ -7,9 +7,11 @@ package hw2013Hypertension.plugins.problems.hypertension.controller
 	import collaboRhythm.shared.ui.healthCharts.model.modifiers.IChartModifier;
 	import collaboRhythm.shared.ui.healthCharts.model.modifiers.IChartModifierFactory;
 
-	public class HypertensionChartModifierFactory implements IChartModifierFactory
+	import com.theory9.data.types.OrderedMap;
+
+	public class HypertensionBloodPressureChartModifierFactory implements IChartModifierFactory
 	{
-		public function HypertensionChartModifierFactory()
+		public function HypertensionBloodPressureChartModifierFactory()
 		{
 		}
 
@@ -19,9 +21,14 @@ package hw2013Hypertension.plugins.problems.hypertension.controller
 			if (chartDescriptor is VitalSignChartDescriptor &&
 					(chartDescriptor as VitalSignChartDescriptor).vitalSignCategory ==
 							VitalSignsModel.SYSTOLIC_CATEGORY)
-				return new HypertensionChartModifier(chartDescriptor as VitalSignChartDescriptor, chartModelDetails, currentChartModifier);
+				return new HypertensionBloodPressureChartModifier(chartDescriptor as VitalSignChartDescriptor, chartModelDetails, currentChartModifier);
 			else
 				return currentChartModifier;
+		}
+
+		public function updateChartDescriptors(chartDescriptors:OrderedMap):OrderedMap
+		{
+			return null;
 		}
 	}
 }
