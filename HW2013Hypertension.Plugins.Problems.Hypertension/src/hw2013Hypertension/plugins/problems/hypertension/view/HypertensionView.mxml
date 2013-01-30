@@ -189,22 +189,22 @@
 	<s:Label x="685" y="115"
       width="70" height="50"
       text="25%"
-		fontSize="11"
+		fontSize="15"
 		fontWeight="bold"	/>
 	<s:Label x="790" y="115"
       width="70" height="50"
       text="50%"
-		fontSize="11"
+		fontSize="15"
 		fontWeight="bold"	/>
 	<s:Label x="895" y="115"
       width="70" height="50"
       text="75%"
-		fontSize="11"
+		fontSize="15"
 		fontWeight="bold"	/>
 	<s:Label x="1000" y="115"
       width="70" height="50"
       text="100%"
-		fontSize="11"
+		fontSize="15"
 		fontWeight="bold"	/>
 
 <!---	<s:RichText  x="590" y="120"
