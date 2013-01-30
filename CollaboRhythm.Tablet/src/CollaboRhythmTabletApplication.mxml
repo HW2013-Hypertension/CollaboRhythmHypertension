@@ -429,8 +429,12 @@
 
 		<!-- Instances of charting components which started causing errors (in plugins which use charts) when we upgraded to Flex SDK 4.6.0 preview -->
 		<mx:LineChart visible="false" includeInLayout="false"/>
+		<mx:ColumnChart visible="false" includeInLayout="false"/>
+		<mx:BubbleChart visible="false" includeInLayout="false"/>
 		<mx:AreaSeries visible="false" includeInLayout="false"/>
 		<mx:PlotSeries visible="false" includeInLayout="false"/>
+		<mx:LineSeries visible="false" includeInLayout="false"/>
+		<mx:BubbleSeries visible="false" includeInLayout="false"/>
 		<s:CalloutButton visible="false" includeInLayout="false"/>
 		<s:Callout visible="false" includeInLayout="false"/>
 		<s:DateSpinner visible='false' includeInLayout="false"/>

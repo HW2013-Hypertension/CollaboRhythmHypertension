@@ -1,6 +1,6 @@
 <component name="ProjectRunConfigurationManager">
   <configuration default="false" name="CollaboRhythm.Tablet - Emulator (Tab 1280 x 752)" type="FlashRunConfigurationType" factoryName="Flash App" singleton="true">
-    <option name="BCName" value="CollaboRhythm.Tablet" />
+    <option name="BCName" value="CollaboRhythm.Tablet Debug" />
     <option name="IOSSimulatorSdkPath" value="" />
     <option name="adlOptions" value="" />
     <option name="airProgramParameters" value="" />

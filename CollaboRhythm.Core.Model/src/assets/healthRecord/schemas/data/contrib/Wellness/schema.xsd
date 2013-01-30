@@ -1,0 +1,32 @@
+<!--~
+  ~ Copyright 2013 John Moore, Scott Gilroy
+  ~
+  ~ This file is part of CollaboRhythm.
+  ~
+  ~ CollaboRhythm is free software: you can redistribute it and/or modify it under the terms of the GNU General Public
+  ~ License as published by the Free Software Foundation, either version 2 of the License, or (at your option) any later
+  ~ version.
+  ~
+  ~ CollaboRhythm is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied
+  ~ warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more
+  ~ details.
+  ~
+  ~ You should have received a copy of the GNU General Public License along with CollaboRhythm.  If not, see
+  ~ <http://www.gnu.org/licenses/>.
+  -->
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified"
+		   targetNamespace="http://indivo.org/vocab/xml/documents#" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+		   xmlns:indivo="http://indivo.org/vocab/xml/documents#">
+
+	<xs:complexType name="Wellness">
+		<xs:sequence>
+			<xs:element type="xs:dateTime" name="measurementDate" maxOccurs="1" minOccurs="1"/>
+			<xs:element type="xs:string" name="reportedBy" maxOccurs="1" minOccurs="1"/>
+			<xs:element type="xs:dateTime" name="dateReported" maxOccurs="1" minOccurs="1"/>
+			<xs:element type="xs:int" name="numberOfStepsTaken" maxOccurs="1" minOccurs="1"/>
+			<xs:element type="xs:float" name="numberOfHoursSlept" maxOccurs="1" minOccurs="1"/>
+			<xs:element type="xs:int" name="numberOfTimesAwakened" maxOccurs="1" minOccurs="1"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="Wellness" type="indivo:Wellness"/>
+</xs:schema>

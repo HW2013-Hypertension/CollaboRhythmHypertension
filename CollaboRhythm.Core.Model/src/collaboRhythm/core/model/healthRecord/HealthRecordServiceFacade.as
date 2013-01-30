@@ -8,6 +8,7 @@ package collaboRhythm.core.model.healthRecord
 	import collaboRhythm.core.model.healthRecord.service.HealthActionResultsHealthRecordService;
 	import collaboRhythm.core.model.healthRecord.service.HealthActionSchedulesHealthRecordService;
 	import collaboRhythm.core.model.healthRecord.service.HealthChartsInitializationService;
+	import collaboRhythm.core.model.healthRecord.service.WellnessHealthRecordService;
 	import collaboRhythm.core.model.healthRecord.service.supportClasses.IRecordSynchronizer;
 	import collaboRhythm.core.model.healthRecord.service.MedicationAdministrationsHealthRecordService;
 	import collaboRhythm.core.model.healthRecord.service.MedicationFillsHealthRecordService;
@@ -23,6 +24,7 @@ package collaboRhythm.core.model.healthRecord
 	import collaboRhythm.core.model.healthRecord.stitchers.MedicationOrderStitcher;
 	import collaboRhythm.core.model.healthRecord.stitchers.MedicationScheduleItemStitcher;
 	import collaboRhythm.core.model.healthRecord.stitchers.VitalSignStitcher;
+	import collaboRhythm.core.model.healthRecord.stitchers.WellnessStitcher;
 	import collaboRhythm.shared.model.Account;
 	import collaboRhythm.shared.model.IRecordStorageService;
 	import collaboRhythm.shared.model.Record;
@@ -93,6 +95,11 @@ package collaboRhythm.core.model.healthRecord
 																		  debuggingToolsEnabled));
 			addService(new AdherenceItemsHealthRecordService(consumerKey, consumerSecret,
 								baseURL, activeAccount, debuggingToolsEnabled));
+
+			addService(new WellnessHealthRecordService(consumerKey, consumerSecret,
+											baseURL, activeAccount, debuggingToolsEnabled));
+
+
 			addService(new HealthChartsInitializationService(consumerKey, consumerSecret, baseURL, activeAccount,
 					debuggingToolsEnabled));
 
@@ -131,6 +138,7 @@ package collaboRhythm.core.model.healthRecord
 			_stitchers.push(new HealthActionOccurrenceStitcher(record));
 			_stitchers.push(new HealthActionPlanStitcher(record));
 			_stitchers.push(new VitalSignStitcher(record));
+			_stitchers.push(new WellnessStitcher(record));
 
 			for each (var stitcher:IDocumentStitcher in _stitchers)
 			{

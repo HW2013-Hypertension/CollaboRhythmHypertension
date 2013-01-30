@@ -1,0 +1,168 @@
+<?xml version="1.0"?>
+<!-- charts/BubbleRelativeSize.mxml -->
+<s:Group xmlns:fx="http://ns.adobe.com/mxml/2009" xmlns:mx="library://ns.adobe.com/flex/mx"
+
+		xmlns:s="spark.components.*"
+		>
+<fx:Declarations>
+	<mx:SolidColor id="redId"
+				  color="red"
+				  alpha=".9"/>
+
+	<mx:SolidColor id="greenId"
+				  color="green"
+				  alpha=".9"/>
+
+	<mx:SolidColorStroke id="strokeId"
+						 color="0x224488"
+						 weight="2"/>
+
+	<mx:SolidColorStroke id="h1Stroke"
+						 color="0x224488"
+						 weight="8"
+						 alpha="1"
+						 caps="square"
+			/>
+</fx:Declarations>
+	<fx:Style>
+		@namespace mx "http://www.adobe.com/2006/mxml";
+		mx|BubbleChart {
+			fontFamily: Calibri;
+			fontSize: 16;
+			fontWeight: bold;
+			color: #224488;
+		}
+
+		.bubbleChart {
+			fontFamily: Calibri;
+			fontSize: 16;
+			color: #000000;
+		}
+
+		.verticalAxis {
+			fontWeight: bold;
+		}
+
+	</fx:Style>
+
+	<fx:Script>
+				<![CDATA[
+		import mx.charts.GridLines;
+		import mx.collections.ArrayCollection;
+		import mx.graphics.Stroke;
+
+		[Bindable]
+		public var tiny:ArrayCollection = new ArrayCollection([
+			{date: "1", "x": 94, "y": 155, steps: 1800, "r": 0.3},
+			{date: "2", "x": 92, "y": 155, steps: 2300, "r": 0.3}
+		]);
+
+		[Bindable]
+		public var small:ArrayCollection = new ArrayCollection([
+			{date: "3", "x": 90, "y": 152, steps: 5300, "r": 0.5},
+			{date: "4", "x": 99, "y": 150, steps: 4100, "r": 0.5},
+			{date: "5", "x": 90, "y": 148, steps: 5210, "r": 0.5},
+			{date: "6", "x": 92, "y": 146, steps: 2580, "r": 0.5},
+			{date: "7", "x": 91, "y": 148, steps: 5500, "r": 0.5}
+		]);
+
+		[Bindable]
+		public var medium:ArrayCollection = new ArrayCollection([
+			{date: "8", "x": 91, "y": 148, steps: 7250, "r": 0.7},
+			{date: "9", "x": 90, "y": 145, steps: 6900, "r": 0.7},
+			{date: "10", "x": 89, "y": 145, steps: 6900, "r": 0.7},
+			{date: "11", "x": 89, "y": 144, steps: 7600, "r": 0.7},
+			{date: "12", "x": 89, "y": 147, steps: 7700, "r": 0.7},
+			{date: "13", "x": 88, "y": 145, steps: 8625, "r": 0.7},
+			{date: "14", "x": 88, "y": 142, steps: 9200, "r": 0.7},
+			{date: "15", "x": 87, "y": 142, steps: 9950, "r": 0.7},
+			{date: "16", "x": 88, "y": 140, steps: 9675, "r": 0.7}
+		]);
+
+		[Bindable]
+		public var big:ArrayCollection = new ArrayCollection([
+			{date: "17", "x": 86, "y": 140, steps: 10875, "r": 0.9},
+			{date: "18", "x": 85, "y": 138, steps: 10050, "r": 0.9},
+			{date: "19", "x": 84, "y": 138, steps: 11400, "r": 0.9},
+			{date: "20", "x": 85, "y": 139, steps: 11652, "r": 0.9},
+			{date: "21", "x": 85, "y": 138, steps: 11900, "r": 0.9}
+		]);
+		]]>
+			</fx:Script>
+
+
+
+	<mx:BubbleChart id="myChart" x="133" y="76"
+					width="810" height="282"
+					maxRadius="16" minRadius="0"
+					showDataTips="true"
+					styleName="bubbleChart"
+			>
+
+		<mx:verticalAxis>
+			<mx:LinearAxis id="v1"
+						   minimum="50" maximum="180"/>
+		</mx:verticalAxis>
+
+
+		<mx:verticalAxisRenderers>
+			<mx:AxisRenderer styleName="verticalAxis"
+							 placement="left"
+							 axis="{v1}">
+				<mx:axisStroke>{h1Stroke}</mx:axisStroke>
+			</mx:AxisRenderer>
+		</mx:verticalAxisRenderers>
+
+
+		<mx:series>
+			<mx:BubbleSeries
+					fill="{redId}"
+					stroke="{strokeId}"
+					dataProvider="{tiny}"
+					displayName="Steps"
+					xField="date"
+					yField="y"
+					radiusField="r"
+					>
+			</mx:BubbleSeries>
+
+			<mx:BubbleSeries
+					fill="{redId}"
+					stroke="{strokeId}"
+					dataProvider="{small}"
+					displayName="Steps"
+					xField="date"
+					yField="y"
+					radiusField="r"
+					/>
+
+			<mx:BubbleSeries
+					fill="{greenId}"
+					stroke="{strokeId}"
+					dataProvider="{medium}"
+					displayName="Steps"
+					xField="date"
+					yField="y"
+					radiusField="r"
+					/>
+
+			<mx:BubbleSeries
+					fill="{greenId}"
+					stroke="{strokeId}"
+					dataProvider="{big}"
+					displayName="Steps"
+					xField="date"
+					yField="y"
+					radiusField="r"
+					/>
+		</mx:series>
+		<!--<mx:backgroundElements>-->
+			<!--<mx:Image id="backgroundImage"-->
+					  <!--scaleContent="true"-->
+					  <!--maintainAspectRatio="false"-->
+					  <!--alpha=".9"-->
+					  <!--source="@Embed('../../../../../assets/images/stepsPerDayBackgorund.png')"/>-->
+		<!--</mx:backgroundElements>-->
+	</mx:BubbleChart>
+
+</s:Group>
