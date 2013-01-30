@@ -31,9 +31,6 @@ package collaboRhythm.core.model.healthRecord.service
 			super.updateModelAfterHandleReportResponse(event, responseXml, healthRecordServiceRequestDetails);
 			_logger.debug("Wellness documents " + activeAccount.primaryRecord.wellnessModel.documents.length);
 
-			for(i=0; i < activeAccount.primaryRecord.wellnessModel.documents.length;i++) {
-				_logger.debug("Wellness documents " + activeAccount.primaryRecord.wellnessModel.documents[i]);
-			}
 		}
 
 	}
