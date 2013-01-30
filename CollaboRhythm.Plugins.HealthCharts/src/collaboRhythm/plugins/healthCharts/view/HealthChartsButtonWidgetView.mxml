@@ -49,8 +49,8 @@
 	<shared:WidgetButton id="showFullViewButton" width="100%" height="100%" skinClass="collaboRhythm.shared.view.skins.HomeTransparentNavigationButtonSkin" click="showFullViewButton_clickHandler()"/>
 	<s:Image source="@Embed(source='charts.png')" width="80" height="80"
 
-										 smooth="true"
-										 />
-
+											 smooth="true"
+											 click="showFullViewButton_clickHandler()"
+				/>
 	<!--<view:ChartsIcon width="60" height="60" horizontalCenter="0" verticalCenter="0" mouseEnabled="false" mouseChildren="false"/>-->
 </s:Group>
