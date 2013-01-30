@@ -44,8 +44,8 @@
 		}
 		]]></fx:Script>
 	<s:VGroup>
-		<view:BloodPressureChartView/>
-		<!--<view:stepsPerDayChart/>-->
+		<!--<view:BloodPressureChartView/>-->
+		<view:StepsPerDayChartView/>
 	</s:VGroup>
 
 </tablet:TabletViewBase>

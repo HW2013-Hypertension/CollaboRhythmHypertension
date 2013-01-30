@@ -43,7 +43,10 @@
 		}
 		]]></fx:Script>
 	<sharedView:WidgetButton id="openButton" width="100%" height="100%"
-							 skinClass="collaboRhythm.shared.view.skins.HomeTransparentNavigationButtonSkin"
-							 label="HypertensionChats"
-							 click="openButton_clickHandler()"/>
+								 skinClass="collaboRhythm.shared.view.skins.HomeTransparentNavigationButtonSkin"
+								  />
+		<s:Image source="@Embed(source='buddy.png')" width="80" height="80"
+
+									 smooth="true"
+									 click="openButton_clickHandler()"/>
 </s:Group>

@@ -22,6 +22,7 @@
 	<fx:Style>
 		@namespace s "library://ns.adobe.com/flex/spark";
 	</fx:Style>
+
 	<fx:Script><![CDATA[
 		import hw2013Hypertension.plugins.problems.hypertension.controller.HypertensionAppController;
 		import hw2013Hypertension.plugins.problems.hypertension.model.HypertensionModel;
