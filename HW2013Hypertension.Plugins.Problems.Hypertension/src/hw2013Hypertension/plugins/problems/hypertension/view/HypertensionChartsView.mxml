@@ -42,7 +42,58 @@
 					CollaborationLobbyNetConnectionServiceProxy;
 		}
 		]]></fx:Script>
-	<s:VGroup width="100%" height="100%" gap="0">
-		<s:Label text="Hello HypertensionCharts!"/>
-	</s:VGroup>
+
+
+		<s:Label x="100" y="40"
+					 width="690" height="40"
+					 text="Choose your BP Buddy"
+					 styleName="titleHeader"
+				 fontWeight="bold"
+				fontSize="24"/>
+
+
+
+			<s:Form x="80" y="80"
+					height="500" width="500">
+
+				<s:Label text="Last Name:"
+						x="50" y="60"
+						height="30" width="100"
+						fontSize="20"/>
+				<s:TextInput skinClass="spark.skins.mobile.StageTextInputSkin"
+							 x="160" y="50"/>
+
+				<s:Label text="First Name:"
+						x="50" y="130"
+						height="30" width="100"
+						fontSize="20"/>
+				<s:TextInput skinClass="spark.skins.mobile.StageTextInputSkin"
+							 x="160" y="120"/>
+
+				<s:Label text="Phone Number:"
+							x="50" y="200"
+							height="50" width="100"
+							fontSize="20"/>
+				<s:TextInput skinClass="spark.skins.mobile.StageTextInputSkin"
+							 x="160" y="200"/>
+
+				<s:Label text="E-mail Address:"
+							x="50" y="270"
+							height="50" width="100"
+							fontSize="20"/>
+				<s:TextInput skinClass="spark.skins.mobile.StageTextInputSkin"
+							 x="160" y="270"/>
+
+
+
+
+
+					<s:Button label="Submit " x="200" y="350"/>
+
+
+			</s:Form>
+
+
+
+
 </tablet:TabletViewBase>
