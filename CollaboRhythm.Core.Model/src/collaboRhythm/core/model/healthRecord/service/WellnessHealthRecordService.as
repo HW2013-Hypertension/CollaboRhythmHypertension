@@ -21,7 +21,7 @@ package collaboRhythm.core.model.healthRecord.service
 		override protected function documentShouldBeIncluded(document:IDocument, nowTime:Number):Boolean
 		{
 			var wellness:Wellness = document as Wellness;
-			return wellness.measurementDate == null || wellness.measurementDate.valueOf() <= nowTime;
+			return wellness.measurementDate.valueOf() <= nowTime;
 		}
 
 		override protected function updateModelAfterHandleReportResponse(event:IndivoClientEvent, responseXml:XML,
