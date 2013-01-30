@@ -39,6 +39,10 @@ package hw2013Hypertension.plugins.problems.hypertension.controller
 					IHealthActionInputControllerFactory,
 					new AdhereTechBottleHealthActionInputControllerFactory());
 
+			componentContainer.registerComponentInstance(ReflectionUtils.getClassInfo(HypertensionChartModifierFactory).name,
+					IChartModifierFactory,
+					new HypertensionChartModifierFactory());
+
 /*			componentContainer.registerComponentInstance(ReflectionUtils.getClassInfo(HypertensionHealthActionListViewAdapterFactory).name,
 					IHealthActionListViewAdapterFactory,
 					new HypertensionHealthActionListViewAdapterFactory());
@@ -46,10 +50,6 @@ package hw2013Hypertension.plugins.problems.hypertension.controller
 			componentContainer.registerComponentInstance(ReflectionUtils.getClassInfo(HypertensionHealthActionInputControllerFactory).name,
 					IHealthActionInputControllerFactory,
 					new HypertensionHealthActionInputControllerFactory());
-
-			componentContainer.registerComponentInstance(ReflectionUtils.getClassInfo(HypertensionChartModifierFactory).name,
-					IChartModifierFactory,
-					new HypertensionChartModifierFactory());
 
 			componentContainer.registerComponentInstance(ReflectionUtils.getClassInfo(HypertensionHealthActionCreationControllerFactory).name,
 					IHealthActionCreationControllerFactory,

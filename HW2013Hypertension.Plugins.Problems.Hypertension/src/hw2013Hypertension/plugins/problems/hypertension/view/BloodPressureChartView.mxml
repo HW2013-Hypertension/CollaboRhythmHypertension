@@ -96,13 +96,13 @@
 			<mx:verticalAxisRenderers>
 				<mx:AxisRenderer styleName="verticalAxis" 
 								 placement="right" 
-								 axis="{v1}">
+								 axis="{diastolicVerticalAxis}">
 					<mx:axisStroke>{h1Stroke}</mx:axisStroke>
 				</mx:AxisRenderer>
 				
 				<mx:AxisRenderer styleName="verticalAxis" 
 								 placement="left" 
-								 axis="{v2}">
+								 axis="{systolicVerticalAxis}">
 					<mx:axisStroke>{h2Stroke}</mx:axisStroke>
 				</mx:AxisRenderer>
 				
@@ -129,7 +129,7 @@
 					</mx:fill>
 					
 					<mx:verticalAxis>
-						<mx:LinearAxis id="v1" 
+						<mx:LinearAxis id="diastolicVerticalAxis"
 									   minimum="20" maximum="120"/>
 					</mx:verticalAxis> 
 					<mx:lineStroke>
@@ -150,7 +150,7 @@
 						<mx:SolidColor color="{systolicColor}"/>
 					</mx:fill>
 					<mx:verticalAxis>
-						<mx:LinearAxis id="v2" 
+						<mx:LinearAxis id="systolicVerticalAxis"
 									   minimum="50" maximum="190"/>           
 					</mx:verticalAxis>
 					
