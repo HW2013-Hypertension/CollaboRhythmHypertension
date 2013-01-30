@@ -27,7 +27,6 @@ package collaboRhythm.core.model.healthRecord.service
 		override protected function updateModelAfterHandleReportResponse(event:IndivoClientEvent, responseXml:XML,
 																		 healthRecordServiceRequestDetails:HealthRecordServiceRequestDetails):void
 		{
-			var i:int;
 			super.updateModelAfterHandleReportResponse(event, responseXml, healthRecordServiceRequestDetails);
 			_logger.debug("Wellness documents " + activeAccount.primaryRecord.wellnessModel.documents.length);
 
