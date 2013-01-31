@@ -1,8 +1,5 @@
 package collaboRhythm.plugins.foraD40b.controller
 {
-	import castle.flexbridge.reflection.ReflectionUtils;
-
-	import collaboRhythm.ane.applicationMessaging.actionScript.ApplicationMessaging;
 	import collaboRhythm.plugins.foraD40b.model.BloodGlucoseHealthActionInputModel;
 	import collaboRhythm.plugins.foraD40b.model.BloodGlucoseHealthActionInputModelCollection;
 	import collaboRhythm.plugins.foraD40b.model.ForaD40bHealthActionInputControllerFactory;
@@ -30,7 +27,6 @@ package collaboRhythm.plugins.foraD40b.controller
 
 	import flash.events.MouseEvent;
 	import flash.net.URLVariables;
-	import flash.system.Capabilities;
 	import flash.utils.getQualifiedClassName;
 
 	import mx.binding.utils.BindingUtils;
@@ -45,7 +41,7 @@ package collaboRhythm.plugins.foraD40b.controller
 	public class BloodGlucoseHealthActionInputController extends HealthActionInputControllerBase implements IHealthActionInputController
 	{
 		private static const HEALTH_ACTION_INPUT_VIEW_CLASS:Class = BloodGlucoseHealthActionInputView;
-		public static const BATCH_TRANSFER_PROCESS_KEY:String = "BloodGlucoseHealthActionInputController_BeginBatchTransfer";
+		public static const BATCH_TRANSFER_PROCESS_KEY:String = "ForaD40b_BeginBatchTransfer";
 
 		private var _dataInputModelCollection:BloodGlucoseHealthActionInputModelCollection;
 		private var _viewNavigator:ViewNavigator;
@@ -222,33 +218,16 @@ package collaboRhythm.plugins.foraD40b.controller
 
 		private function detectDuplicates(urlVariables:URLVariables):Boolean
 		{
-			var isDebugger:Boolean = Capabilities.isDebugger;
-			var playerType:String = Capabilities.playerType;
-
 			// check all existing blood glucose measurements
 			for each (var bloodGlucoseVitalSign:VitalSign in _dataInputModelCollection.healthActionModelDetailsProvider.record.vitalSignsModel.getVitalSignsByCategory(VitalSignsModel.BLOOD_GLUCOSE_CATEGORY))
 			{
 				if (isDuplicate(urlVariables, bloodGlucoseVitalSign))
 				{
-					if (playerType == "Desktop" && isDebugger)
-					{
-					}
-					else
-					{
-						sendBroadcastDuplicateDetected();
-					}
-
+					safeSendBroadcastDuplicateDetected();
 					return true;
 				}
 			}
 			return false;
-		}
-
-		private function sendBroadcastDuplicateDetected():void
-		{
-			var extension:ApplicationMessaging = new ApplicationMessaging();
-			extension.sendBroadcast("CollaboRhythm-health-action-received-v1", "duplicate",
-					"healthActionStringTest1");
 		}
 
 		private static function isDuplicate(urlVariables:URLVariables, bloodGlucoseVitalSign:VitalSign):Boolean

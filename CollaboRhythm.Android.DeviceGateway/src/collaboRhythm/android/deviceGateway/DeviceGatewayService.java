@@ -76,7 +76,7 @@ public class DeviceGatewayService extends Service {
 	// A separate class that extends Thread and implements IBluetoothSocketThread must be created for each device. The class must
 	// provide a BluetoothSocketThreadAnnotation that specifies the name of the Bluetooth device that it handles. The name
 	// of each class must then be added to this array.
-	private String mBluetoothSocketThreadNames[] = {"collaboRhythm.android.deviceGateway.AdhereTechBluetoothSocketThread"};
+	private String mBluetoothSocketThreadNames[] = {"collaboRhythm.android.deviceGateway.ForaD40bBluetoothSocketThread", "collaboRhythm.android.deviceGateway.AdhereTechBluetoothSocketThread"};
 
 	@Override
 	public IBinder onBind(Intent arg0) {

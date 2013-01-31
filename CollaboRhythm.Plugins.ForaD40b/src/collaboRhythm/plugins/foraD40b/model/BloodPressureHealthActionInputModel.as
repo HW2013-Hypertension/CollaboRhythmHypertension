@@ -19,6 +19,7 @@ package collaboRhythm.plugins.foraD40b.model
 		private var _systolic:String = "";
 		private var _diastolic:String = "";
 		private var _heartRate:String = "";
+		private var _isFromDevice:Boolean;
 
 		public function BloodPressureHealthActionInputModel(scheduleItemOccurrence:ScheduleItemOccurrence = null,
 															healthActionModelDetailsProvider:IHealthActionModelDetailsProvider = null)
@@ -65,6 +66,7 @@ package collaboRhythm.plugins.foraD40b.model
 
 		override public function set urlVariables(value:URLVariables):void
 		{
+			isFromDevice = true;
 			systolic = value.systolic;
 			diastolic = value.diastolic;
 			heartRate = value.heartrate;
@@ -135,6 +137,16 @@ package collaboRhythm.plugins.foraD40b.model
 		public function get isChangeTimeAllowed():Boolean
 		{
 			return true;
+		}
+
+		public function get isFromDevice():Boolean
+		{
+			return _isFromDevice;
+		}
+
+		public function set isFromDevice(value:Boolean):void
+		{
+			_isFromDevice = value;
 		}
 	}
 }

@@ -42,6 +42,7 @@ package collaboRhythm.plugins.schedule.controller
 	import flash.net.URLVariables;
 
 	import mx.core.UIComponent;
+	import mx.utils.StringUtil;
 
 	import org.osmf.utils.URL;
 
@@ -177,12 +178,16 @@ package collaboRhythm.plugins.schedule.controller
 				{
 					urlVariablesString = url.query;
 				}
-				var urlVariables:URLVariables;
-				urlVariables = new URLVariables(urlVariablesString);
 
-				if (urlVariables.success == "true")
+				if (!StringUtils.isEmpty(urlVariablesString))
 				{
-					handleUrlVariables(urlVariables);
+					var urlVariables:URLVariables;
+					urlVariables = new URLVariables(urlVariablesString);
+
+					if (urlVariables.success == "true")
+					{
+						handleUrlVariables(urlVariables);
+					}
 				}
 			}
 		}
@@ -211,8 +216,8 @@ package collaboRhythm.plugins.schedule.controller
 			}
 			else
 			{
-				handleUrlVariablesForController(healthActionInputController, urlVariables);
-			}
+					handleUrlVariablesForController(healthActionInputController, urlVariables);
+				}
 
 			// Note that we are currently using the "end" as a rough way to detect when we can clear the _activeHealthActionInputController. It may not be 100% robust but it works for all cases tested.
 			var batchTransferAction:String = urlVariables[HealthActionInputControllerBase.BATCH_TRANSFER_URL_VARIABLE];

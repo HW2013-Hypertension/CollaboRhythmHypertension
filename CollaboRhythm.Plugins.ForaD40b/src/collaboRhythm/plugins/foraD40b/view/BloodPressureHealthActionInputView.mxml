@@ -19,7 +19,8 @@
 					   xmlns:s="library://ns.adobe.com/flex/spark"
 					   xmlns:sharedViews="collaboRhythm.shared.view.*"
 					   xmlns:tablet="collaboRhythm.shared.view.tablet.*"
-					   implements="collaboRhythm.plugins.schedule.shared.model.IHealthActionInputView">
+					   implements="collaboRhythm.plugins.schedule.shared.model.IHealthActionInputView"
+		creationComplete="creationCompleteHandler(event)">
 	<fx:Declarations>
 		<s:Button id="doneButton" label="Done" click="doneButton_clickHandler()"/>
 	</fx:Declarations>
@@ -48,7 +49,10 @@
 		import collaboRhythm.plugins.schedule.shared.model.HealthActionInputModelAndController;
 		import collaboRhythm.plugins.schedule.shared.model.IHealthActionInputController;
 
+		import mx.events.FlexEvent;
+
 		import spark.components.ViewNavigator;
+		import spark.events.TextOperationEvent;
 
 		private static const HYPOTENSION_SYSTOLIC_THRESHOLD:int = 90;
 		private static const HYPOTENSION_DIASTOLIC_THRESHOLD:int = 60;
@@ -60,6 +64,7 @@
 		[Bindable]
 		protected var _dataInputModel:BloodPressureHealthActionInputModel;
 		protected var _dataInputController:BloodPressureHealthActionInputController;
+		private var _propertiesChanged:Boolean;
 
 		override public function set data(value:Object):void
 		{
@@ -69,6 +74,7 @@
 
 			_dataInputModel = BloodPressureHealthActionInputModel(dataInputModelAndController.healthActionInputModel);
 			_dataInputController = BloodPressureHealthActionInputController(dataInputModelAndController.healthActionInputController);
+			propertiesChanged = true;
 		}
 
 		public function get healthActionInputController():IHealthActionInputController
@@ -86,6 +92,55 @@
 		{
 			_dataInputController.submitBloodPressure(positionDropDownList.selectedItem, siteDropDownList.selectedItem);
 		}
+
+		override protected function commitProperties():void
+		{
+			super.commitProperties();
+			if (propertiesChanged)
+			{
+				updateChildren();
+				propertiesChanged = false;
+			}
+		}
+
+		private function updateChildren():void
+		{
+			if (systolicTextInput)
+			{
+/*
+				systolicTextInput.text = _dataInputModel.systolic;
+				diastolic.text = _dataInputModel.diastolic;
+				heartRate.text = _dataInputModel.heartRate;
+				positionDropDownList.selectedItem = _dataInputModel.position;
+				siteDropDownList.selectedItem = _dataInputModel.site;
+*/
+				heartRate.setFocus();
+				diastolic.setFocus();
+				systolicTextInput.setFocus();
+				positionDropDownList.setFocus();
+				this.setFocus();
+			}
+		}
+
+		public function get propertiesChanged():Boolean
+		{
+			return _propertiesChanged;
+		}
+
+		public function set propertiesChanged(value:Boolean):void
+		{
+			_propertiesChanged = value;
+			if (propertiesChanged)
+			{
+				invalidateProperties();
+			}
+		}
+
+		private function creationCompleteHandler(event:Event):void
+		{
+			propertiesChanged = true;
+		}
+
 		]]>
 	</fx:Script>
 	<s:VGroup top="10" left="10" right="10" gap="10" horizontalAlign="center">
@@ -110,9 +165,14 @@
 			<s:HGroup id="systolicResultGroup" gap="15" paddingTop="20" left="0">
 				<!--TODO: Determine why the font size from the style is not working-->
 				<s:Label id="systolicLabel" text="SYS" width="65" styleName="reportingLabelsText" fontSize="40"/>
-				<s:TextInput id="systolic" width="240" height="130"
-							 skinClass="spark.skins.mobile.StageTextInputSkin" styleName="textInputText"
-							 textAlign="right" restrict="0-9" maxChars="3" softKeyboardType="number"
+				<s:TextInput id="systolicTextInput"
+							 width="280" height="170"
+							 skinClass="spark.skins.mobile.StageTextInputSkin"
+							 styleName="textInputText"
+							 contentBackgroundAlpha="1"
+							 textAlign="right"
+							 restrict="0-9" maxChars="3" softKeyboardType="number"
+							 needsSoftKeyboard="true"
 							 text="@{_dataInputModel.systolic}"/>
 				<s:Group height="100%">
 					<s:Label text="mmHg" verticalCenter="0" styleName="reportingLabelsText"/>
@@ -122,7 +182,7 @@
 		<s:Group width="100%">
 			<s:HGroup id="diastolicResultGroup" gap="15" left="0">
 				<s:Label id="diastolicLabel" text="DIA" width="65" styleName="reportingLabelsText"/>
-				<s:TextInput id="diastolic" width="240" height="130"
+				<s:TextInput id="diastolic" width="280" height="170"
 							 skinClass="spark.skins.mobile.StageTextInputSkin" styleName="textInputText"
 							 textAlign="right" restrict="0-9" maxChars="3" softKeyboardType="number"
 							 text="@{_dataInputModel.diastolic}"/>
@@ -130,7 +190,7 @@
 		</s:Group>
 		<s:Group width="100%">
 			<s:VGroup id="heartRateResultGroup" right="0">
-				<s:TextInput id="heartRate" width="200" height="95"
+				<s:TextInput id="heartRate" width="200" height="125"
 							 skinClass="spark.skins.mobile.StageTextInputSkin"
 							 textAlign="center" restrict="0-9" maxChars="3" softKeyboardType="number"
 							 text="@{_dataInputModel.heartRate}"/>
