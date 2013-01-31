@@ -33,13 +33,18 @@
 			_messagesAppController.showMessagesView();
 		}
 		]]></fx:Script>
-	<sharedView:WidgetButton width="100%" height="100%"
+	<!--<sharedView:WidgetButton width="100%" height="100%"
 							 skinClass="collaboRhythm.shared.view.skins.HomeTransparentNavigationButtonSkin"
-							 click="showMessagesViewButton_clickHandler()"/>
-	<s:Group left="10" right="10" top="10" bottom="10" mouseEnabled="false" mouseChildren="false">
+							 click="showMessagesViewButton_clickHandler()"/>-->
+	<s:Image source="@Embed(source='messages.png')" width="80" height="80"
+
+										 smooth="true"
+										 click="showMessagesViewButton_clickHandler()"
+			/>
+	<!--<s:Group left="10" right="10" top="10" bottom="10" mouseEnabled="false" mouseChildren="false">
 		<sharedView:NoMessagesIcon visible="{_messagesModel.unreadMessageCount == 0}"/>
 		<sharedView:MessagesIcon visible="{_messagesModel.unreadMessageCount != 0}"/>
 		<s:Label id="unreadMessageCountLabel" horizontalCenter="0" verticalCenter="-2"
 				 text="{_messagesModel.unreadMessageCount.toString()}"/>
-	</s:Group>
+	</s:Group>-->
 </s:Group>
