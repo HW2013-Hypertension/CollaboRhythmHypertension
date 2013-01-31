@@ -21,6 +21,8 @@ package hw2013Hypertension.plugins.problems.hypertension.model
 	import mx.formatters.NumberBase;
 	import mx.formatters.NumberBaseRoundType;
 
+	import spark.formatters.DateTimeFormatter;
+
 	[Bindable]
 
 	public class HypertensionModel
@@ -246,8 +248,9 @@ package hw2013Hypertension.plugins.problems.hypertension.model
 
 							//if (adherenceItem.dateReported.time > beginningOfToday.time)
 							//{
+
 								_messages2.addItem("Your buddy earned 100 points because you took your" +
-								"\n" + "medication today"+adherenceItem.dateReported.getDate()+"");
+								"\n" + "medication today "+adherenceItem.dateReported.toLocaleDateString());
 							//}
 						}
 					}
@@ -362,7 +365,7 @@ package hw2013Hypertension.plugins.problems.hypertension.model
 
 			averagesystolic = totalsystolic / count;
 			averagediastolic = totaldiastolic / count;
-			if (averagediastolic > 60 && averagediastolic < 90 && averagesystolic > 90 && averagesystolic < 140)
+			if (averagediastolic > 60 && averagediastolic < 90 && averagesystolic > 90 && averagesystolic <= 140)
 			{
 				_messages3.addItem("Congratulations your  average systolic this week was " + averagesystolic +
 						" and your" +
