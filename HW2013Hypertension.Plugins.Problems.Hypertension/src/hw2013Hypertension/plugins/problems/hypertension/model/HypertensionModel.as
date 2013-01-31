@@ -274,7 +274,7 @@ package hw2013Hypertension.plugins.problems.hypertension.model
 								//if (adherenceItem.dateReported.time > beginningOfToday.time)
 								//{
 									_messages2.addItem("Your buddy earned 100 points because you took your blood pressure" +
-											"\n" + adherenceItem.dateReported.getDate() + "");
+											"\n" + adherenceItem.dateReported.toLocaleDateString()+ "");
 								//}
 							}
 						}
