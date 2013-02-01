@@ -99,7 +99,8 @@
             <FilePathAndPathInPackage file-path="$MODULE_DIR$/../CollaboRhythm.Plugins.InsulinTitrationSupport/bin-debug/CollaboRhythm_Plugins_InsulinTitrationSupportPluginModule.swf" path-in-package="plugins/InsulinTitrationSupportPluginModule.swf" />
             <FilePathAndPathInPackage file-path="$MODULE_DIR$/../CollaboRhythm.Plugins.Problems.HIV/bin-debug/HIVPluginModule.swf" path-in-package="plugins/HIVPluginModule.swf" />
             <FilePathAndPathInPackage file-path="$MODULE_DIR$/../out/production/Test/Test.swf" path-in-package="plugins/Test.swf" />
-            <FilePathAndPathInPackage file-path="$MODULE_DIR$/../out/production/HW2013Hypertension.Plugins.Problems.Hypertension/HW2013Hypertension_Plugins_Problems_Hypertension.swf" path-in-package="plugins//HW2013Hypertension_Plugins_Problems_Hypertension.swf" />
+            <FilePathAndPathInPackage file-path="$MODULE_DIR$/../out/production/HW2013Hypertension.Plugins.Problems.Hypertension/HW2013Hypertension_Plugins_Problems_Hypertension.swf" path-in-package="plugins/HW2013Hypertension_Plugins_Problems_Hypertension.swf" />
+            <FilePathAndPathInPackage file-path="$MODULE_DIR$/../CollaboRhythm.Plugins.BloodPressure/bin-debug/BloodPressurePluginModule.swf" path-in-package="plugins/BloodPressurePluginModule.swf" />
           </files-to-package>
           <AirSigningOptions keystore-path="$MODULE_DIR$/../CollaboRhythm.Workstation/CollaboRhythmKeystore.p12" use-temp-certificate="false" />
         </packaging-android>

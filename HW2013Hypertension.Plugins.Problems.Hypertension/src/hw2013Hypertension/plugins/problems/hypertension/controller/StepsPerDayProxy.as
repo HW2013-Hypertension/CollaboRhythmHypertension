@@ -35,10 +35,9 @@ package hw2013Hypertension.plugins.problems.hypertension.controller
 
 		public function get systolic():Number
 		{
-			if(_vitalSign === undefined || _vitalSign === null)
+			if(_vitalSign === null)
 			{
 				return NaN;
-				
 			}
 			return _vitalSign.resultAsNumber;
 

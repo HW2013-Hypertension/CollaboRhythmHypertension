@@ -101,7 +101,7 @@ package hw2013Hypertension.plugins.problems.hypertension.controller
 				backgroundImage.id = "backgroundImage";
 				backgroundImage.scaleContent = true;
 				backgroundImage.maintainAspectRatio = false;
-				backgroundImage.alpha = 0.9;
+				backgroundImage.alpha = 0.7;
 				backgroundImage.source = backgroundImageClass;
 				cartesianChart.backgroundElements.push(backgroundImage);
 			}

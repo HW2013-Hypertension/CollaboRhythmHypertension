@@ -18,6 +18,7 @@ package hw2013Hypertension.plugins.problems.hypertension.controller
 	import mx.charts.LinearAxis;
 
 	import mx.charts.chartClasses.CartesianChart;
+	import mx.charts.chartClasses.IAxis;
 	import mx.charts.chartClasses.Series;
 	import mx.charts.series.BubbleSeries;
 	import mx.collections.ArrayCollection;
@@ -42,7 +43,7 @@ package hw2013Hypertension.plugins.problems.hypertension.controller
 		{
 			if (decoratedModifier)
 				decoratedModifier.modifyCartesianChart(chart, cartesianChart, isMainChart);
-			chart.mainChartTitle = "Blood Pressure (mmHg)";
+			chart.mainChartTitle = "Steps Per Day";
 
 /*
 			var verticalAxis:LinearAxis = cartesianChart.verticalAxis as LinearAxis;
@@ -71,29 +72,55 @@ package hw2013Hypertension.plugins.problems.hypertension.controller
 		{
 			var systolicCollection:ArrayCollection = chartModelDetails.record.vitalSignsModel.getVitalSignsByCategory(VitalSignsModel.SYSTOLIC_CATEGORY);
 			var wellnessCollection:ArrayCollection = chartModelDetails.record.wellnessModel.documents;
-			var seriesDataCollection:ArrayCollection = new ArrayCollection();
+			var seriesDataCollectionLow:ArrayCollection = new ArrayCollection();
+			var seriesDataCollectionHigh:ArrayCollection = new ArrayCollection();
+
+			var vitalSignSeries:BubbleSeries;
 
 			for each (var wellness:Wellness in wellnessCollection)
 			{
 				var proxy:StepsPerDayProxy = new StepsPerDayProxy(wellness);
 				proxy.vitalSign = getVitalSignForDay(systolicCollection, wellness.measurementDate);
-				seriesDataCollection.addItem(proxy);
+				if (wellness.numberOfStepsTaken < 5000)
+				{
+					seriesDataCollectionLow.addItem(proxy);
+				}
+				else
+				{
+					seriesDataCollectionHigh.addItem(proxy);
+				}
 			}
 
-			var vitalSignSeries:BubbleSeries;
+			var radiusAxis:LinearAxis = new LinearAxis();
+//			radiusAxis.minimum = 0
 
 			vitalSignSeries = new BubbleSeries();
-			vitalSignSeries.name = "systolic";
-			vitalSignSeries.id = chart.id + "_systolicSeries";
+			vitalSignSeries.name = "stepsLow";
+			vitalSignSeries.id = chart.id + "_stepsLowSeries";
 			vitalSignSeries.xField = "measurementDate";
 			vitalSignSeries.yField = "systolic";
 			vitalSignSeries.radiusField = "radius";
-			vitalSignSeries.dataProvider = seriesDataCollection;
-			vitalSignSeries.displayName = "Blood Pressure Systolic";
+			vitalSignSeries.radiusAxis = radiusAxis;
+			vitalSignSeries.dataProvider = seriesDataCollectionLow;
+			vitalSignSeries.displayName = "Steps Low";
 			vitalSignSeries.filterDataValues = "none";
 			vitalSignSeries.setStyle("stroke", new SolidColorStroke(0x224488, 2));
 			vitalSignSeries.setStyle("fill", new SolidColor(0xFF0000));
-			seriesDataSets.push(new SeriesDataSet(vitalSignSeries, seriesDataCollection, "measurementDate"));
+			seriesDataSets.push(new SeriesDataSet(vitalSignSeries, seriesDataCollectionLow, "measurementDate"));
+
+			vitalSignSeries = new BubbleSeries();
+			vitalSignSeries.name = "stepsHigh";
+			vitalSignSeries.id = chart.id + "_stepsHighSeries";
+			vitalSignSeries.xField = "measurementDate";
+			vitalSignSeries.yField = "systolic";
+			vitalSignSeries.radiusField = "radius";
+			vitalSignSeries.radiusAxis = radiusAxis;
+			vitalSignSeries.dataProvider = seriesDataCollectionHigh;
+			vitalSignSeries.displayName = "Steps High";
+			vitalSignSeries.filterDataValues = "none";
+			vitalSignSeries.setStyle("stroke", new SolidColorStroke(0x224488, 2));
+			vitalSignSeries.setStyle("fill", new SolidColor(0x00FF00));
+			seriesDataSets.push(new SeriesDataSet(vitalSignSeries, seriesDataCollectionLow, "measurementDate"));
 
 			return seriesDataSets;
 		}

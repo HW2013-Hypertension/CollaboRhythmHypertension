@@ -62,7 +62,11 @@
 		<pluginSearchPath>$APPLICATION_DIRECTORY$/plugins/EquipmentPluginModule.swf</pluginSearchPath>
 		<pluginSearchPath>$APPLICATION_DIRECTORY$/plugins/InsulinPluginModule.swf</pluginSearchPath>
 		<pluginSearchPath>$APPLICATION_DIRECTORY$/plugins/InsulinTitrationSupportPluginModule.swf</pluginSearchPath>
+		<pluginSearchPath>$APPLICATION_DIRECTORY$/plugins/ForaD40bPluginModule.swf</pluginSearchPath>
+		<pluginSearchPath>$APPLICATION_DIRECTORY$/plugins/MessagesPluginModule.swf</pluginSearchPath>
 		<pluginSearchPath>$APPLICATION_DIRECTORY$/plugins/HIVPluginModule.swf</pluginSearchPath>
+		<pluginSearchPath>$APPLICATION_DIRECTORY$/plugins/BloodPressurePluginModule.swf</pluginSearchPath>
+		<pluginSearchPath>$APPLICATION_DIRECTORY$/plugins/HW2013Hypertension_Plugins_Problems_Hypertension.swf</pluginSearchPath>
 		<pluginSearchPath>$APPLICATION_DIRECTORY$/plugins</pluginSearchPath>
 	</pluginSearchPaths>
 	<demoModeEnabled>true</demoModeEnabled>
